@@ -1,0 +1,16 @@
+Nome_empresa: Estacionamento laranja
+
+Nossa ideia inicial é criar um software ou aplicativo mobile, cuja intenção é ajudar na gestão financeira e
+facilitar a forma com que o estacionemto faz suas comandas. Com o nosso software, não seria mais necessário o uso 
+das comandas em papel, e ele também faz o cálculo automático diário, semanal e mensal de quantos carros/motos usufruiram do estacionamento
+usando as horas por carro e horas por moto. 
+EX:
+		hora p/ carro: 4,00R$
+		hora p/ moto: 2,00R$
+Se 10 carros usufruiram, dando um total de 20 horas, e 20 motos, dando um total de 30 horas, então o valor ganho
+nesse dia será: 
+		20h*4,00 = 80,00R$
+		30h*2,00 = 60,00R$
+		TOTAL = 140,00R$
+
+EM BREVE SERÁ COMMITADO MAIS ATUALIZAÇÕES!
