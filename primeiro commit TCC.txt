@@ -1,4 +1,4 @@
-Nome_empresa: Estacionamento laranja
+Nome_empresa: Mariah Estacionamento
 
 Nossa ideia inicial é criar um software ou aplicativo mobile, cuja intenção é ajudar na gestão financeira e
 facilitar a forma com que o estacionemto faz suas comandas. Com o nosso software, não seria mais necessário o uso 
