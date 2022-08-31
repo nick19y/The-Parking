@@ -1,0 +1,22 @@
+perguntas de fluxo
+1 - Como funciona o registro de informações do cliente na empresa?
+
+2 - De que forma é feito o cadastro de um cliente que faz um contrato com o estacionamento a longo prazo, como por exemplo em uma semana, ou um mês?
+
+3 - Como é contabilizado o tempo em que o usuário fica no estacionamento?
+
+4 - Como é feito o controle de clientes que se encontram no estacionamento?
+
+5 - Como é feito o cálculo do valor a ser pago pelo cliente?
+
+perguntas de viabilidade
+
+1 - Algum cliente já perdeu o registro (papel) que inidica o tempo de uso do estaionamento?
+
+2 - A demanda de clientes já foi maior do que a disponibilidade de vagas no estacionamento?
+
+3 - A organização dos clientes já ficou sobrecarregada em horários de pico?
+
+4 - Já houve equívoco na hora de dar o devido troco do cliente?
+
+5 - Já houve confusão e transtorno na hora do pagamento?
