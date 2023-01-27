@@ -1,0 +1,9 @@
+.cabecalho-principal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.imagem_usuario{
+    width: 25%;
+}
