@@ -1,6 +1,6 @@
 @import url("index.css");
-@import url("cadastro.css");
 @import url("registro.css");
+@import url("cadastro.css");
 :root{
     --fonte-principal: 'Roboto', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -9,4 +9,7 @@
     --cinza: #BFABB2;
     --preto: #000;
     --verde: #01FF4E;
+}
+body{
+    background: var(--azul-principal);
 }

@@ -1,9 +1,83 @@
-.cabecalho-principal{
+.cabecalho-registro{
+    background-color: red;
+    width: 101%;
+    padding-bottom: 1.5em;
+}
+.cabecalho-nome-data{
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em 1em 2em 0;
+}
+.imagem{
+    height: 10vh;
+    width: 25vw;
+    border: 1px solid var(--preto);
+    border-radius: 100%;
+}
+.imagem-usuario{
+    align-items: center;
+}
+.mensagem-usuario{
+    margin-bottom: 0.4em;
+}
+.container-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    outline: 1px solid var(--preto);
+}
+.dia-mes{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid var(--preto);
+}
+.data-mes{
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
-.imagem_usuario{
-    width: 25%;
+.semana-horario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.altura-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 8vh;
+}
+.dia-semana{
+    border-right: 1px solid var(--preto);
+}
+.itens-cabecalho{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0.7em 0 0em;
+}
+.item-lista-cabecalho{
+    display: flex;
+    width: 15vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto-itens-cabecalho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+.imagem-lista-cabecalho{
+    height: 5vh;
+    outline: 1px solid var(--cinza);
+    background-color: var(--cinza);
+    border-radius: 10px;
+    padding: 0.5em;
 }

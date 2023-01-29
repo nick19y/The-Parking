@@ -13,21 +13,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="cabecalho-principal">
-        <div class="imagem-usuario">
-            <img src="img/usuario.svg" alt="Imagem do usuário" >
-            <h1>teste</h1>
-        </div>
-        <div class="mensagem-data">
-            <h1 class="mensagem-usuario">Bem-vindo novamente, Enzo!</h1>
-            <div class="container-data">
-                <h3 class="dia-mes"></h3>
-                <div class="semana-horario">
-                    <div class="dia-semana"></div>
-                    <div class="horario"></div>
+    <header class="cabecalho-registro">
+        <div class="cabecalho-nome-data">
+            <div class="imagem-usuario">
+                <img src="img/usuario.svg" alt="Imagem do usuário" class="imagem">
+                <h1 class="nome-usuario">Enzo Guimarães</h1>
+            </div>
+            <div class="mensagem-data">
+                <h1 class="mensagem-usuario">Bem-vindo novamente, Enzo!</h1>
+                <div class="container-data">
+                    <div class="data-mes">
+                        <h3 class="dia-mes">27 de janeiro de 2023</h3>
+                    </div>
+                    <div class="semana-horario">
+                        <div class="dia-semana altura-data">segunda-feira</div>
+                        <div class="horario altura-data">22:42</div>
+                    </div>
                 </div>
             </div>
         </div>
+        <ul class="itens-cabecalho">
+            <div class="item-lista-cabecalho">
+                <liv class="texto-itens-cabecalho">Registrar</li>
+                <img src="img/registrar.svg" alt="" class="imagem-lista-cabecalho">
+            </div>
+            <div class="item-lista-cabecalho">    
+                <liv class="texto-itens-cabecalho">Histórico</li>
+                <img src="img/historico.svg" alt="" class="imagem-lista-cabecalho">
+            </div>
+            <div class="item-lista-cabecalho">    
+                <liv class="texto-itens-cabecalho">Faturamento</li>
+                <img src="img/faturamento.svg" alt="" class="imagem-lista-cabecalho">
+            </div>
+            <div class="item-lista-cabecalho">    
+                <liv class="texto-itens-cabecalho">Gráficos</li>
+                <img src="img/grafico.svg" alt="" class="imagem-lista-cabecalho">
+            </div>
+            <div class="item-lista-cabecalho">    
+                <liv class="texto-itens-cabecalho">Configurações</li>
+                <img src="img/configuracoes.svg" alt="" class="imagem-lista-cabecalho">
+            </div>
+        </ul>
     </header>
 </body>
 </html>
