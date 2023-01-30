@@ -12,4 +12,6 @@
 }
 body{
     background: var(--azul-principal);
+    font-weight: bold;
+    font-family: var(--fonte-principal);
 }

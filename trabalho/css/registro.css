@@ -15,7 +15,7 @@
     height: 10vh;
     width: 25vw;
     border: 1px solid var(--branco);
-    border-radius: 100%;
+    border-radius: 50px;
 }
 .imagem-usuario{
     align-items: center;
@@ -100,12 +100,19 @@
     outline: 1px solid black;
     border-radius: 15px;
 }
+.placa-veiculo{
+    padding: 0.2em;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-weight: bold;
+}
 .horario{
+    font-weight: bold;
     font-size: 30px;
 }
 .horario-registro-2{
     outline: 1px solid black;
-    padding: 0.5em;
+    padding: 0.4em;
     border-radius: 15px;
 }
 .btn-fechar{
@@ -119,4 +126,49 @@
     font-size: 25px;
     width: 10vw;
     height: 5vh;
+}
+@media screen and (min-width: 1024px){
+    .corpo-registro{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 99%;
+    }
+    .cabecalho-registro{
+        margin-top: 15%;
+        width: 40%;
+    }
+    .cabecalho-nome-data{
+        display: flex;
+        justify-content: space-between;;
+    }
+    .imagem-usuario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+    }
+    .imagem{
+        width: 50%;
+    }
+    .mensagem-data{
+        width: 65%;
+    }
+    .msg-usuario{
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+    }
+    .container-registro{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .registro{
+        width: 24vw;
+        padding: 1em;
+    }
+    .btn-fechar{
+        width: 1vw;
+    }
 }

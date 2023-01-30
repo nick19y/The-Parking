@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="corpo-registro">
     <header class="cabecalho-registro">
         <div class="cabecalho-nome-data">
             <div class="imagem-usuario">
@@ -20,7 +20,9 @@
                 <h1 class="nome-usuario">Enzo Guimarães</h1>
             </div>
             <div class="mensagem-data">
-                <h1 class="mensagem-usuario">Bem-vindo novamente, Enzo!</h1>
+                <div class="msg-usuario">
+                    <h1 class="mensagem-usuario">Bem-vindo novamente, Enzo!</h1>
+                </div>
                 <div class="container-data">
                     <div class="data-mes">
                         <h3 class="dia-mes">27 de janeiro de 2023</h3>
@@ -57,6 +59,54 @@
     </header>
     <main>
         <div class="container-registro">
+            <div class="registro registro-carro">
+                <div class="placa-tipo">
+                    <div class="placa-veiculo">ZYK4R53</div>
+                    <img src="img/carro.svg" alt="" class="imagem-veiculo">
+                </div>
+                <div class="horario horario-registro-2">00:12:53</div>
+                <button class="btn-fechar">X</button>
+            </div>
+            <div class="registro registro-moto">
+                <div class="placa-tipo">
+                    <div class="placa-veiculo">ZYK4R53</div>
+                    <img src="img/moto.svg" alt="" class="imagem-veiculo">
+                </div>
+                <div class="horario horario-registro-2">05:03:08</div>
+                <button class="btn-fechar">X</button>
+            </div>
+            <div class="registro registro-carro">
+                <div class="placa-tipo">
+                    <div class="placa-veiculo">ZYK4R53</div>
+                    <img src="img/carro.svg" alt="" class="imagem-veiculo">
+                </div>
+                <div class="horario horario-registro-2">00:12:53</div>
+                <button class="btn-fechar">X</button>
+            </div>
+            <div class="registro registro-moto">
+                <div class="placa-tipo">
+                    <div class="placa-veiculo">ZYK4R53</div>
+                    <img src="img/moto.svg" alt="" class="imagem-veiculo">
+                </div>
+                <div class="horario horario-registro-2">05:03:08</div>
+                <button class="btn-fechar">X</button>
+            </div>
+            <div class="registro registro-carro">
+                <div class="placa-tipo">
+                    <div class="placa-veiculo">ZYK4R53</div>
+                    <img src="img/carro.svg" alt="" class="imagem-veiculo">
+                </div>
+                <div class="horario horario-registro-2">00:12:53</div>
+                <button class="btn-fechar">X</button>
+            </div>
+            <div class="registro registro-moto">
+                <div class="placa-tipo">
+                    <div class="placa-veiculo">ZYK4R53</div>
+                    <img src="img/moto.svg" alt="" class="imagem-veiculo">
+                </div>
+                <div class="horario horario-registro-2">05:03:08</div>
+                <button class="btn-fechar">X</button>
+            </div>
             <div class="registro registro-carro">
                 <div class="placa-tipo">
                     <div class="placa-veiculo">ZYK4R53</div>
