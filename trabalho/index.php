@@ -14,10 +14,11 @@
 </head>
 <body>
     <main class="botoes-inicial">
-        <img src="img/carro2_background.png" alt="" class="imagem-carro">
+        <div class="imagem-carro-inicial">
+            <img src="img/logo.svg" alt="" class="imagem-carro">
+        </div>
         <button class="btn-inicial btn-iniciar">Iniciar sessão</button>
         <button class="btn-inicial btn-criar-conta">Criar conta</button>
-        <div class="logo"></div>
     </main>
 </body>
 </html>
