@@ -18,6 +18,9 @@
     border-radius: 50px;
 }
 .imagem-usuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 .mensagem-usuario{
