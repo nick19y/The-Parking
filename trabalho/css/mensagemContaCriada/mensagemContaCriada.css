@@ -2,7 +2,12 @@
     width: 300px;
     height: 300px;
 }
-.botoes-inicial{
+.conta-criada{
+    color: var(--branco);
+    font-size: 30px;
+    margin-bottom: 1em;
+}
+.conta-criada-pagina{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -11,7 +16,7 @@
     justify-content: start;
     align-items: center;
 }
-.btn-inicial{
+.btn-conta-criada{
     color: var(--branco);
     background-color: var(--preto);
     width: 60%;
@@ -21,13 +26,13 @@
     margin-bottom: 0.5em;
     font-size: 20px;
 }
-.btn-inicial:hover{
+.btn-conta-criada:hover{
     background-color: var(--cinza);
     border: 1px solid var(--cinza);
     cursor: pointer;
 }
 @media screen and (min-width:1024px){
-    .botoes-inicial{
+    .conta-criada-pagina{
         justify-content: center;
     }
 }
