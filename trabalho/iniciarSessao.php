@@ -23,6 +23,7 @@
             <input type="email" class="entrada-nome-email" placeholder= "Digite o seu email">
             <input type="password" class="entrada-nome-email" placeholder= "Digite sua senha">
             <button class="btn-entrar-usuario">Iniciar sessão</button>
+            <a href="recuperarSenha.php" class="esqueceu-senha">Esqueceu a senha?</a>
         </form>
     </main>
 </body>

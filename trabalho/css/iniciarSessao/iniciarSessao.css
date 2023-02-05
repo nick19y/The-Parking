@@ -47,7 +47,10 @@
     font-size: 18px;
     border-radius: 15px;
 }
-
+.esqueceu-senha{
+    margin-top: 1em;
+    color: var(--branco);
+}
 @media screen and (min-width: 1024px){
     .entrada-nome-email{
         padding: 1rem;
