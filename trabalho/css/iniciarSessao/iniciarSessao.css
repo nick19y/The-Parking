@@ -14,7 +14,7 @@
 .formulario-iniciar-sessao{
     display: flex;
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -27,25 +27,27 @@
     color: var(--branco);
     background-color: var(--preto);
     width: 60%;
-    height: 30vh;
+    height: 100%;
     border: 1px solid var(--preto);
     border-radius: 15px;
     margin: 0.7em 0 0em;
     padding: 1em;
 }
-.btn-entrar-usuario{
+.btn2-padrao{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 1em;
     padding: 1em;
-    width: 50vw;
-    height: 7vh;
-    background-color: var(--cinza);
-    color: var(--preto);
+    width: 60%;
+    height: 20%;
     font-weight: bold;
-    font-size: 18px;
     border-radius: 15px;
+    color: var(--branco);
+    background-color: var(--preto);
+    border: 1px solid var(--preto);
+    margin-bottom: 0.5em;
+    font-size: 20px;
 }
 .esqueceu-senha{
     margin-top: 1em;
@@ -62,11 +64,16 @@
     .formulario-criar-conta{
         margin-top: 2em;
     }
-    .btn-entrar-usuario{
+    .btn2-padrao{
         width: 20vw;
         height: 7vh;
     }
-    .btn-entrar-usuario:hover{
+    .btn2-padrao:hover{
+        cursor: pointer;
+    }
+    .btn2-padrao:hover{
+        background-color: var(--cinza);
+        border: 1px solid var(--cinza);
         cursor: pointer;
     }
 }

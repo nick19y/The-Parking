@@ -11,7 +11,7 @@
     justify-content: start;
     align-items: center;
 }
-.btn-inicial{
+.btn-padrao{
     color: var(--branco);
     background-color: var(--preto);
     width: 60%;
@@ -21,13 +21,27 @@
     margin-bottom: 0.5em;
     font-size: 20px;
 }
-.btn-inicial:hover{
-    background-color: var(--cinza);
-    border: 1px solid var(--cinza);
-    cursor: pointer;
+.btn-padrao-azul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    background-color: var(--azul-principal);
+    width: 60%;
+    height: 10%;
+    padding: 1em;
+    border: 1px solid var(--branco);
+    border-radius: 15px;
+    margin-bottom: 0.5em;
+    font-size: 20px;
 }
 @media screen and (min-width:1024px){
     .botoes-inicial{
         justify-content: center;
+    }
+    .btn-padrao:hover{
+        background-color: var(--cinza);
+        border: 1px solid var(--cinza);
+        cursor: pointer;
     }
 }

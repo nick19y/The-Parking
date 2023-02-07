@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/iniciarSessao/iniciarSessao.css">
     <link rel="stylesheet" href="css/criarConta/criarConta.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,17 +15,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="criar-conta-pagina">
+    <main class="iniciar-sessao">
         <div class="imagem-carro-inicial">
             <img src="img/logo.svg" alt="" class="imagem-carro">
         </div>
-        <h1 class="titulo-criar-conta">Criar conta</h1>
-        <form class="formulario-criar-conta" action="mensagemContaCriada.php">
-            <input type="text" class="input-nome-email" placeholder= "Digite o seu nome">
-            <input type="email" class="input-nome-email" placeholder= "Digite o seu email">
-            <input type="password" class="input-nome-email" placeholder= "Digite sua senha">
-            <input type="password" class="input-nome-email" placeholder= "Confirme sua senha">
-            <button class="btn-criar-conta-usuario">Criar conta</button>
+        <form class="formulario-iniciar-sessao criar-conta-iniciar-sessao" action="mensagemContaCriada.php">
+            <h1 class="titulo-iniciar-sessao">Criar conta</h1>
+            <input type="text" class="entrada-nome-email input-nome-email" placeholder= "Digite o seu nome">
+            <input type="email" class="entrada-nome-email input-nome-email" placeholder= "Digite o seu email">
+            <input type="password" class="entrada-nome-email input-nome-email" placeholder= "Digite sua senha">
+            <input type="password" class="entrada-nome-email input-nome-email" placeholder= "Confirme sua senha">
+            <button class="btn2-padrao">Criar conta</button>
         </form>
     </main>
 </body>

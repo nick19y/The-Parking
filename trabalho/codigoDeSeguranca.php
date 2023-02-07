@@ -23,9 +23,9 @@
         <form class="formulario-iniciar-sessao" action="redefinirSenha.php">
             <h1 class="titulo-iniciar-sessao">Recuperar senha</h1>
             <input type="number" class="entrada-nome-email recuperar-senha-input" placeholder= "Digite o código de segurança">
-            <button class="btn-entrar-usuario">Confirmar</button>
+            <button class="btn2-padrao">Confirmar</button>
         </form>
-        <button class="btn-entrar-usuario reenviar-codigo">Reenviar código de segurança</button>
+        <button class="btn2-padrao reenviar-codigo">Reenviar código de segurança</button>
     </main>
 </body>
 </html>

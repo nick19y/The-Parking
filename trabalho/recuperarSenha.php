@@ -22,7 +22,7 @@
         <form class="formulario-iniciar-sessao" action="codigoDeSeguranca.php">
             <h1 class="titulo-iniciar-sessao">Recuperar senha</h1>
             <input type="email" class="entrada-nome-email recuperar-senha-input" placeholder= "Digite o seu email">
-            <button class="btn-entrar-usuario">Enviar código de segurança</button>
+            <button class="btn2-padrao">Enviar código de segurança</button>
         </form>
     </main>
 </body>

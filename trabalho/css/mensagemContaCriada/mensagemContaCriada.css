@@ -26,13 +26,13 @@
     margin-bottom: 0.5em;
     font-size: 20px;
 }
-.btn-conta-criada:hover{
-    background-color: var(--cinza);
-    border: 1px solid var(--cinza);
-    cursor: pointer;
-}
 @media screen and (min-width:1024px){
     .conta-criada-pagina{
         justify-content: center;
+    }
+    .btn-conta-criada:hover{
+        background-color: var(--cinza);
+        border: 1px solid var(--cinza);
+        cursor: pointer;
     }
 }

@@ -7,11 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index/index.css">
+    <link rel="stylesheet" href="css/iniciarSessao/iniciarSessao.css">
     <link rel="stylesheet" href="css/registro/registro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="js/registro/registro.js" defer></script>
 </head>
 <body class="corpo-registro">
     <header class="cabecalho-registro">
@@ -38,25 +41,44 @@
         <ul class="itens-cabecalho">
             <div class="item-lista-cabecalho">
                 <li class="texto-itens-cabecalho">Registrar</li>
-                <img src="img/registrar.svg" alt="" class="imagem-lista-cabecalho">
+                <img src="img/registrar.svg" alt="" id="registrar-item" class="imagem-lista-cabecalho">
             </div>
             <div class="item-lista-cabecalho">    
                 <li class="texto-itens-cabecalho">Histórico</li>
-                <img src="img/historico.svg" alt="" class="imagem-lista-cabecalho">
+                <img src="img/historico.svg" alt="" id="historico-item" class="imagem-lista-cabecalho">
             </div>
             <div class="item-lista-cabecalho">    
                 <li class="texto-itens-cabecalho">Faturamento</li>
-                <img src="img/faturamento.svg" alt="" class="imagem-lista-cabecalho">
+                <img src="img/faturamento.svg" alt="" id="faturamento-item" class="imagem-lista-cabecalho">
             </div>
             <div class="item-lista-cabecalho">    
                 <li class="texto-itens-cabecalho">Gráficos</li>
-                <img src="img/grafico.svg" alt="" class="imagem-lista-cabecalho">
+                <img src="img/grafico.svg" alt="" id="graficos-item" class="imagem-lista-cabecalho">
             </div>
             <div class="item-lista-cabecalho">    
                 <li class="texto-itens-cabecalho">Configurações</li>
-                <img src="img/configuracoes.svg" alt="" class="imagem-lista-cabecalho">
+                <img src="img/configuracoes.svg" alt="" id="configuracoes-item" class="imagem-lista-cabecalho">
             </div>
         </ul>
+        <div class="pop-up-flexbox">
+            <div class="pop-up-registrar">
+                <div class="container-flex-digitar">
+                    <h1 class="titulo-iniciar-sessao">Placa do veículo</h1>
+                    <input class="input-placa-veiculo" type="text">
+                    <div class="selecao-moto-carro">
+                        <div class="radio-selecao carro-radio">
+                            <h3>Carro</h3>
+                            <input name="veiculo" class="input-radio-btn" type="radio">
+                        </div>
+                        <div class="radio-selecao moto-radio">
+                            <h3>Moto</h3>
+                            <input name="veiculo" class="input-radio-btn" type="radio">
+                        </div>
+                    </div>
+                    <button class="btn-padrao-azul">Registrar</button>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <div class="container-registro">

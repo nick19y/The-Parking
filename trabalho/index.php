@@ -19,8 +19,8 @@
         <div class="imagem-carro-inicial">
             <img src="img/logo.svg" alt="" class="imagem-carro">
         </div>
-        <button class="btn-inicial btn-iniciar">Iniciar sessão</button>
-        <button class="btn-inicial btn-criar-conta">Criar conta</button>
+        <button class="btn-padrao btn-iniciar">Iniciar sessão</button>
+        <button class="btn-padrao btn-criar-conta">Criar conta</button>
     </main>
 </body>
 </html>
