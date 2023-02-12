@@ -87,7 +87,6 @@
     padding: 0.5em;
 }
 .pop-up-registrar{
-    /* coloccar display block com o js */
     display: none;
     position: absolute;
     width: 80%;
@@ -97,6 +96,7 @@
     transform: translateX(-50%);
     background-color: var(--azul-principal);
     padding: 1em;
+    border: 2px solid var(--preto);
     border-radius: 15px;
 }
 .container-flex-digitar{
@@ -137,18 +137,36 @@
     height: 30px;
     width: 30px;
 }
-.container-registro{
+.conteudo-principal-registro{
     background-color: var(--cinza);
     border-radius: 10PX;
     height: auto;
     padding: 0.1em;
     margin: 1em;
 }
+.titulo-registro-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.titulo-container-h1-registro{
+    margin: 1.5em 0 1em;
+    font-size: 25px;
+}
+.container-registro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .registro{
     display: flex;
-    justify-content: space-between;
+    flex-grow: 1;
+    justify-content: space-around;
     align-items: center;
     background-color: var(--branco);
+    max-width: 60vw;
+    min-width: 70vw;
     margin: 1em;
     padding: 1em;
     outline: 1px solid black;
@@ -217,13 +235,22 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        width: 57vw;
     }
     .registro{
-        width: 24vw;
         padding: 1em;
+        flex-grow: 1;
+        max-width: 22vw;
+        min-width: 22vw;
     }
     .btn-fechar{
         width: 1vw;
+    }
+    .btn-fechar:hover{
+        cursor: pointer;
+    }
+    .btn-registrar-placa-veiculo:hover{
+        cursor: pointer;
     }
     .itens-cabecalho{
         width: 100%;
@@ -236,5 +263,12 @@
     }
     .imagem-lista-cabecalho:hover{
         cursor: pointer;
+    }
+    .pop-up-registrar{
+        width: 40%;
+    }
+    .titulo-container-h1-registro{
+        font-size: 30px;
+        width: 100%;
     }
 }

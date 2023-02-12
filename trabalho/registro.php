@@ -68,21 +68,24 @@
                     <div class="selecao-moto-carro">
                         <div class="radio-selecao carro-radio">
                             <h3>Carro</h3>
-                            <input name="veiculo" class="input-radio-btn" type="radio">
+                            <input name="veiculo" class="input-radio-btn" type="radio" value="carro" id="id-carro">
                         </div>
                         <div class="radio-selecao moto-radio">
                             <h3>Moto</h3>
-                            <input name="veiculo" class="input-radio-btn" type="radio">
+                            <input name="veiculo" class="input-radio-btn" type="radio" value="moto" id="id-moto">
                         </div>
                     </div>
-                    <button class="btn-padrao-azul">Registrar</button>
+                    <button class="btn-padrao-azul btn-registrar-placa-veiculo" id="btn-registro-placa-veiculo">Registrar</button>
                 </div>
             </div>
         </div>
     </header>
-    <main>
+    <main class="conteudo-principal-registro">
+        <div class="titulo-registro-container">
+            <h1 class="titulo-container-h1-registro">Registros</h1>
+        </div>
         <div class="container-registro">
-            <div class="registro registro-carro">
+            <!-- <div class="registro registro-carro">
                 <div class="placa-tipo">
                     <div class="placa-veiculo">ZYK4R53</div>
                     <img src="img/carro.svg" alt="" class="imagem-veiculo">
@@ -193,7 +196,7 @@
                 </div>
                 <div class="horario horario-registro-2">05:03:08</div>
                 <button class="btn-fechar">X</button>
-            </div>
+            </div> -->
         </div>
     </main>
 </body>
