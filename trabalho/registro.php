@@ -79,6 +79,19 @@
                 </div>
             </div>
         </div>
+        <div class="pop-up-configuracoes">
+            <div class="pop-up-config-flexbox">
+                <div class="pop-up-config pop-up-ajuda">
+                    <h2 class="btn-padrao-config">Ajuda</h2>
+                </div>
+                <div class="pop-up-config pop-up-conta">
+                    <h2 class="btn-padrao-config">Conta</h2>
+                </div>
+                <div class="pop-up-config pop-up-sair">
+                    <h2 class="btn-padrao-config">Sair</h2>
+                </div>
+            </div>
+        </div>
     </header>
     <main class="conteudo-principal-registro">
         <div class="titulo-registro-container">

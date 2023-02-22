@@ -99,6 +99,31 @@
     border: 2px solid var(--preto);
     border-radius: 15px;
 }
+.pop-up-configuracoes{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 60%;
+    height: 35%;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    background-color: var(--azul-principal);
+    border: 2px solid var(--preto);
+    border-radius: 15px;
+}
+.btn-padrao-config{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid var(--branco);
+    border-radius: 15px;
+    padding: 0.5em 1.3em;
+    margin: 0.2em 0em;
+}
 .container-flex-digitar{
     display: flex;
     width: 100%;
@@ -151,7 +176,7 @@
     text-align: center;
 }
 .titulo-container-h1-registro{
-    margin: 1.5em 0 1em;
+    margin: 1em 0 1em;
     font-size: 25px;
 }
 .container-registro{
@@ -270,5 +295,11 @@
     .titulo-container-h1-registro{
         font-size: 30px;
         width: 100%;
+    }
+    .pop-up-config-flexbox{
+        width: 50vw;
+    }
+    .pop-up-config:hover{
+        cursor: pointer;
     }
 }
