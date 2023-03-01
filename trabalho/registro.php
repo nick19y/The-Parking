@@ -61,12 +61,13 @@
             </div>
         </ul>
 
+        <!-- pesquisar como fazer para pegar o horario de entrada automaticamente pelo sql -->
         <!-- fazer o php aq -->
-        <form class="pop-up-flexbox" method="POST" action="registro.php">
+        <form class="pop-up-flexbox" method="POST" action="./php/registro/registrar/registrar.php">
             <div class="pop-up-registrar">
                 <div class="container-flex-digitar">
                     <h1 class="titulo-iniciar-sessao">Placa do veículo</h1>
-                    <input class="input-placa-veiculo" type="text">
+                    <input name="placa_veiculo" class="input-placa-veiculo" type="text">
                     <div class="selecao-moto-carro">
                         <div class="radio-selecao carro-radio">
                             <h3>Carro</h3>
@@ -95,17 +96,28 @@
             </div>
         </div>
     </header>
+    <!-- php -S localhost root -->
     <main class="conteudo-principal-registro">
         <div class="titulo-registro-container">
             <h1 class="titulo-container-h1-registro">Registros</h1>
         </div>
         <div class="container-registro" method="POST" action="registro.php">
             <?php
+            require_once("./php/registro/conexao/conexao.php");
             include "./php/registro/funcoes/funcoes.php";
-                echo '
+            $sql = "SELECT * FROM estacionamento";
+            $comando = $conexao->prepare($sql);
+            $comando->execute();
+            $dados = $comando->fetchAll(PDO::FETCH_ASSOC);
+            foreach($dados as $estacionamento){
+                $veiculoSelecionado = verificarVeiculo($_POST["veiculo"]);
+            }
+            ?>
+
+            <!-- echo '
                 <div class="registro registro-carro">
                 <div class="placa-tipo">
-                    <div class="placa-veiculo">ZYK4R53</div>
+                    <div class="placa-veiculo">' . $estacionamento["placa_veiculo"] . '</div>
                     <img src="img/carro.svg" alt="" class="imagem-veiculo">
                 </div>
                 <div class="horario horario-registro-2">00:12:53</div>
@@ -114,13 +126,24 @@
                 ';
                 echo '<div class="registro registro-moto">
                 <div class="placa-tipo">
-                    <div class="placa-veiculo">ZYK4R53</div>
+                    <div class="placa-veiculo">' . $estacionamento["placa_veiculo"] . '</div>
                     <img src="img/moto.svg" alt="" class="imagem-veiculo">
                 </div>
                 <div class="horario horario-registro-2">05:03:08</div>
                 <button class="btn-fechar">X</button>
-                </div>';
-            ?>
+                </div>'; -->
+
+            <!--echo '
+                <div class="registro registro-carro">
+                <div class="placa-tipo">
+                    <div class="placa-veiculo">' . $estacionamento["placa_veiculo"] . '</div>
+                    <img src="img/carro.svg" alt="" class="imagem-veiculo">
+                </div>
+                <div class="horario horario-registro-2">00:12:53</div>
+                <button class="btn-fechar">X</button>
+                </div>
+                ';
+             -->
             <!-- <div class="registro registro-carro">
                 <div class="placa-tipo">
                     <div class="placa-veiculo">ZYK4R53</div>

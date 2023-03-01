@@ -2,8 +2,10 @@ CREATE DATABASE estacionamento_mariah;
 USE estacionamento_mariah;
 CREATE TABLE estacionamento(
     idEstacionamento INT PRIMARY KEY AUTO_INCREMENT,
-    horario_entrada TIME NOT NULL,
-    horario_saida TIME NOT NULL
+    horario_entrada DATETIME NOT NULL,
+    horario_saida DATETIME NOT NULL,
+    placa_veiculo CHAR(8) NOT NULL,
+    tipo_veiculo VARCHAR (25) NOT NULL
 ) engine InnoDB;
 CREATE TABLE funcionario(
     idFuncionario INT PRIMARY KEY AUTO_INCREMENT,
@@ -49,3 +51,8 @@ CREATE TABLE veiculo_estacionamento(
     FOREIGN KEY (fkEstacionamento) REFERENCES estacionamento(idEstacionamento),
     PRIMARY KEY (fkVeiculo, fkEstacionamento)
 ) engine InnoDB;
+
+
+-- exemplo de um insert into com datetime
+-- INSERT INTO estacionamento(parametro, horario_entrada, horario_saida)
+-- VALUES('', '2023-10-22 14:45:30');
