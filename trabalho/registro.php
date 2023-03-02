@@ -63,7 +63,7 @@
 
         <!-- pesquisar como fazer para pegar o horario de entrada automaticamente pelo sql -->
         <!-- fazer o php aq -->
-        <form class="pop-up-flexbox" method="POST" action="./php/registro/registrar/registrar.php">
+        <form class="pop-up-flexbox" method="POST" action="./back-end/registro/registrar/registrar.php">
             <div class="pop-up-registrar">
                 <div class="container-flex-digitar">
                     <h1 class="titulo-iniciar-sessao">Placa do veículo</h1>
@@ -103,14 +103,15 @@
         </div>
         <div class="container-registro" method="POST" action="registro.php">
             <?php
-            require_once("./php/registro/conexao/conexao.php");
-            include "./php/registro/funcoes/funcoes.php";
+            require_once("./back-end/registro/conexao/conexao.php");
+            include "./back-end/registro/funcoes/funcoes.php";
             $sql = "SELECT * FROM estacionamento";
             $comando = $conexao->prepare($sql);
             $comando->execute();
             $dados = $comando->fetchAll(PDO::FETCH_ASSOC);
             foreach($dados as $estacionamento){
                 $veiculoSelecionado = verificarVeiculo($_POST["veiculo"]);
+                var_dump($dados);
             }
             ?>
 
