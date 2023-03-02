@@ -10,7 +10,7 @@
     $placaVeiculo = $_POST["placa_veiculo"];
     $tipoVeiculo = $_POST["veiculo"];
 
-    $sql = "INSERT INTO estacionamento VALUES(0, :placa_veiculo, :veiculo, '2023-10-22 14:45:30', '2023-10-22 14:45:30')";
+    $sql = "INSERT INTO estacionamento VALUES(0, NOW(), '2023-10-22 14:45:30', :placa_veiculo, :veiculo)";
 
     $comando = $conexao->prepare($sql);
 

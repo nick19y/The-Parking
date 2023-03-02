@@ -110,7 +110,8 @@
             $comando->execute();
             $dados = $comando->fetchAll(PDO::FETCH_ASSOC);
             foreach($dados as $estacionamento){
-                $veiculoSelecionado = verificarVeiculo($_POST["veiculo"]);
+                $veiculoSelecionado = $_POST["veiculo"]; 
+                verificarVeiculo($veiculoSelecionado);
                 var_dump($dados);
             }
             ?>
