@@ -1,0 +1,305 @@
+.cabecalho-registro{
+    background-color: var(--azul-principal);
+    width: 100%;
+    padding: 1em 0 1.5em 0;
+    color: var(--branco);
+}
+.cabecalho-nome-data{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em 0 2em 0;
+}
+.imagem{
+    height: 10vh;
+    width: 25vw;
+    border: 1px solid var(--branco);
+    border-radius: 50px;
+}
+.imagem-usuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mensagem-usuario{
+    margin-bottom: 0.4em;
+}
+.container-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    outline: 1px solid var(--branco);
+}
+.dia-mes{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid var(--branco);
+}
+.data-mes{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.semana-horario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.altura-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 8vh;
+}
+.dia-semana{
+    border-right: 1px solid var(--branco);
+}
+.itens-cabecalho{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0.7em 0 0em;
+}
+.item-lista-cabecalho{
+    display: flex;
+    width: 15vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto-itens-cabecalho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 0.4em;
+}
+.imagem-lista-cabecalho{
+    height: 5vh;
+    outline: 1px solid var(--cinza);
+    background-color: var(--cinza);
+    border-radius: 10px;
+    padding: 0.5em;
+}
+.pop-up-registrar{
+    display: none;
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    background-color: var(--azul-principal);
+    padding: 1em;
+    border: 2px solid var(--preto);
+    border-radius: 15px;
+}
+.pop-up-configuracoes{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 60%;
+    height: 35%;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    background-color: var(--azul-principal);
+    border: 2px solid var(--preto);
+    border-radius: 15px;
+}
+.btn-padrao-config{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid var(--branco);
+    border-radius: 15px;
+    padding: 0.5em 1.3em;
+    margin: 0.2em 0em;
+}
+.container-flex-digitar{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input-placa-veiculo{
+    margin-top: 1em;
+    width: 60%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 1em;
+}
+.selecao-moto-carro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+.radio-selecao{
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input-radio-btn{
+    height: 30px;
+    width: 30px;
+}
+.conteudo-principal-registro{
+    background-color: var(--cinza);
+    border-radius: 10PX;
+    height: auto;
+    padding: 0.1em;
+    margin: 1em;
+}
+.titulo-registro-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.titulo-container-h1-registro{
+    margin: 1em 0 1em;
+    font-size: 25px;
+}
+.container-registro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.registro{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--branco);
+    max-width: 60vw;
+    min-width: 70vw;
+    margin: 1em;
+    padding: 1em;
+    outline: 1px solid black;
+    border-radius: 15px;
+}
+.placa-veiculo{
+    padding: 0.2em;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.horario{
+    font-weight: bold;
+    font-size: 30px;
+}
+.horario-registro-2{
+    outline: 1px solid black;
+    padding: 0.4em;
+    border-radius: 15px;
+}
+.btn-fechar{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0.7em;
+    align-items: center;
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+    width: 10vw;
+    height: 5vh;
+}
+@media screen and (min-width: 1024px){
+    .corpo-registro{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 99%;
+    }
+    .cabecalho-registro{
+        margin-top: 15%;
+        width: 40%;
+    }
+    .cabecalho-nome-data{
+        display: flex;
+        justify-content: space-between;;
+    }
+    .imagem-usuario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+    }
+    .imagem{
+        width: 50%;
+    }
+    .mensagem-data{
+        width: 65%;
+    }
+    .msg-usuario{
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+    }
+    .container-registro{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 57vw;
+    }
+    .registro{
+        padding: 1em;
+        flex-grow: 1;
+        max-width: 22vw;
+        min-width: 22vw;
+    }
+    .btn-fechar{
+        width: 1vw;
+    }
+    .btn-fechar:hover{
+        cursor: pointer;
+    }
+    .btn-registrar-placa-veiculo:hover{
+        cursor: pointer;
+    }
+    .itens-cabecalho{
+        width: 100%;
+    }
+    .texto-itens-cabecalho{
+        font-size: 15px;
+    }
+    .imagem-lista-cabecalho{
+        padding: 1em;
+    }
+    .imagem-lista-cabecalho:hover{
+        cursor: pointer;
+    }
+    .pop-up-registrar{
+        width: 40%;
+    }
+    .titulo-container-h1-registro{
+        font-size: 30px;
+        width: 100%;
+    }
+    .pop-up-config-flexbox{
+        width: 50vw;
+    }
+    .pop-up-config:hover{
+        cursor: pointer;
+    }
+}
