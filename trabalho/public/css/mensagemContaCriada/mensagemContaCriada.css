@@ -1,0 +1,38 @@
+.imagem-carro{
+    width: 300px;
+    height: 300px;
+}
+.conta-criada{
+    color: var(--branco);
+    font-size: 30px;
+    margin-bottom: 1em;
+}
+.conta-criada-pagina{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    background: var(--azul-principal);
+    justify-content: start;
+    align-items: center;
+}
+.btn-conta-criada{
+    color: var(--branco);
+    background-color: var(--preto);
+    width: 60%;
+    height: 10%;
+    border: 1px solid var(--preto);
+    border-radius: 15px;
+    margin-bottom: 0.5em;
+    font-size: 20px;
+}
+@media screen and (min-width:1024px){
+    .conta-criada-pagina{
+        justify-content: center;
+    }
+    .btn-conta-criada:hover{
+        background-color: var(--cinza);
+        border: 1px solid var(--cinza);
+        cursor: pointer;
+    }
+}

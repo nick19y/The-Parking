@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+}
+
+.faturamento-diario{
+    background: #4348d6;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.faturamento-mensal{
+    background: #4348d6;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.h1-faturamento-diario{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 2px;
+    margin-bottom: 10px;
+}
+
+.h1-faturamento-mensal{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 2px;
+    margin-bottom: 10px;
+}
+
+.div-faturamento-diario{
+    border: 1px solid white;
+    width: 700px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.div-faturamento-mensal{
+    border: 1px solid white;
+    width: 700px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.fieldset-faturamento-1{
+    color: white;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.legend-faturamento-1 {
+    color: white;
+    margin: auto;
+    font-size: 20px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.div-faturamento-diario-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.p-div-faturamento-diario-1 {
+    margin: 10px;
+}
+
+.div-lucro-total-1 {
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: auto;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    background-color: green;
+}
+
+@media (max-width: 1420px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 730px){
+    .faturamento-diario{
+        background: #4348d6;
+        width: 100vw;
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-bottom: 1px transparent;
+    }
+
+    .divinha {
+        height: 260px;
+        width: 80vw;
+    }
+
+    .h1-faturamento-diario {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .div-faturamento-diario {
+        width: 90vw;
+        height: 800px;
+    }
+
+    .fieldset-faturamento-1 {
+        width: 90vw;
+        border-bottom: 1px transparent;
+        display: flex;
+        justify-content: center;
+    }
+
+    .p-div-faturamento-diario-1 {
+        width: 100px;
+        font-size: 14px;
+    }
+
+    .div-lucro-total-1 {
+        width: 70vw;
+    }
+}
