@@ -60,25 +60,28 @@
                 <img src="img/configuracoes.svg" alt="" id="configuracoes-item" class="imagem-lista-cabecalho">
             </div>
         </ul>
+        <!-- tem que importar o recurso de formularo no BaseControler -->
+        <?= form_open(base_url("/admin/registro/registrar")) ?>
         <div class="pop-up-flexbox">
             <div class="pop-up-registrar">
                 <div class="container-flex-digitar">
                     <h1 class="titulo-iniciar-sessao">Placa do veículo</h1>
-                    <input class="input-placa-veiculo" type="text">
+                    <input class="input-placa-veiculo" id="placa_veiculo" name="placa_veiculo" type="text">
                     <div class="selecao-moto-carro">
                         <div class="radio-selecao carro-radio">
                             <h3>Carro</h3>
-                            <input name="veiculo" class="input-radio-btn" type="radio" value="carro" id="id-carro">
+                            <input name="veiculo" class="input-radio-btn" type="radio" value="carro" id="id-carro=">
                         </div>
                         <div class="radio-selecao moto-radio">
                             <h3>Moto</h3>
                             <input name="veiculo" class="input-radio-btn" type="radio" value="moto" id="id-moto">
                         </div>
                     </div>
-                    <button class="btn-padrao-azul btn-registrar-placa-veiculo" id="btn-registro-placa-veiculo">Registrar</button>
+                    <button type="submit" class="btn-padrao-azul btn-registrar-placa-veiculo" id="btn-registro-placa-veiculo">Registrar</button>
                 </div>
             </div>
         </div>
+        <?= form_close() ?>
         <div class="pop-up-configuracoes">
             <div class="pop-up-config-flexbox">
                 <div class="pop-up-config pop-up-ajuda">
@@ -98,118 +101,16 @@
             <h1 class="titulo-container-h1-registro">Registros</h1>
         </div>
         <div class="container-registro">
-            <!-- <div class="registro registro-carro">
-                <div class="placa-tipo">
-                    <div class="placa-veiculo">ZYK4R53</div>
-                    <img src="img/carro.svg" alt="" class="imagem-veiculo">
-                </div>
-                <div class="horario horario-registro-2">00:12:53</div>
-                <button class="btn-fechar">X</button>
-            </div>
-            <div class="registro registro-moto">
-                <div class="placa-tipo">
-                    <div class="placa-veiculo">ZYK4R53</div>
-                    <img src="img/moto.svg" alt="" class="imagem-veiculo">
-                </div>
-                <div class="horario horario-registro-2">05:03:08</div>
-                <button class="btn-fechar">X</button>
-            </div>
+            <?php foreach($estacionamento as $estacionamentos): ?>
             <div class="registro registro-carro">
                 <div class="placa-tipo">
-                    <div class="placa-veiculo">ZYK4R53</div>
+                    <div class="placa-veiculo"><?=$estacionamentos["placa_veiculo"]?></div>
                     <img src="img/carro.svg" alt="" class="imagem-veiculo">
                 </div>
                 <div class="horario horario-registro-2">00:12:53</div>
                 <button class="btn-fechar">X</button>
             </div>
-            <div class="registro registro-moto">
-                <div class="placa-tipo">
-                    <div class="placa-veiculo">ZYK4R53</div>
-                    <img src="img/moto.svg" alt="" class="imagem-veiculo">
-                </div>
-                <div class="horario horario-registro-2">05:03:08</div>
-                <button class="btn-fechar">X</button>
-            </div>
-            <div class="registro registro-carro">
-                <div class="placa-tipo">
-                    <div class="placa-veiculo">ZYK4R53</div>
-                    <img src="img/carro.svg" alt="" class="imagem-veiculo">
-                </div>
-                <div class="horario horario-registro-2">00:12:53</div>
-                <button class="btn-fechar">X</button>
-            </div>
-            <div class="registro registro-moto">
-                <div class="placa-tipo">
-                    <div class="placa-veiculo">ZYK4R53</div>
-                    <img src="img/moto.svg" alt="" class="imagem-veiculo">
-                </div>
-                <div class="horario horario-registro-2">05:03:08</div>
-                <button class="btn-fechar">X</button>
-            </div>
-            <div class="registro registro-carro">
-                <div class="placa-tipo">
-                    <div class="placa-veiculo">ZYK4R53</div>
-                    <img src="img/carro.svg" alt="" class="imagem-veiculo">
-                </div>
-                <div class="horario horario-registro-2">00:12:53</div>
-                <button class="btn-fechar">X</button>
-            </div>
-            <div class="registro registro-moto">
-                <div class="placa-tipo">
-                    <div class="placa-veiculo">ZYK4R53</div>
-                    <img src="img/moto.svg" alt="" class="imagem-veiculo">
-                </div>
-                <div class="horario horario-registro-2">05:03:08</div>
-                <button class="btn-fechar">X</button>
-            </div>
-            <div class="registro registro-carro">
-                <div class="placa-tipo">
-                    <div class="placa-veiculo">ZYK4R53</div>
-                    <img src="img/carro.svg" alt="" class="imagem-veiculo">
-                </div>
-                <div class="horario horario-registro-2">00:12:53</div>
-                <button class="btn-fechar">X</button>
-            </div>
-            <div class="registro registro-moto">
-                <div class="placa-tipo">
-                    <div class="placa-veiculo">ZYK4R53</div>
-                    <img src="img/moto.svg" alt="" class="imagem-veiculo">
-                </div>
-                <div class="horario horario-registro-2">05:03:08</div>
-                <button class="btn-fechar">X</button>
-            </div>
-            <div class="registro registro-carro">
-                <div class="placa-tipo">
-                    <div class="placa-veiculo">ZYK4R53</div>
-                    <img src="img/carro.svg" alt="" class="imagem-veiculo">
-                </div>
-                <div class="horario horario-registro-2">00:12:53</div>
-                <button class="btn-fechar">X</button>
-            </div>
-            <div class="registro registro-moto">
-                <div class="placa-tipo">
-                    <div class="placa-veiculo">ZYK4R53</div>
-                    <img src="img/moto.svg" alt="" class="imagem-veiculo">
-                </div>
-                <div class="horario horario-registro-2">05:03:08</div>
-                <button class="btn-fechar">X</button>
-            </div>
-            <div class="registro registro-carro">
-                <div class="placa-tipo">
-                    <div class="placa-veiculo">ZYK4R53</div>
-                    <img src="img/carro.svg" alt="" class="imagem-veiculo">
-                </div>
-                <div class="horario horario-registro-2">00:12:53</div>
-                <button class="btn-fechar">X</button>
-            </div>
-            <div class="registro registro-moto">
-                <div class="placa-tipo">
-                    <div class="placa-veiculo">ZYK4R53</div>
-                    <img src="img/moto.svg" alt="" class="imagem-veiculo">
-                </div>
-                <div class="horario horario-registro-2">05:03:08</div>
-                <button class="btn-fechar">X</button>
-            </div> -->
+            <?php endforeach; ?>
         </div>
     </main>
 </body>

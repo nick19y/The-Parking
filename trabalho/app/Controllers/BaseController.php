@@ -35,7 +35,8 @@ class BaseController extends Controller
      *
      * @var array
      */
-    protected $helpers = [];
+    protected $helpers = ["form"];
+    // importando recurso de formulário
 
     /**
      * Constructor.

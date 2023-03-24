@@ -2,11 +2,13 @@ CREATE DATABASE estacionamento_mariah;
 USE estacionamento_mariah;
 CREATE TABLE estacionamento(
     idEstacionamento INT PRIMARY KEY AUTO_INCREMENT,
+    horario_atual TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),
     horario_entrada DATETIME NOT NULL,
     horario_saida DATETIME NOT NULL,
     placa_veiculo CHAR(8) NOT NULL,
-    tipo_veiculo VARCHAR (25) NOT NULL
+    veiculo VARCHAR (25) NOT NULL
 ) engine InnoDB;
+-- veiculo é o tipo, carro ou moto
 CREATE TABLE funcionario(
     idFuncionario INT PRIMARY KEY AUTO_INCREMENT,
     email VARCHAR(80) NOT NULL,
