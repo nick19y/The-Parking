@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\RegistroModel;
+
 class Home extends BaseController
 {
     public function index()
@@ -31,10 +33,6 @@ class Home extends BaseController
     public function redefinirSenha()
     {
         return view('redefinirSenha');
-    }
-    public function registro()
-    {
-        return view('registro');
     }
     public function senhaRedefinidaMensagem()
     {

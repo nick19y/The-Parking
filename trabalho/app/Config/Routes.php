@@ -38,7 +38,6 @@ $routes->get('/iniciarSessao','Home::iniciarSessao');
 $routes->get('/mensagemContaCriada','Home::mensagemContaCriada');
 $routes->get('/recuperarSenha','Home::recuperarSenha');
 $routes->get('/redefinirSenha','Home::redefinirSenha');
-$routes->get('/registro', 'Home::registro');
 $routes->get('/senhaRedefinidaMensagem', 'Home::senhaRedefinidaMensagem');
 $routes->get('/historico', 'Home::historico');
 $routes->get('/graficos', 'Home::graficos');

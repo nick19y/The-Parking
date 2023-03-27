@@ -5,22 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/index/index.css">
-    <link rel="stylesheet" href="css/iniciarSessao/iniciarSessao.css">
-    <link rel="stylesheet" href="css/registro/registro.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/index/index.css">
+    <link rel="stylesheet" href="/css/iniciarSessao/iniciarSessao.css">
+    <link rel="stylesheet" href="/css/registro/registro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <script src="js/registro/registro.js" defer></script>
+    <script src="/js/registro/registro.js" defer></script>
 </head>
 <body class="corpo-registro">
     <header class="cabecalho-registro">
         <div class="cabecalho-nome-data">
             <div class="imagem-usuario">
-                <img src="img/usuario.svg" alt="Imagem do usuário" class="imagem">
+                <img src="/img/usuario.svg" alt="Imagem do usuário" class="imagem">
                 <h1 class="nome-usuario">Enzo Guimarães</h1>
             </div>
             <div class="mensagem-data">
@@ -41,23 +41,23 @@
         <ul class="itens-cabecalho">
             <div class="item-lista-cabecalho">
                 <li class="texto-itens-cabecalho">Registrar</li>
-                <img src="img/registrar.svg" alt="" id="registrar-item" class="imagem-lista-cabecalho">
+                <img src="/img/registrar.svg" alt="" id="registrar-item" class="imagem-lista-cabecalho">
             </div>
             <div class="item-lista-cabecalho">    
                 <li class="texto-itens-cabecalho">Histórico</li>
-                <img src="img/historico.svg" alt="" id="historico-item" class="imagem-lista-cabecalho btnHistorico">
+                <img src="/img/historico.svg" alt="" id="historico-item" class="imagem-lista-cabecalho btnHistorico">
             </div>
             <div class="item-lista-cabecalho">    
                 <li class="texto-itens-cabecalho">Faturamento</li>
-                <img src="img/faturamento.svg" alt="" id="faturamento-item" class="imagem-lista-cabecalho btnFaturamento">
+                <img src="/img/faturamento.svg" alt="" id="faturamento-item" class="imagem-lista-cabecalho btnFaturamento">
             </div>
             <div class="item-lista-cabecalho">    
                 <li class="texto-itens-cabecalho">Gráficos</li>
-                <img src="img/grafico.svg" alt="" id="graficos-item" class="imagem-lista-cabecalho btnGraficos">
+                <img src="/img/grafico.svg" alt="" id="graficos-item" class="imagem-lista-cabecalho btnGraficos">
             </div>
             <div class="item-lista-cabecalho">    
                 <li class="texto-itens-cabecalho">Configurações</li>
-                <img src="img/configuracoes.svg" alt="" id="configuracoes-item" class="imagem-lista-cabecalho">
+                <img src="/img/configuracoes.svg" alt="" id="configuracoes-item" class="imagem-lista-cabecalho">
             </div>
         </ul>
         <!-- tem que importar o recurso de formularo no BaseControler -->
@@ -105,7 +105,7 @@
             <div class="registro registro-carro">
                 <div class="placa-tipo">
                     <div class="placa-veiculo"><?=$estacionamentos["placa_veiculo"]?></div>
-                    <img src="img/carro.svg" alt="" class="imagem-veiculo">
+                    <img src="/img/carro.svg" alt="" class="imagem-veiculo">
                 </div>
                 <div class="horario horario-registro-2">00:12:53</div>
                 <button class="btn-fechar">X</button>

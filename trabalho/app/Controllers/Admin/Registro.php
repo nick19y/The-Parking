@@ -6,7 +6,7 @@ use App\Controllers\BaseController;
 use App\Models\RegistroModel;
 
 class Registro extends BaseController{
-    public function index(){
+    public function index(){        
         $registroModel = new RegistroModel();
         $dados["estacionamento"] = $registroModel->findAll();
         return view("registro", $dados);
