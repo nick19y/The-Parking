@@ -107,7 +107,7 @@
                     <div class="placa-veiculo"><?=$estacionamentos["placa_veiculo"]?></div>
                     <img src="/img/carro.svg" alt="" class="imagem-veiculo">
                 </div>
-                <div class="horario horario-registro-2">00:12:53</div>
+                <div class="horario horario-registro-2"><?=$estacionamentos["horario_atual"]?></div>
                 <button class="btn-fechar">X</button>
             </div>
             <?php endforeach; ?>

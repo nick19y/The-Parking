@@ -15,7 +15,7 @@ class Registro extends BaseController{
         $registroModel = new RegistroModel();
         $dados["estacionamento"] = $registroModel->findAll();
         if($registroModel->delete($id)){
-            return "Sucesso";
+            return view("registro", $dados);
         }
         return "Erro";
     }
@@ -23,8 +23,9 @@ class Registro extends BaseController{
     public function registrar(){
             $modelRegistro = new RegistroModel();
             $dadosEnviados = $this->request->getPost();
+            $dados["estacionamento"] = $modelRegistro->findAll();
             if($modelRegistro->save($dadosEnviados)){
-                return "Salvo com sucesso";
+                return view("registro", $dados);
             }else{
                 return "Erro ao sucesso";
             }
