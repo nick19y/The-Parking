@@ -12,3 +12,6 @@ body{
     font-weight: bold;
     font-family: var(--fonte-principal);
 }
+a{
+    text-decoration: none;
+}

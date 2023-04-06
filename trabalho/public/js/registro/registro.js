@@ -8,9 +8,11 @@ const selecaoCarro = document.getElementById("id-carro");
 const btnFecharRegistro = document.querySelector(".btn-fechar");
 const btnConfiguracoes = document.querySelector("#configuracoes-item");
 const popUpConfiguracoes = document.querySelector(".pop-up-configuracoes");
+
 const btnFaturamento = document.querySelector(".btnFaturamento");
 const btnHistorico = document.querySelector(".btnHistorico");
 const btnGraficos = document.querySelector(".btnGraficos");
+
 
 function mostrarPopUpRegistro(){
     popUpRegistro.style.display = 'block';

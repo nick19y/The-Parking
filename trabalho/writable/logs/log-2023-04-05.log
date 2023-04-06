@@ -1,0 +1,32 @@
+ERROR - 2023-04-05 19:23:30 --> Error connecting to the database: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+CRITICAL - 2023-04-05 19:23:30 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+#0 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\app\Controllers\Admin\Registro.php(11): CodeIgniter\BaseModel->findAll()
+#5 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Registro->index()
+#6 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Registro))
+#7 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\AQUIVOS LOCA...')
+#10 {main}
+ERROR - 2023-04-05 19:23:35 --> Error connecting to the database: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+CRITICAL - 2023-04-05 19:23:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+#0 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\app\Controllers\Admin\Registro.php(11): CodeIgniter\BaseModel->findAll()
+#5 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Registro->index()
+#6 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Registro))
+#7 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\AQUIVOS LOCA...')
+#10 {main}

@@ -41,21 +41,27 @@
         <ul class="itens-cabecalho">
             <div class="item-lista-cabecalho">
                 <li class="texto-itens-cabecalho">Registrar</li>
-                <img src="/img/registrar.svg" alt="" id="registrar-item" class="imagem-lista-cabecalho">
+                    <img src="/img/registrar.svg" alt="" id="registrar-item" class="imagem-lista-cabecalho">
             </div>
             <div class="item-lista-cabecalho">    
                 <li class="texto-itens-cabecalho">Histórico</li>
-                <img src="/img/historico.svg" alt="" id="historico-item" class="imagem-lista-cabecalho btnHistorico">
+                <a href="../historico">
+                    <img src="/img/historico.svg" alt="" id="historico-item" class="imagem-lista-cabecalho btnHistorico">
+                </a>
             </div>
             <div class="item-lista-cabecalho">    
                 <li class="texto-itens-cabecalho">Faturamento</li>
-                <img src="/img/faturamento.svg" alt="" id="faturamento-item" class="imagem-lista-cabecalho btnFaturamento">
+                <a href="../faturamento">
+                    <img src="/img/faturamento.svg" alt="" id="faturamento-item" class="imagem-lista-cabecalho btnFaturamento">
+                </a>
             </div>
             <div class="item-lista-cabecalho">    
                 <li class="texto-itens-cabecalho">Gráficos</li>
-                <img src="/img/grafico.svg" alt="" id="graficos-item" class="imagem-lista-cabecalho btnGraficos">
+                <a href="../graficos">
+                    <img src="/img/grafico.svg" alt="" id="graficos-item" class="imagem-lista-cabecalho btnGraficos">
+                </a>
             </div>
-            <div class="item-lista-cabecalho">    
+            <div class="item-lista-cabecalho">
                 <li class="texto-itens-cabecalho">Configurações</li>
                 <img src="/img/configuracoes.svg" alt="" id="configuracoes-item" class="imagem-lista-cabecalho">
             </div>
@@ -108,7 +114,13 @@
                     <img src="/img/carro.svg" alt="" class="imagem-veiculo">
                 </div>
                 <div class="horario horario-registro-2"><?=$estacionamentos["horario_atual"]?></div>
+<<<<<<< HEAD
                 <button class="btn-fechar">X</button>
+=======
+                <a href="/admin/registro/remover/<?= $estacionamentos["idEstacionamento"]?>">
+                    <button class="btn-fechar">X</button>
+                </a>
+>>>>>>> 96b46f2 (função de exclusão)
             </div>
             <?php endforeach; ?>
         </div>

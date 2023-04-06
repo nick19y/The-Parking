@@ -168,6 +168,7 @@
     height: auto;
     padding: 0.1em;
     margin: 1em;
+    margin-bottom: 15em;
 }
 .titulo-registro-container{
     display: flex;
@@ -190,12 +191,13 @@
     justify-content: space-around;
     align-items: center;
     background-color: var(--branco);
-    max-width: 60vw;
+    max-width: 80vw;
     min-width: 70vw;
     margin: 1em;
     padding: 1em;
     outline: 1px solid black;
     border-radius: 15px;
+    text-align: center;
 }
 .placa-veiculo{
     padding: 0.2em;
@@ -268,6 +270,9 @@
         max-width: 22vw;
         min-width: 22vw;
     }
+    .conteudo-principal-registro{
+        min-height: 50vh;
+    }    
     .btn-fechar{
         width: 1vw;
     }
