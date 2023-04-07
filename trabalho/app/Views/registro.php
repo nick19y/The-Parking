@@ -114,13 +114,9 @@
                     <img src="/img/carro.svg" alt="" class="imagem-veiculo">
                 </div>
                 <div class="horario horario-registro-2"><?=$estacionamentos["horario_atual"]?></div>
-<<<<<<< HEAD
-                <button class="btn-fechar">X</button>
-=======
                 <a href="/admin/registro/remover/<?= $estacionamentos["idEstacionamento"]?>">
                     <button class="btn-fechar">X</button>
                 </a>
->>>>>>> 96b46f2 (função de exclusão)
             </div>
             <?php endforeach; ?>
         </div>

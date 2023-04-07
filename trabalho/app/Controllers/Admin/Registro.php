@@ -17,16 +17,9 @@ class Registro extends BaseController{
         $registroModel = new RegistroModel();
         $dados["estacionamento"] = $registroModel->findAll();
         if($registroModel->delete($id)){
-<<<<<<< HEAD
-            return view("registro", $dados);
-=======
-            // return view("registro", $dados);
-            session()->setFlashdata("tipo","danger");
-            session()->setFlashdata("mensagem","Item excluído com sucesso");
             return redirect()->to("/admin/registro");
         }else{
             return "Erro";
->>>>>>> 96b46f2 (função de exclusão)
         }
         
     }
@@ -36,14 +29,7 @@ class Registro extends BaseController{
             $dadosEnviados = $this->request->getPost();
             $dados["estacionamento"] = $modelRegistro->findAll();
             if($modelRegistro->save($dadosEnviados)){
-<<<<<<< HEAD
-                return view("registro", $dados);
-=======
-                session()->setFlashdata("tipo","success");
-                session()->setFlashdata("mensagem","Item salvo com sucesso");
-                // return view("registro", $dados);
                 return redirect()->to("/admin/registro");
->>>>>>> 96b46f2 (função de exclusão)
             }else{
                 return "Erro";
             }
