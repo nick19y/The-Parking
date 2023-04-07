@@ -1,0 +1,40 @@
+CRITICAL - 2023-04-07 15:23:51 --> password_hash(): Passing null to parameter #1 ($password) of type string is deprecated
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'password_hash()...', 'G:\\AQUIVOS LOCA...', 15)
+#1 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\app\Models\AdminModel.php(15): password_hash(Object(SensitiveParameterValue), '2y')
+#2 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\app\Controllers\Admin\AutenticacaoAdmin.php(16): App\Models\AdminModel->cadastrar(NULL, NULL, NULL)
+#3 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\AutenticacaoAdmin->cadastrar()
+#4 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AutenticacaoAdmin))
+#5 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('G:\\AQUIVOS LOCA...')
+#8 {main}
+CRITICAL - 2023-04-07 15:28:01 --> password_hash(): Passing null to parameter #1 ($password) of type string is deprecated
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'password_hash()...', 'G:\\AQUIVOS LOCA...', 15)
+#1 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\app\Models\AdminModel.php(15): password_hash(Object(SensitiveParameterValue), '2y')
+#2 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\app\Controllers\Admin\AutenticacaoAdmin.php(16): App\Models\AdminModel->cadastrar(NULL, NULL, NULL)
+#3 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\AutenticacaoAdmin->cadastrar()
+#4 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AutenticacaoAdmin))
+#5 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('G:\\AQUIVOS LOCA...')
+#8 {main}
+CRITICAL - 2023-04-07 15:28:12 --> password_hash(): Passing null to parameter #1 ($password) of type string is deprecated
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'password_hash()...', 'G:\\AQUIVOS LOCA...', 15)
+#1 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\app\Models\AdminModel.php(15): password_hash(Object(SensitiveParameterValue), '2y')
+#2 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\app\Controllers\Admin\AutenticacaoAdmin.php(16): App\Models\AdminModel->cadastrar(NULL, NULL, NULL)
+#3 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\AutenticacaoAdmin->cadastrar()
+#4 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AutenticacaoAdmin))
+#5 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('G:\\AQUIVOS LOCA...')
+#8 {main}
+CRITICAL - 2023-04-07 15:29:25 --> password_hash(): Passing null to parameter #1 ($password) of type string is deprecated
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'password_hash()...', 'G:\\AQUIVOS LOCA...', 15)
+#1 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\app\Models\AdminModel.php(15): password_hash(Object(SensitiveParameterValue), '2y')
+#2 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\app\Controllers\Admin\AutenticacaoAdmin.php(16): App\Models\AdminModel->cadastrar(NULL, NULL, NULL)
+#3 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\AutenticacaoAdmin->cadastrar()
+#4 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AutenticacaoAdmin))
+#5 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 G:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('G:\\AQUIVOS LOCA...')
+#8 {main}

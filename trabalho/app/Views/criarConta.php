@@ -17,16 +17,19 @@
 <body>
     <main class="iniciar-sessao">
         <div class="imagem-carro-inicial">
-            <img src="img/logo.svg" alt="" class="imagem-carro">
+            <img src="/img/logo.svg" alt="" class="imagem-carro">
         </div>
-        <form class="formulario-iniciar-sessao criar-conta-iniciar-sessao" action="mensagemContaCriada">
+        <!-- <form class="formulario-iniciar-sessao criar-conta-iniciar-sessao" action="mensagemContaCriada"> -->
+        <?= form_open(base_url("admin/novo")) ?>
+        <div class="formulario-iniciar-sessao criar-conta-iniciar-sessao">
             <h1 class="titulo-iniciar-sessao">Criar conta</h1>
-            <input type="text" class="entrada-nome-email input-nome-email" placeholder= "Digite o seu nome">
-            <input type="email" class="entrada-nome-email input-nome-email" placeholder= "Digite o seu email">
-            <input type="password" class="entrada-nome-email input-nome-email" placeholder= "Digite sua senha">
+            <input type="text" class="entrada-nome-email input-nome-email" placeholder= "Digite o seu nome" name="nome">
+            <input type="email" class="entrada-nome-email input-nome-email" placeholder= "Digite o seu email" name="email">
+            <input type="password" class="entrada-nome-email input-nome-email" placeholder= "Digite sua senha" name="senha">
             <input type="password" class="entrada-nome-email input-nome-email" placeholder= "Confirme sua senha">
-            <button class="btn2-padrao">Criar conta</button>
-        </form>
+            <button class="btn2-padrao criar-conta-btn" type="submit">Criar conta</button>
+        </div>
+        <?= form_close() ?>    
     </main>
 </body>
 </html>

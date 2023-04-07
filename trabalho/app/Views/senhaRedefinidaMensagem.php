@@ -13,12 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <script src="js/mensagemContaCriada/mensagemContaCriada.js" defer></script>
+    <script src="/js/mensagemContaCriada/mensagemContaCriada.js" defer></script>
 </head>
 <body>
     <main class="conta-criada-pagina">
         <div class="imagem-carro-inicial">
-            <img src="img/logo.svg" alt="" class="imagem-carro">
+            <img src="/img/logo.svg" alt="" class="imagem-carro">
         </div>
         <h1 class="conta-criada senha-redefinida">Senha redefinida com sucesso!</h1>
         <button class="btn-conta-criada">Iniciar sessão</button>

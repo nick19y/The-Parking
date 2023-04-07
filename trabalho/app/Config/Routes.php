@@ -46,6 +46,10 @@ $routes->group('admin', function($routes){
     $routes->get('/registro', 'Admin\Registro::index');
     $routes->post('/registro/remover/(:num)', 'Admin\Registro::remover/$1');
     $routes->post('/registro/registrar', 'Admin\Registro::registrar');
+
+
+    $routes->post('novo', "Admin\AutenticacaoAdmin::cadastrar");
+    $routes->post('logar', "Admin\AutenticacaoAdmin::logar");
 });
 /*
  * --------------------------------------------------------------------

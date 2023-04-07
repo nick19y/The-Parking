@@ -2,5 +2,9 @@
     height: 50vh;
 }
 .input-nome-email{
-    height: 40 vh;
+    height: 40vh;
+    width: 50vw;
+}
+.criar-conta-btn{
+    width: 40vw;
 }

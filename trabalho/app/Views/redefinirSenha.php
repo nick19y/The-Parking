@@ -17,7 +17,7 @@
 <body>
     <main class="iniciar-sessao">
         <div class="imagem-carro-inicial">
-            <img src="img/logo.svg" alt="" class="imagem-carro">
+            <img src="/img/logo.svg" alt="" class="imagem-carro">
         </div>
         <form class="formulario-iniciar-sessao redefinir-iniciar-sessao" action="senhaRedefinidaMensagem">
             <h1 class="titulo-iniciar-sessao">Redefinir senha</h1>
