@@ -42,6 +42,7 @@ $routes->get('/senhaRedefinidaMensagem', 'Home::senhaRedefinidaMensagem');
 $routes->get('/graficos', 'Home::graficos');
 $routes->get('/historico', 'Home::historico');
 $routes->get('/faturamento', 'Home::faturamento');
+$routes->get('/preco', 'Home::preco');
 $routes->group('admin', function($routes){
     $routes->get('/registro', 'Admin\Registro::index');
     $routes->post('/registro/remover/(:num)', 'Admin\Registro::remover/$1');

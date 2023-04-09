@@ -91,7 +91,7 @@
         <div class="pop-up-configuracoes">
             <div class="pop-up-config-flexbox">
                 <div class="pop-up-config pop-up-ajuda">
-                    <h2 class="btn-padrao-config">Ajuda</h2>
+                    <h2 class="btn-padrao-config">Preço</h2>
                 </div>
                 <div class="pop-up-config pop-up-conta">
                     <h2 class="btn-padrao-config">Conta</h2>
@@ -111,7 +111,7 @@
             <div class="registro registro-carro">
                 <div class="placa-tipo">
                     <div class="placa-veiculo"><?=$estacionamentos["placa_veiculo"]?></div>
-                    <img src="/img/carro.svg" alt="" class="imagem-veiculo">
+                    <img src="/img/<?=$estacionamentos["veiculo"]?>.svg" alt="" class="imagem-veiculo">
                 </div>
                 <div class="horario horario-registro-2"><?=$estacionamentos["horario_atual"]?></div>
                 <a href="/admin/registro/remover/<?= $estacionamentos["idEstacionamento"]?>">

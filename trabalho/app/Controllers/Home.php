@@ -50,4 +50,8 @@ class Home extends BaseController
     {
         return view('historico');
     }
+    public function preco()
+    {
+        return view('preco');
+    }
 }
