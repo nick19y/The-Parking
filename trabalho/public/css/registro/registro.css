@@ -4,6 +4,11 @@
     padding: 1em 0 1.5em 0;
     color: var(--branco);
 }
+
+.altura-data{
+    font-size: 1em;
+}
+
 .cabecalho-nome-data{
     width: 100%;
     display: flex;
@@ -184,16 +189,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 4em;
 }
 .registro{
     display: flex;
     flex-grow: 1;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--branco);
     max-width: 80vw;
     min-width: 70vw;
-    margin: 1em;
+    margin: .3em .2em;
     padding: 1em;
     outline: 1px solid black;
     border-radius: 15px;
@@ -207,12 +213,13 @@
 }
 .horario{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
 }
 .horario-registro-2{
     outline: 1px solid black;
     padding: 0.4em;
     border-radius: 15px;
+    margin: 0 0.5em;
 }
 .btn-fechar{
     display: flex;
@@ -220,7 +227,7 @@
     border-radius: 5px;
     padding: 0.7em;
     align-items: center;
-    color: red;
+    color: green;
     font-weight: bold;
     font-size: 25px;
     width: 10vw;

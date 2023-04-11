@@ -17,7 +17,7 @@ const btnGraficos = document.querySelector(".btnGraficos");
 function mostrarPopUpRegistro(){
     popUpRegistro.style.display = 'block';
 }
-function registrarVeiculo(veiculo){
+function registrarVeiculo(){
     if(selecaoCarro.checked){
         containerRegistro.innerHTML +=
         `<div class="registro registro-carro">
@@ -37,7 +37,7 @@ function registrarVeiculo(veiculo){
             <img src="img/moto.svg" alt="" class="imagem-veiculo">
         </div>
         <div class="horario horario-registro-2">05:03:08</div>
-        <button class="btn-fechar">X</button>
+        <button class="btn-fechar"></button>
         </div>`
     }
 }
@@ -62,3 +62,48 @@ btnHistorico.addEventListener("click", function(){
 btnGraficos.addEventListener("click", function(){
     window.open("graficos", "_self");
 });
+
+
+
+
+
+
+
+
+function atualizarHorario() {
+    const elementoData = document.querySelector(".dia-mes-ano-data");
+    const horario = document.querySelector(".hora-cabecalho");
+    const diaSemanaAtual = document.querySelector(".dia-semana-atual");
+
+    const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+        "Julho", "Agusto", "Setembro", "Outubro", "Novembro", "Dezembro"
+    ];
+    const diasDaSemana = ["domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado"];
+    
+    const data = new Date();
+
+
+    const hora = String(data.getHours());
+    const minutos = String(data.getMinutes());
+    const segundos = String(data.getSeconds());
+
+    const dia = data.getDate();
+
+    const mes = meses[data.getMonth()];
+
+    const ano = data.getFullYear();
+
+    const diaSemana = diasDaSemana[data.getDay()];
+
+    const horarioCompleto = `${hora.padStart(2, '0')}:${minutos.padStart(2, '0')}:${segundos.padStart(2, '0')}`;
+    const mesCompleto = `${dia} de ${mes} de ${ano}`;
+
+    elementoData.innerText = mesCompleto;
+    horario.innerText = horarioCompleto;
+    diaSemanaAtual.innerText = diaSemana;
+
+
+}
+
+setInterval(atualizarHorario, 1000);
+

@@ -17,6 +17,7 @@
     <script src="/js/registro/registro.js" defer></script>
 </head>
 <body class="corpo-registro">
+    <!-- chart.js graficos com js -->
     <header class="cabecalho-registro">
         <div class="cabecalho-nome-data">
             <div class="imagem-usuario">
@@ -29,11 +30,11 @@
                 </div>
                 <div class="container-data">
                     <div class="data-mes">
-                        <h3 class="dia-mes">27 de janeiro de 2023</h3>
+                        <h3 class="dia-mes dia-mes-ano-data"></h3>
                     </div>
                     <div class="semana-horario">
-                        <div class="dia-semana altura-data">segunda-feira</div>
-                        <div class="horario altura-data">22:42</div>
+                        <div class="dia-semana altura-data dia-semana-atual"></div>
+                        <div class="horario altura-data hora-cabecalho"></div>
                     </div>
                 </div>
             </div>
@@ -115,7 +116,7 @@
                 </div>
                 <div class="horario horario-registro-2"><?=$estacionamentos["horario_atual"]?></div>
                 <a href="/admin/registro/remover/<?= $estacionamentos["idEstacionamento"]?>">
-                    <button class="btn-fechar">X</button>
+                    <button class="btn-fechar">&#10003</button>
                 </a>
             </div>
             <?php endforeach; ?>
