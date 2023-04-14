@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use Exception;
 
 class AdminModel extends Model
 {
@@ -16,8 +17,20 @@ public function cadastrar($nome, $email, $senha){
     return $this->save(["nome" => $nome, "email" => $email, "senha" => $hash]);
 }
 
-    public function logar($email, $senha){
-        //criar query
+public function logar($email, $senha){
+    $admin = $this->db->query("SELECT idFuncionario, nome, senha 
+        FROM funcionario WHERE email=?", [$email])->getFirstRow("array");
+
+    if(!$admin){
+        throw new Exception("Senha incorreta ou usuário não encontrado");
     }
+
+    if(!password_verify($senha, $admin["senha"])){
+        throw new Exception("Senha incorreta ou usuário não encontrado");
+    }
+
+    return $admin["idadmin"];
+
+}
 }
 

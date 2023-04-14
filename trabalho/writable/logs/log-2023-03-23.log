@@ -169,39 +169,139 @@ Main connection [MySQLi]: Unknown database 'estacionamento_mariah'
 #2 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
 #3 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
 #4 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
-#5 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
-#6 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\app\Controllers\Admin\Registro.php(27): CodeIgniter\BaseModel->save(Array)
-#7 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Registro->registrar()
-#8 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Registro))
-#9 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#10 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
-#11 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\AQUIVOS LOCA...')
-#12 {main}
-CRITICAL - 2023-03-23 20:07:45 --> Undefined variable: estacionamento
-#0 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\app\Views\registro.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\AQUIVOS LOCA...', 104, Array)
-#1 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\View\View.php(210): include('D:\\AQUIVOS LOCA...')
-#2 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
-#3 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('registro', Array, true)
-#4 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\app\Controllers\Home.php(37): view('registro')
-#5 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->registro()
-#6 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#7 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#8 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
-#9 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\AQUIVOS LOCA...')
-#10 {main}
-CRITICAL - 2023-03-23 20:14:37 --> Undefined variable: estacionamento
-#0 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\app\Views\registro.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\AQUIVOS LOCA...', 104, Array)
-#1 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\View\View.php(210): include('D:\\AQUIVOS LOCA...')
-#2 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
-#3 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('registro', Array, true)
-#4 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\app\Controllers\Home.php(37): view('registro')
-#5 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Home->registro()
-#6 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
-#7 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#8 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
-#9 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\AQUIVOS LOCA...')
-#10 {main}
-CRITICAL - 2023-03-23 20:14:38 --> Undefined variable: estacionamento
+#5 D:\AQUIVOS LOCAIS TCC\tcc-igniter\<?php
+
+declare(strict_types=1);
+
+namespace PhpParser\Builder;
+
+use PhpParser;
+use PhpParser\BuilderHelpers;
+use PhpParser\Node;
+use PhpParser\Node\Const_;
+use PhpParser\Node\Identifier;
+use PhpParser\Node\Stmt;
+
+class ClassConst implements PhpParser\Builder
+{
+    protected $flags = 0;
+    protected $attributes = [];
+    protected $constants = [];
+
+    /** @var Node\AttributeGroup[] */
+    protected $attributeGroups = [];
+
+    /**
+     * Creates a class constant builder
+     *
+     * @param string|Identifier                          $name  Name
+     * @param Node\Expr|bool|null|int|float|string|array $value Value
+     */
+    public function __construct($name, $value) {
+        $this->constants = [new Const_($name, BuilderHelpers::normalizeValue($value))];
+    }
+
+    /**
+     * Add another constant to const group
+     *
+     * @param string|Identifier                          $name  Name
+     * @param Node\Expr|bool|null|int|float|string|array $value Value
+     *
+     * @return $this The builder instance (for fluid interface)
+     */
+    public function addConst($name, $value) {
+        $this->constants[] = new Const_($name, BuilderHelpers::normalizeValue($value));
+
+        return $this;
+    }
+
+    /**
+     * Makes the constant public.
+     *
+     * @return $this The builder instance (for fluid interface)
+     */
+    public function makePublic() {
+        $this->flags = BuilderHelpers::addModifier($this->flags, Stmt\Class_::MODIFIER_PUBLIC);
+
+        return $this;
+    }
+
+    /**
+     * Makes the constant protected.
+     *
+     * @return $this The builder instance (for fluid interface)
+     */
+    public function makeProtected() {
+        $this->flags = BuilderHelpers::addModifier($this->flags, Stmt\Class_::MODIFIER_PROTECTED);
+
+        return $this;
+    }
+
+    /**
+     * Makes the constant private.
+     *
+     * @return $this The builder instance (for fluid interface)
+     */
+    public function makePrivate() {
+        $this->flags = BuilderHelpers::addModifier($this->flags, Stmt\Class_::MODIFIER_PRIVATE);
+
+        return $this;
+    }
+
+    /**
+     * Makes the constant final.
+     *
+     * @return $this The builder instance (for fluid interface)
+     */
+    public function makeFinal() {
+        $this->flags = BuilderHelpers::addModifier($this->flags, Stmt\Class_::MODIFIER_FINAL);
+
+        return $this;
+    }
+
+    /**
+     * Sets doc comment for the constant.
+     *
+     * @param PhpParser\Comment\Doc|string $docComment Doc comment to set
+     *
+     * @return $this The builder instance (for fluid interface)
+     */
+    public function setDocComment($docComment) {
+        $this->attributes = [
+            'comments' => [BuilderHelpers::normalizeDocComment($docComment)]
+        ];
+
+        return $this;
+    }
+
+    /**
+     * Adds an attribute group.
+     *
+     * @param Node\Attribute|Node\AttributeGroup $attribute
+     *
+     * @return $this The builder instance (for fluid interface)
+     */
+    public function addAttribute($attribute) {
+        $this->attributeGroups[] = BuilderHelpers::normalizeAttribute($attribute);
+
+        return $this;
+    }
+
+    /**
+     * Returns the built class node.
+     *
+     * @return Stmt\ClassConst The built constant node
+     */
+    public function getNode(): PhpParser\Node {
+        return new Stmt\ClassConst(
+            $this->constants,
+            $this->flags,
+            $this->attributes,
+            $this->attributeGroups
+        );
+    }
+}
+                                                                                                                                              ig\\View.php"},{"name":"View.php","path":"SYSTEMPATH\\View\\View.php"},{"name":"Views.php","path":"SYSTEMPATH\\Debug\\Toolbar\\Collectors\\Views.php"},{"name":"bootstrap.php","path":"SYSTEMPATH\\bootstrap.php"},{"name":"form_helper.php","path":"SYSTEMPATH\\Helpers\\form_helper.php"},{"name":"rewrite.php","path":"SYSTEMPATH\\Commands\\Server\\rewrite.php"},{"name":"url_helper.php","path":"SYSTEMPATH\\Helpers\\url_helper.php"}],"userFiles":[{"name":"App.php","path":"APPPATH\\Config\\App.php"},{"name":"Autoloa-03-23 20:14:38 --> Undefined variable: estacionamento
 #0 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\app\Views\registro.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\AQUIVOS LOCA...', 104, Array)
 #1 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\View\View.php(210): include('D:\\AQUIVOS LOCA...')
 #2 D:\AQUIVOS LOCAIS TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()

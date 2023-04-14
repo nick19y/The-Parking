@@ -1,0 +1,7 @@
+ERROR - 2023-04-13 20:32:34 --> Table 'estacionamento_mariah.admin' doesn't exist
+ERROR - 2023-04-13 20:35:07 --> Table 'estacionamento_mariah.admin' doesn't exist
+ERROR - 2023-04-13 20:35:35 --> Table 'estacionamento_mariah.admin' doesn't exist
+ERROR - 2023-04-13 20:37:36 --> Table 'estacionamento_mariah.admin' doesn't exist
+ERROR - 2023-04-13 20:39:43 --> Table 'estacionamento_mariah.admin' doesn't exist
+ERROR - 2023-04-13 20:41:28 --> Unknown column 'idadmin' in 'field list'
+ERROR - 2023-04-13 20:41:35 --> Unknown column 'idadmin' in 'field list'

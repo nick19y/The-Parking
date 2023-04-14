@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.1/chart.umd.js"></script>
     <script src="/js/graficos/graficos.js" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,24 +18,8 @@
         <!-- <button class="botao-voltar">
             <span class="span-voltar"><</span>
         </button> -->
-        <div class="div-graficos">
-            <img src="/img/graficos.png" alt="" class="img-graficos">
-        </div>
-        <div class="div-graficos">
-            <img src="/img/graficos.png" alt="" class="img-graficos">
-        </div>
-        <div class="div-graficos">
-            <img src="/img/graficos.png" alt="" class="img-graficos">
-        </div>
-        <div class="div-graficos">
-            <img src="/img/graficos.png" alt="" class="img-graficos">
-        </div>
-        <div class="div-graficos">
-            <img src="/img/graficos.png" alt="" class="img-graficos">
-        </div>
-        <div class="div-graficos">
-            <img src="/img/graficos.png" alt="" class="img-graficos">
-        </div>
+        <canvas id="grafico">
+        </canvas>
     </main>
 </body>
 </html>

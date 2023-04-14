@@ -3,10 +3,37 @@
 
     use App\Controllers\BaseController;
     use App\Models\AdminModel;
+    use Exception;
     class AutenticacaoAdmin extends BaseController
     {
-        public function login(){
-            return view("registro");
+            public function login()
+        {
+            if(session()->has("idadmin")){
+                return redirect()->to(base_url("admin/produto"));
+            }
+            return view("admin/home");
+        }
+
+        public function sair(){
+            $session = session();
+
+            $session->destroy();
+            
+            return redirect()->to(base_url("/"));
+        }
+        public function logar()
+        {
+            try {
+                $email = $this->request->getPost("email");
+                $senha = $this->request->getPost("senha");
+                $adminModel = new AdminModel();
+                $idAdmin = $adminModel->logar($email, $senha);
+                session()->set("idFuncionario", $idAdmin);
+                return redirect()->to(base_url("/admin/registro"));
+            } catch (Exception $erro) {
+                session()->setFlashdata("aviso-login", $erro->getMessage());
+                return redirect()->to(base_url("/"));
+            }
         }   
         public function cadastrar(){
             $nome = $this->request->getPost("nome");
