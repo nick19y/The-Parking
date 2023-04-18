@@ -26,7 +26,7 @@ class FiltroAdmin implements FilterInterface
     public function before(RequestInterface $request, $arguments = null)
     {
         if(!session()->has("idFuncionario")){
-            return redirect()->to(base_url("/"));
+            return redirect()->to(base_url("/iniciarSessao"));
         }
     }
 

@@ -29,7 +29,7 @@ public function logar($email, $senha){
         throw new Exception("Senha incorreta ou usuário não encontrado");
     }
 
-    return $admin["idadmin"];
+    return $admin["idFuncionario"];
 
 }
 }

@@ -18,12 +18,25 @@
         <div class="imagem-carro-inicial">
             <img src="/img/logo.svg" alt="" class="imagem-carro">
         </div>
+        
+        <?= form_open(base_url("admin/novo")) ?>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome">
+            <label for="email">Email</label>
+            <input type="email" name="email">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha">
+            <button type="submit">Enviar</button>
+            
+        <?= form_close() ?>
+        <br><br><br>
+
         <?= form_open(base_url("admin/logar")) ?>
         <div class="formulario-iniciar-sessao">
             <h1 class="titulo-iniciar-sessao">Iniciar sessão</h1>
-            <input type="email" class="entrada-nome-email" placeholder= "Digite o seu email">
-            <input type="password" class="entrada-nome-email" placeholder= "Digite sua senha">
-            <button class="btn2-padrao">Iniciar sessão</button>
+            <input type="email" class="entrada-nome-email" placeholder= "Digite o seu email" name="email">
+            <input type="password" class="entrada-nome-email" placeholder= "Digite sua senha" name="senha">
+            <button class="btn2-padrao" type="submit">Iniciar sessão</button>
             <a href="recuperarSenha" class="esqueceu-senha">Esqueceu a senha?</a>
             <a href="criarConta" class="esqueceu-senha">Criar nova conta</a>
         </div>

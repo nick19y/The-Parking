@@ -8,10 +8,10 @@
     {
             public function login()
         {
-            if(session()->has("idadmin")){
-                return redirect()->to(base_url("admin/produto"));
+            if(session()->has("idFuncionario")){
+                return redirect()->to(base_url("admin/registro"));
             }
-            return view("admin/home");
+            return view("/iniciarSessao");
         }
 
         public function sair(){
@@ -29,7 +29,7 @@
                 $adminModel = new AdminModel();
                 $idAdmin = $adminModel->logar($email, $senha);
                 session()->set("idFuncionario", $idAdmin);
-                return redirect()->to(base_url("/admin/registro"));
+                return redirect()->to(base_url("admin/registro"));
             } catch (Exception $erro) {
                 session()->setFlashdata("aviso-login", $erro->getMessage());
                 return redirect()->to(base_url("/"));
@@ -47,7 +47,7 @@
             else{
                 return "Erro";
             }
-            return redirect()->to("/admin");
+            // return redirect()->to("/admin");
         }
     }
 
