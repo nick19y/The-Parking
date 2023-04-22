@@ -3,7 +3,8 @@ const popUpRegistro = document.querySelector(".pop-up-registrar");
 const btnRegistroPlacaVeiculo = document.querySelector("#btn-registro-placa-veiculo");
 const inputRadioRegistro = document.getElementsByName("veiculo");
 const btnConfiguracoes = document.querySelector("#configuracoes-item");
-const popUpConfiguracoes = document.querySelector(".pop-up-configuracoes");
+const btnFecharRegistro = document.querySelector(".btn-fechar-registro");
+
 
 
 
@@ -21,11 +22,11 @@ function mostrarPopUpRegistro(){
 // executar a função acima com o click do botao registrar
 btnRegistrarVeiculo.onclick = mostrarPopUpRegistro;
 
-
-
-btnConfiguracoes.addEventListener("click", function(){
-    popUpConfiguracoes.style.display = 'flex';
+btnFecharRegistro.addEventListener("click", function(){
+    popUpRegistro.style.display = 'none';
 });
+
+
 
 btnFaturamento.addEventListener("click", function(){
     window.open("faturamento", "_self")

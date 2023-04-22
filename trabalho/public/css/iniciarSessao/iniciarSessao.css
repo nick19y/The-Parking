@@ -1,11 +1,16 @@
-.iniciar-sessao{
+.imagem-de-fundo{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 100vh;
     width: 100%;
-    background: var(--azul-principal);
     align-items: center;
+    background-color: var(--azul-principal);
+    background-image: url(carro_imagem.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    background-position: top;
 }
 .imagem-carro{
     width: 300px;
@@ -53,6 +58,22 @@
     margin-top: 1em;
     color: var(--branco);
 }
+.btn-voltar-sessao{
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    left: 60px;
+    top: 5px;
+    height: 60px;
+    font-style: italic;
+    height: 50px;
+    padding: 10px;
+}
+.btn-voltar-sessao img:hover {
+    cursor: pointer;
+}
 @media screen and (min-width: 1024px){
     .entrada-nome-email{
         padding: 1rem;
@@ -75,5 +96,21 @@
         background-color: var(--cinza);
         border: 1px solid var(--cinza);
         cursor: pointer;
+    }
+}
+@media (max-width: 700px){
+    .btn-voltar-sessao{
+        position: absolute;
+        left: 60px;
+        top: 5px;
+        height: 60px;
+    }
+}
+@media (max-width: 600px){
+    .btn-voltar-sessao{
+        position: absolute;
+        left: 10px;
+        top: 5px;
+        height: 60px;
     }
 }

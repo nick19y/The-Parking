@@ -9,9 +9,6 @@ main{
 }
 
 .faturamento-diario{
-    background: #4348d6;
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,6 +31,7 @@ main{
     font-size: 26px;
     font-weight: 2px;
     margin-bottom: 10px;
+    padding-top: 10px;
 }
 
 .h1-faturamento-mensal{
@@ -141,5 +139,40 @@ main{
 
     .div-lucro-total-1 {
         width: 70vw;
+    }
+}
+
+.btn-voltar-sessao{
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    left: 60px;
+    top: 10px;
+    height: 60px;
+    font-style: italic;
+    height: 50px;
+    padding: 10px;
+}
+.btn-voltar-sessao:hover {
+    cursor: pointer;
+    color: black;
+}
+
+@media (max-width: 700px){
+    .btn-voltar-sessao{
+        position: absolute;
+        left: 60px;
+        top: 5px;
+        height: 60px;
+    }
+}
+@media (max-width: 600px){
+    .btn-voltar-sessao{
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        height: 60px;
     }
 }

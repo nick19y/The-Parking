@@ -13,10 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="/js/botao-voltar/botao-voltar.js" defer></script>
 </head>
 <body>
-    <main class="iniciar-sessao">
-        <div class="imagem-carro-inicial">
+    <main class="imagem-de-fundo">
+    <button class="btn-voltar-sessao"><img src="img/up.svg" alt=""></button>
+    <div class="imagem-carro-inicial">
             <img src="/img/logo.svg" alt="" class="imagem-carro">
         </div>
         <form class="formulario-iniciar-sessao redefinir-iniciar-sessao" action="senhaRedefinidaMensagem">

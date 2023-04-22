@@ -12,25 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="/js/botao-voltar/botao-voltar.js" defer></script>
 </head>
 <body>
-    <main class="iniciar-sessao">
+    <main class="imagem-de-fundo">
+    <button class="btn-voltar-sessao"><img src="/img/up.svg" alt=""></button>
         <div class="imagem-carro-inicial">
             <img src="/img/logo.svg" alt="" class="imagem-carro">
         </div>
-        
-        <?= form_open(base_url("admin/novo")) ?>
-            <label for="nome">Nome</label>
-            <input type="text" name="nome">
-            <label for="email">Email</label>
-            <input type="email" name="email">
-            <label for="senha">Senha</label>
-            <input type="password" name="senha">
-            <button type="submit">Enviar</button>
-            
-        <?= form_close() ?>
-        <br><br><br>
-
         <?= form_open(base_url("admin/logar")) ?>
         <div class="formulario-iniciar-sessao">
             <h1 class="titulo-iniciar-sessao">Iniciar sessão</h1>

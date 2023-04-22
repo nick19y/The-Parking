@@ -32,5 +32,12 @@ public function logar($email, $senha){
     return $admin["idFuncionario"];
 
 }
+public function sair(){
+    $session = session();
+
+    $session->destroy();
+    
+    return redirect()->to(base_url("admin"));
+}
 }
 

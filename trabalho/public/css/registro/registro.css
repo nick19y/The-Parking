@@ -1,5 +1,5 @@
 .cabecalho-registro{
-    background-color: var(--azul-principal);
+    background-color: transparent;
     width: 100%;
     padding: 1em 0 1.5em 0;
     color: var(--branco);
@@ -103,6 +103,13 @@
     padding: 1em;
     border: 2px solid var(--preto);
     border-radius: 15px;
+}
+.btn-fechar-registro{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin: 0.5em 2em 0.5em 1em;
 }
 .pop-up-configuracoes{
     display: none;
@@ -288,6 +295,7 @@
     }
     .btn-registrar-placa-veiculo:hover{
         cursor: pointer;
+        background: grey;
     }
     .itens-cabecalho{
         width: 100%;
@@ -314,4 +322,64 @@
     .pop-up-config:hover{
         cursor: pointer;
     }
+    .btn-fechar-registro:hover{
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 500px){
+    .button-fechar2 {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        right: 10px;
+    }
+
+    .button-fechar2 img {
+        position: relative;
+        left: 4px;
+        width: 16px;
+        height: 16px;
+    }
+
+}
+
+.button-fechar {
+    background-color: transparent;
+    border: 1px solid transparent;
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.button-fechar:hover {
+    cursor: pointer;
+}
+
+.button-fechar img{
+    background-color: transparent;
+    border: 1px solid transparent;
+    width: 20px;
+    height: 20px;
+}
+
+.button-fechar2 {
+    background-color: transparent;
+    border: 1px solid transparent;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.button-fechar2 img {
+    width: 20px;
+    height: 20px;
+}
+
+.button-fechar2:hover {
+    cursor: pointer;
 }

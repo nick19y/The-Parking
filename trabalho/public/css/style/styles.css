@@ -1,0 +1,19 @@
+:root{
+    --fonte-principal: 'Roboto', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --azul-principal: #4348D6;
+    --branco: #FFF;
+    --cinza: #BFABB2;
+    --preto: #000;
+    --verde: #01FF4E;
+}
+body{
+    background-color: var(--azul-principal);
+    background-image: url(carro_imagem.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    background-position: top;
+    font-weight: bold;
+    font-family: var(--fonte-principal);
+}

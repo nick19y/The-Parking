@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/iniciarSessao/iniciarSessao.css">
     <link rel="stylesheet" href="/css/historico/historico.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/botao-voltar/botao-voltar.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <main>
+    <main class="imagem-de-fundo">
         <h1>Histórico de veiculos</h1>
+        <button class="btn-voltar-sessao"><img src="img/up.svg" alt=""></button>
         <div class="div-linha">
             <fieldset class="first-fiel">
                 <legend class="legenda-1">Hoje </legend>

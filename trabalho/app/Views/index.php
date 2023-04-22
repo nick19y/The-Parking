@@ -15,7 +15,7 @@
     <script src="/js/index/index.js" defer></script>
 </head>
 <body>
-    <main class="botoes-inicial">
+    <main class="botoes-inicial imagem-de-fundo">
         <div class="imagem-carro-inicial">
             <img src="/img/logo.svg" alt="" class="imagem-carro">
         </div>

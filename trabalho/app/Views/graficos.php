@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.1/chart.umd.js"></script>
     <script src="/js/graficos/graficos.js" defer></script>
+    <script src="/js/botao-voltar/botao-voltar.js" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
 </head>
 <body>
     <main class="painel-inicial-grafico">
+    <button class="btn-voltar-sessao"><img src="img/up.svg" alt=""></button>
         <!-- <button class="botao-voltar">
             <span class="span-voltar"><</span>
         </button> -->

@@ -63,8 +63,10 @@
                 </a>
             </div>
             <div class="item-lista-cabecalho">
-                <li class="texto-itens-cabecalho">Configurações</li>
-                <img src="/img/configuracoes.svg" alt="" id="configuracoes-item" class="imagem-lista-cabecalho">
+                <li class="texto-itens-cabecalho">Sair</li>
+                <a href="<?= base_url("admin/sair")?>">
+                    <img src="/img/logout.png" alt="" id="configuracoes-item" class="imagem-lista-cabecalho">
+                </a>
             </div>
         </ul>
         <!-- tem que importar o recurso de formularo no BaseControler -->
@@ -72,6 +74,9 @@
         <div class="pop-up-flexbox">
             <div class="pop-up-registrar">
                 <div class="container-flex-digitar">
+                    <div class="btn-fechar-registro">
+                        <img src="/img/x.png" alt="">
+                    </div>
                     <h1 class="titulo-iniciar-sessao">Placa do veículo</h1>
                     <input class="input-placa-veiculo" id="placa_veiculo" name="placa_veiculo" type="text">
                     <div class="selecao-moto-carro">
@@ -89,19 +94,6 @@
             </div>
         </div>
         <?= form_close() ?>
-        <div class="pop-up-configuracoes">
-            <div class="pop-up-config-flexbox">
-                <div class="pop-up-config pop-up-ajuda">
-                    <h2 class="btn-padrao-config">Preço</h2>
-                </div>
-                <div class="pop-up-config pop-up-conta">
-                    <h2 class="btn-padrao-config">Conta</h2>
-                </div>
-                <div class="pop-up-config pop-up-sair">
-                    <h2 class="btn-padrao-config">Sair</h2>
-                </div>
-            </div>
-        </div>
     </header>
     <main class="conteudo-principal-registro">
         <div class="titulo-registro-container">

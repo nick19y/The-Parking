@@ -49,6 +49,7 @@ $routes->group('admin', ['filter'=>'admin'], function($routes){
     $routes->post('/registro/remover/(:num)', 'Admin\Registro::remover/$1');
     $routes->post('/registro/registrar', 'Admin\Registro::registrar');
 
+    $routes->get("sair", "Admin\AutenticacaoAdmin::sair");
 });
 
 
