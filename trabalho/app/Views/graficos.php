@@ -21,8 +21,11 @@
         <!-- <button class="botao-voltar">
             <span class="span-voltar"><</span>
         </button> -->
-        <canvas id="grafico" width="100vw" height="160%">
-        </canvas>
+    <div class="chartCard">
+        <div class="chartBox">
+            <canvas id="grafico" width="600" height="250"></canvas>
+        </div>
+    </div>
     </main>
 </body>
 </html>

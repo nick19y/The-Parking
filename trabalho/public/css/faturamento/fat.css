@@ -111,9 +111,7 @@ main{
 
 @media (max-width: 730px){
     .faturamento-diario{
-        background: #4348d6;
-        width: 100vw;
-        height: 95vh;
+        background: transparent;
         display: flex;
         justify-content: center;
         align-items: center;

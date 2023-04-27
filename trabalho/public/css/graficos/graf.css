@@ -1,8 +1,9 @@
-/* mobile first */
-
 #grafico{
     margin-top: 2.5em;
 }
-@media screen and (min-width: 1024px){
-
+.chartBox{
+    height: 40em;
+    width: 100%;
+}
+@media screen and (max-width: 1024px){
 }
