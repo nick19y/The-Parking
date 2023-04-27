@@ -13,9 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <script src="/js/index/index.js" defer></script>
+    <script src="js/botao-voltar/botao-voltar.js" defer></script>
 </head>
 <body>
     <main class="botoes-inicial imagem-de-fundo">
+    <button class="btn-voltar-sessao"><img src="/img/up.svg" alt=""></button>
         <div class="imagem-carro-inicial">
             <img src="/img/logo.svg" alt="" class="imagem-carro">
         </div>

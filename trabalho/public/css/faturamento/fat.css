@@ -3,7 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.imagem-de-fundo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    background-color: var(--azul-principal);
+    background-image: url(carro_imagem.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 180% 100%;
+}
 main{
     display: flex;
 }

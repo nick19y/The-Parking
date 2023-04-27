@@ -2,6 +2,7 @@
 
 namespace Config;
 
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -21,7 +22,9 @@ $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
-$routes->setAutoRoute(true);
+$routes->setAutoRoute(false);
+
+
 
 /*
  * --------------------------------------------------------------------
@@ -44,18 +47,19 @@ $routes->get('/historico', 'Home::historico');
 $routes->get('/faturamento', 'Home::faturamento');
 $routes->get('/preco', 'Home::preco');
 
+$routes->get("admin/", "Admin\AutenticacaoAdmin::login");
+$routes->post('/admin/logar', "Admin\AutenticacaoAdmin::logar");
+$routes->post('/admin/novo', "Admin\AutenticacaoAdmin::cadastrar");
+
 $routes->group('admin', ['filter'=>'admin'], function($routes){
-    $routes->get('/registro', 'Admin\Registro::index');
-    $routes->post('/registro/remover/(:num)', 'Admin\Registro::remover/$1');
-    $routes->post('/registro/registrar', 'Admin\Registro::registrar');
+    $routes->get('registro', 'Admin\Registro::index');
+    $routes->post('registro/remover/(:num)', 'Admin\Registro::remover/$1');
+    $routes->post('registro/registrar', 'Admin\Registro::registrar');
 
     $routes->get("sair", "Admin\AutenticacaoAdmin::sair");
 });
+    
 
-
-$routes->get("admin/", "Admin\AutenticacaoAdmin::login");
-$routes->post('admin/logar', "Admin\AutenticacaoAdmin::logar");
-$routes->post('admin/novo', "Admin\AutenticacaoAdmin::cadastrar");
 /*
  * --------------------------------------------------------------------
  * Additional Routing

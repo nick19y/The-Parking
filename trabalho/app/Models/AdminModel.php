@@ -29,15 +29,10 @@ public function logar($email, $senha){
         throw new Exception("Senha incorreta ou usuário não encontrado");
     }
 
-    return $admin["idFuncionario"];
+    $dados["id"]= $admin["idFuncionario"];
+    $dados["nome"] = $admin["nome"];
+    return $dados;
 
-}
-public function sair(){
-    $session = session();
-
-    $session->destroy();
-    
-    return redirect()->to(base_url("admin"));
 }
 }
 

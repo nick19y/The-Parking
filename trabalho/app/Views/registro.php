@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -22,11 +24,11 @@
         <div class="cabecalho-nome-data">
             <div class="imagem-usuario">
                 <img src="/img/usuario.svg" alt="Imagem do usuário" class="imagem">
-                <h1 class="nome-usuario">Enzo Guimarães</h1>
+                <h1 class="nome-usuario"><?=session()->get("nome")?></h1>
             </div>
             <div class="mensagem-data">
                 <div class="msg-usuario">
-                    <h1 class="mensagem-usuario">Bem-vindo novamente, Enzo!</h1>
+                    <h1 class="mensagem-usuario">Bem-vindo novamente, <?= session()->get("nome")?>!</h1>
                 </div>
                 <div class="container-data">
                     <div class="data-mes">

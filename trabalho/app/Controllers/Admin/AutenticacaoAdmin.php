@@ -27,8 +27,9 @@
                 $email = $this->request->getPost("email");
                 $senha = $this->request->getPost("senha");
                 $adminModel = new AdminModel();
-                $idAdmin = $adminModel->logar($email, $senha);
-                session()->set("idFuncionario", $idAdmin);
+                $dados = $adminModel->logar($email, $senha);
+                session()->set("idFuncionario", $dados["id"]);
+                session()->set("nome", $dados["nome"]);
                 return redirect()->to(base_url("admin/registro"));
             } catch (Exception $erro) {
                 session()->setFlashdata("aviso-login", $erro->getMessage());

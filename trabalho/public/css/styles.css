@@ -15,3 +15,37 @@ body{
 a{
     text-decoration: none;
 }
+.btn-voltar-sessao{
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    left: 60px;
+    top: 10px;
+    height: 60px;
+    font-style: italic;
+    height: 50px;
+    padding: 10px;
+}
+.btn-voltar-sessao:hover {
+    cursor: pointer;
+    color: black;
+}
+
+@media (max-width: 700px){
+    .btn-voltar-sessao{
+        position: absolute;
+        left: 60px;
+        top: 5px;
+        height: 60px;
+    }
+}
+@media (max-width: 600px){
+    .btn-voltar-sessao{
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        height: 60px;
+    }
+}

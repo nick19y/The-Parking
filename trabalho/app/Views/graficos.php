@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/graficos/graf.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,15 +13,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>graficos</title>
+    <title>Gráficos</title>
 </head>
 <body>
-    <main class="painel-inicial-grafico">
+    <main class="painel-inicial-grafico imagem-de-fundo">
     <button class="btn-voltar-sessao"><img src="img/up.svg" alt=""></button>
         <!-- <button class="botao-voltar">
             <span class="span-voltar"><</span>
         </button> -->
-        <canvas id="grafico">
+        <canvas id="grafico" width="100vw" height="160%">
         </canvas>
     </main>
 </body>

@@ -25,6 +25,7 @@ class FiltroAdmin implements FilterInterface
      */
     public function before(RequestInterface $request, $arguments = null)
     {
+
         if(!session()->has("idFuncionario")){
             return redirect()->to(base_url("/"));
         }
@@ -44,6 +45,8 @@ class FiltroAdmin implements FilterInterface
      */
     public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
     {
-        //
+        if(!session()->has("idFuncionario")){
+            return redirect()->to(base_url("/"));
+        }
     }
 }
