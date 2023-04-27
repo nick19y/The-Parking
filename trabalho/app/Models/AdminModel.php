@@ -34,5 +34,13 @@ public function logar($email, $senha){
     return $dados;
 
 }
+public function sair(){
+    $session = session();
+
+    $session->destroy();
+    // $session->stop();
+    
+    return redirect()->to(base_url("admin"));
+}
 }
 
