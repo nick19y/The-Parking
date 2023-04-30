@@ -15,6 +15,9 @@
     </div>
     <div class="chartCard">
       <div class="chartBox">
+        <h2 id="titulo-grafico">
+          Faturamento
+        </h2>
         <canvas id="myChart"></canvas>
       </div>
     </div>

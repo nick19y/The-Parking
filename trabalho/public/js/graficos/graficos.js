@@ -32,6 +32,15 @@ const data = {
     data,
     options: {
     maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          labels: {
+            generateLabels: (chart) =>{
+              console.log(chart);
+            }
+          }
+        }
+      },
       scales: {
         y: {
           beginAtZero: true
@@ -45,6 +54,3 @@ const data = {
     document.getElementById('myChart'),
     config
   );
-
-  const chartVersion = document.getElementById('chartVersion');
-  chartVersion.innerText = Chart.version;
