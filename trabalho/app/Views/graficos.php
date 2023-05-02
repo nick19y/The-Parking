@@ -16,7 +16,7 @@
     <div class="chartCard">
       <div class="chartBox">
         <h2 id="titulo-grafico">
-          Faturamento
+          Faturamento Semanal
         </h2>
         <canvas id="myChart"></canvas>
       </div>

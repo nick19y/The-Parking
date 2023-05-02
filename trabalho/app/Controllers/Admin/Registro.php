@@ -5,8 +5,6 @@ namespace App\Controllers\Admin;
 use App\Controllers\BaseController;
 use App\Models\RegistroModel;
 
-// TALVEZ O ERRO SEJA ESTAR RETORNANDO UMA VIEW, VER COMO FOI FEITO NO PROJETO DO GIOVANNI
-
 class Registro extends BaseController{
     public function index(){        
         $registroModel = new RegistroModel();

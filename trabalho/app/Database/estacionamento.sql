@@ -58,3 +58,25 @@ CREATE TABLE veiculo_estacionamento(
 -- exemplo de um insert into com datetime
 -- INSERT INTO estacionamento(parametro, horario_entrada, horario_saida)
 -- VALUES('', '2023-10-22 14:45:30');
+
+
+-- quantidade de serviços do dia
+-- select max(idEstacionamento) from estacionamento;
+
+-- retorno  do dia
+-- SELECT LEFT(horario_atual, 10) FROM estacionamento;
+
+-- retorno do horário
+-- SELECT RIGHT(horario_atual, 8) FROM estacionamento;
+
+-- retorno do dia da semana
+-- SELECT dayofweek(LEFT(horario_atual, 10))  FROM estacionamento;
+-- 1 é domingo, 7 é sábado
+
+
+-- INSERT dentro da tabela, não vai funcionar pelo id, pois esse se atualiza e não guarda a quantidade
+-- a solução pode ser um sum na consulta ou um novo campo no sql que guarde a quantidade de veículos
+-- INSERT INTO estacionamento values(6, '2023-05-01 08:45:12', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 'AKD0398', 'carro');
+
+
+

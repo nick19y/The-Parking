@@ -60,7 +60,7 @@
             </div>
             <div class="item-lista-cabecalho">    
                 <li class="texto-itens-cabecalho">Gráficos</li>
-                <a href="../graficos">
+                <a href="/admin/graficos">
                     <img src="/img/grafico.svg" alt="" id="graficos-item" class="imagem-lista-cabecalho btnGraficos">
                 </a>
             </div>

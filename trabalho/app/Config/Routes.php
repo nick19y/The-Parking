@@ -42,7 +42,6 @@ $routes->get('/mensagemContaCriada','Home::mensagemContaCriada');
 $routes->get('/recuperarSenha','Home::recuperarSenha');
 $routes->get('/redefinirSenha','Home::redefinirSenha');
 $routes->get('/senhaRedefinidaMensagem', 'Home::senhaRedefinidaMensagem');
-$routes->get('/graficos', 'Home::graficos');
 $routes->get('/historico', 'Home::historico');
 $routes->get('/faturamento', 'Home::faturamento');
 $routes->get('/preco', 'Home::preco');
@@ -55,6 +54,8 @@ $routes->group('admin', ['filter'=>'admin'], function($routes){
     $routes->get('registro', 'Admin\Registro::index');
     $routes->post('registro/remover/(:num)', 'Admin\Registro::remover/$1');
     $routes->post('registro/registrar', 'Admin\Registro::registrar');
+
+    $routes->get('graficos', 'Home::graficos');
 
     $routes->get("sair", "Admin\AutenticacaoAdmin::sair");
 });
