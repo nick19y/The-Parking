@@ -11,8 +11,8 @@ class HistoricoModel extends Model
     protected $useAutoIncrement = true;
     protected $allowedFields = ["horario_entrada", "horario_saida", "placa_veiculo", "veiculo"];
 
-    public function getHorario(){
-        $query = $this->db->query("SELECT *, RIGHT(horario_atual, 8) h FROM estacionamento")->getResultArray();
+    public function getHorarioEntrada(){
+        $query = $this->db->query("SELECT *, RIGHT(horario_atual_entrada, 8) h FROM estacionamento WHERE horario_atual_saida IS NUll")->getResultArray();
         return $query;
     }
 }

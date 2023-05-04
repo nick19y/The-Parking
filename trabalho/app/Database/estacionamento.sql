@@ -2,14 +2,14 @@ CREATE DATABASE estacionamento_mariah;
 USE estacionamento_mariah;
 CREATE TABLE estacionamento(
     idEstacionamento INT PRIMARY KEY AUTO_INCREMENT,
-    horario_atual TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),
-    horario_atual_saida TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),
+    horario_atual_entrada TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),
+    horario_atual_saida TIMESTAMP,
     horario_entrada DATETIME NOT NULL,
     horario_saida DATETIME NOT NULL,
     placa_veiculo CHAR(8) NOT NULL,
     veiculo VARCHAR (25) NOT NULL,
     preco_carro DECIMAL(5,2),
-    preco_moto DECIMAL(5,2),
+    preco_moto DECIMAL(5,2)
 ) engine InnoDB;
 -- veiculo é o tipo, carro ou moto
 CREATE TABLE funcionario(
@@ -67,13 +67,13 @@ CREATE TABLE veiculo_estacionamento(
 -- select max(idEstacionamento) from estacionamento;
 
 -- retorno  do dia
--- SELECT LEFT(horario_atual, 10) FROM estacionamento;
+-- SELECT LEFT(horario_atual_entrada, 10) FROM estacionamento;
 
 -- retorno do horário
--- SELECT RIGHT(horario_atual, 8) FROM estacionamento;
+-- SELECT RIGHT(horario_atual_entrada, 8) FROM estacionamento;
 
 -- retorno do dia da semana
--- SELECT dayofweek(LEFT(horario_atual, 10))  FROM estacionamento;
+-- SELECT dayofweek(LEFT(horario_atual_entrada, 10))  FROM estacionamento;
 -- 1 é domingo, 7 é sábado
 
 

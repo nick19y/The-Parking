@@ -7,7 +7,7 @@ class Historico extends BaseController
 {
     public function historico(){        
         $historicoModel = new HistoricoModel();
-        $dados["estacionamento"] = $historicoModel->getHorario();
+        $dados["estacionamento"] = $historicoModel->getHorarioEntrada();
         return view("historico", $dados);
     }
 }

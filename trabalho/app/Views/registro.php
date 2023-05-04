@@ -106,7 +106,7 @@
                     <div class="placa-veiculo"><?=$estacionamentos["placa_veiculo"]?></div>
                     <img src="/img/<?=$estacionamentos["veiculo"]?>.svg" alt="" class="imagem-veiculo">
                 </div>
-                <div class="horario horario-registro-2"><?=$estacionamentos["horario_atual"]?></div>
+                <div class="horario horario-registro-2"><?=$estacionamentos["horario_atual_entrada"]?></div>
                 <a href="/admin/registro/remover/<?= $estacionamentos["idEstacionamento"]?>">
                     <button class="btn-fechar">&#10003</button>
                 </a>
