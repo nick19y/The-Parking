@@ -7,7 +7,9 @@ CREATE TABLE estacionamento(
     horario_entrada DATETIME NOT NULL,
     horario_saida DATETIME NOT NULL,
     placa_veiculo CHAR(8) NOT NULL,
-    veiculo VARCHAR (25) NOT NULL
+    veiculo VARCHAR (25) NOT NULL,
+    preco_carro DECIMAL(5,2),
+    preco_moto DECIMAL(5,2),
 ) engine InnoDB;
 -- veiculo é o tipo, carro ou moto
 CREATE TABLE funcionario(

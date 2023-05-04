@@ -51,6 +51,9 @@ $routes->post('/admin/logar', "Admin\AutenticacaoAdmin::logar");
 $routes->post('/admin/novo', "Admin\AutenticacaoAdmin::cadastrar");
 
 $routes->group('admin', ['filter'=>'admin'], function($routes){
+    
+    $routes->get('atualizacao', 'Admin\Atualizacao::atualizacao');
+
 
     $routes->get('historico', 'Admin\Historico::historico');
 
