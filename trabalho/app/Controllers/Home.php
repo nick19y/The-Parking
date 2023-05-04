@@ -46,10 +46,6 @@ class Home extends BaseController
     {
         return view('faturamento');
     }
-    public function historico()
-    {
-        return view('historico');
-    }
     public function preco()
     {
         return view('preco');

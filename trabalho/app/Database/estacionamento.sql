@@ -3,6 +3,7 @@ USE estacionamento_mariah;
 CREATE TABLE estacionamento(
     idEstacionamento INT PRIMARY KEY AUTO_INCREMENT,
     horario_atual TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),
+    horario_atual_saida TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),
     horario_entrada DATETIME NOT NULL,
     horario_saida DATETIME NOT NULL,
     placa_veiculo CHAR(8) NOT NULL,
@@ -77,6 +78,3 @@ CREATE TABLE veiculo_estacionamento(
 -- INSERT dentro da tabela, não vai funcionar pelo id, pois esse se atualiza e não guarda a quantidade
 -- a solução pode ser um sum na consulta ou um novo campo no sql que guarde a quantidade de veículos
 -- INSERT INTO estacionamento values(6, '2023-05-01 08:45:12', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 'AKD0398', 'carro');
-
-
-

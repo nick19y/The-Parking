@@ -34,14 +34,14 @@
                             <p class="p-div-faturamento-diario-1">Horas motos: <p style="color: red; font-size: 20px; margin: 10px;">540h</p></p>
                         </div>
                         <div class="div-faturamento-diario-1">
-                            <p class="p-div-faturamento-diario-1">Lucro dos carros: <p style="color: red; font-size: 20px; margin: 10px;">R$954,00</p></p>
+                            <p class="p-div-faturamento-diario-1">Faturamento dos carros: <p style="color: red; font-size: 20px; margin: 10px;">R$954,00</p></p>
                         </div>
                         <div class="div-faturamento-diario-1">
-                            <p class="p-div-faturamento-diario-1">Lucro das motos: <p style="color: red; font-size: 20px; margin: 10px;">R$580,00</p></p>
+                            <p class="p-div-faturamento-diario-1">Faturamento das motos: <p style="color: red; font-size: 20px; margin: 10px;">R$580,00</p></p>
                         </div>
                         <div>
                             <div class="div-lucro-total-1">
-                                <p class="p-div-faturamento-diario-1">Lucro total: <p style="font-size: 26px; margin: 6px;">R$1543,00</p></p>
+                                <p class="p-div-faturamento-diario-1">Faturamento total: <p style="font-size: 26px; margin: 6px;">R$1543,00</p></p>
                             </div>    
                         </div>
                     </div>
@@ -60,14 +60,14 @@
                             <p class="p-div-faturamento-diario-1">Horas motos: <p style="color: red; font-size: 20px; margin: 10px;">540 horas</p></p>
                         </div>
                         <div class="div-faturamento-diario-1">
-                            <p class="p-div-faturamento-diario-1">Lucro dos carros: <p style="color: red; font-size: 20px; margin: 10px;">R$954,00</p></p>
+                            <p class="p-div-faturamento-diario-1">Faturamento dos carros: <p style="color: red; font-size: 20px; margin: 10px;">R$954,00</p></p>
                         </div>
                         <div class="div-faturamento-diario-1">
-                            <p class="p-div-faturamento-diario-1">Lucro das motos: <p style="color: red; font-size: 20px; margin: 10px;">R$580,00</p></p>
+                            <p class="p-div-faturamento-diario-1">Faturamento das motos: <p style="color: red; font-size: 20px; margin: 10px;">R$580,00</p></p>
                         </div>
                         <div>
                             <div class="div-lucro-total-1">
-                                <p class="p-div-faturamento-diario-1">Lucro total: <p style="font-size: 26px; margin: 6px;">R$1543,00</p></p>
+                                <p class="p-div-faturamento-diario-1">Faturamento total: <p style="font-size: 26px; margin: 6px;">R$1543,00</p></p>
                             </div>    
                         </div>
                     </div>
@@ -91,14 +91,14 @@
                             <p class="p-div-faturamento-diario-1">Horas motos: <p style="color: red; font-size: 20px; margin: 10px;">540 horas</p></p>
                         </div>
                         <div class="div-faturamento-diario-1">
-                            <p class="p-div-faturamento-diario-1">Lucro dos carros: <p style="color: red; font-size: 20px; margin: 10px;">R$954,00</p></p>
+                            <p class="p-div-faturamento-diario-1">Faturamento dos carros: <p style="color: red; font-size: 20px; margin: 10px;">R$954,00</p></p>
                         </div>
                         <div class="div-faturamento-diario-1">
-                            <p class="p-div-faturamento-diario-1">Lucro das motos: <p style="color: red; font-size: 20px; margin: 10px;">R$580,00</p></p>
+                            <p class="p-div-faturamento-diario-1">Faturamento das motos: <p style="color: red; font-size: 20px; margin: 10px;">R$580,00</p></p>
                         </div>
                         <div>
                             <div class="div-lucro-total-1">
-                                <p class="p-div-faturamento-diario-1">Lucro total: <p style="font-size: 26px; margin: 6px;">R$1543,00</p></p>
+                                <p class="p-div-faturamento-diario-1">Faturamento total: <p style="font-size: 26px; margin: 6px;">R$1543,00</p></p>
                             </div>    
                         </div>
                     </div>
@@ -117,14 +117,14 @@
                             <p class="p-div-faturamento-diario-1">Horas motos: <p style="color: red; font-size: 20px; margin: 10px;">540 horas</p></p>
                         </div>
                         <div class="div-faturamento-diario-1">
-                            <p class="p-div-faturamento-diario-1">Lucro dos carros: <p style="color: red; font-size: 20px; margin: 10px;">R$954,00</p></p>
+                            <p class="p-div-faturamento-diario-1">Faturamento dos carros: <p style="color: red; font-size: 20px; margin: 10px;">R$954,00</p></p>
                         </div>
                         <div class="div-faturamento-diario-1">
-                            <p class="p-div-faturamento-diario-1">Lucro das motos: <p style="color: red; font-size: 20px; margin: 10px;">R$580,00</p></p>
+                            <p class="p-div-faturamento-diario-1">Faturamento das motos: <p style="color: red; font-size: 20px; margin: 10px;">R$580,00</p></p>
                         </div>
                         <div>
                             <div class="div-lucro-total-1">
-                                <p class="p-div-faturamento-diario-1">Lucro total: <p style="font-size: 26px; margin: 6px;">R$1543,00</p></p>
+                                <p class="p-div-faturamento-diario-1">Faturamento total: <p style="font-size: 26px; margin: 6px;">R$1543,00</p></p>
                             </div>    
                         </div>
                     </div>

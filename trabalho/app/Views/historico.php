@@ -16,25 +16,17 @@
         <button class="btn-voltar-sessao"><img src="img/up.svg" alt=""></button>
         <div class="div-linha">
             <fieldset class="first-fiel">
-                <legend class="legenda-1">Hoje </legend>
+                <legend class="legenda-1"></legend>
+                <?php foreach ($estacionamento as $estacionamentos) :?>
                 <div class="div-1">
-                    <p class="p-placa">Placa: ZYK4R53 - (carro) - e: 09:40 | s:10:32</p>
+                    <p class="p-placa"><?= $estacionamentos["placa_veiculo"] . " - (" . $estacionamentos["veiculo"] . ") - e: " . ($estacionamentos["h"]) ?></p>
                 </div>
-                <div class="div-2">
-                    <p class="p-placa">Placa: ZYK4R53 - (carro) - e: 09:40 | s:10:32</p>
-                </div>
-            </fieldset>
-
-            <fieldset class="first-fiel">
-                <legend class="legenda-1">Hoje </legend>
-                <div class="div-1">
-                    <p class="p-placa">Placa: ZYK4R53 - (carro) - e: 09:40 | s:10:32</p>
-                </div>   
-                <div class="div-2">
-                    <p class="p-placa">Placa: ZYK4R53 - (carro) - e: 09:40 | s:10:32</p>
-                </div>
+                <?php endforeach; ?>
             </fieldset>
         </div>
     </main>
 </body>
 </html>
+<!-- Placa: <?php 
+// $estacionamentos["placa_veiculo"] . " - (" . $estacionamentos["veiculo"] . ") - e:"
+?> 09:40 | s:10:32</p> -->

@@ -28,11 +28,11 @@ main {
 }
 
 .first-fiel {
+    flex-wrap: wrap;
     border-top-right-radius: 1.5px;
     border-top-left-radius: 1.5px;
     color: white;
     border: 1px solid white;
-    margin-top: 7px;
     height: 270px;
     border-bottom: transparent;
     display: flex;
@@ -70,10 +70,6 @@ h1 {
         height: 120px;
     }
 
-    .div-2 {
-        height: 120px;
-    }
-
     .p-placa {
         text-align: center;
     }
@@ -93,10 +89,6 @@ h1 {
     }
 
     .div-1 {
-        height: 120px;
-    }
-
-    .div-2 {
         height: 120px;
     }
 

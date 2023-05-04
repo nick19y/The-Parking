@@ -1,5 +1,3 @@
-<?php
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -46,9 +44,9 @@
                 <li class="texto-itens-cabecalho">Registrar</li>
                     <img src="/img/registrar.svg" alt="" id="registrar-item" class="imagem-lista-cabecalho">
             </div>
-            <div class="item-lista-cabecalho">    
+            <div class="item-lista-cabecalho">
                 <li class="texto-itens-cabecalho">Histórico</li>
-                <a href="../historico">
+                <a href="/admin/historico">
                     <img src="/img/historico.svg" alt="" id="historico-item" class="imagem-lista-cabecalho btnHistorico">
                 </a>
             </div>
@@ -58,9 +56,9 @@
                     <img src="/img/faturamento.svg" alt="" id="faturamento-item" class="imagem-lista-cabecalho btnFaturamento">
                 </a>
             </div>
-            <div class="item-lista-cabecalho">    
+            <div class="item-lista-cabecalho">
                 <li class="texto-itens-cabecalho">Gráficos</li>
-                <a href="/admin/graficos">
+                <a href="../graficos">
                     <img src="/img/grafico.svg" alt="" id="graficos-item" class="imagem-lista-cabecalho btnGraficos">
                 </a>
             </div>
