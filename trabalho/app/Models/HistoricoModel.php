@@ -15,4 +15,7 @@ class HistoricoModel extends Model
         $query = $this->db->query("SELECT *, RIGHT(horario_atual_entrada, 8) h FROM estacionamento WHERE horario_atual_saida IS NUll")->getResultArray();
         return $query;
     }
+    public function setHorarioSaida(){
+        
+    }
 }
