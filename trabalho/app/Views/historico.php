@@ -19,7 +19,7 @@
                 <legend class="legenda-1"></legend>
                 <?php foreach ($estacionamento as $estacionamentos) :?>
                 <div class="div-1">
-                    <p class="p-placa"><?= $estacionamentos["placa_veiculo"] . " - (" . $estacionamentos["veiculo"] . ") - e: " . ($estacionamentos["h"]) ?></p>
+                    <p class="p-placa"><?= $estacionamentos["placa_veiculo"] . " - (" . $estacionamentos["veiculo"] . ") - e: " . ($estacionamentos["he"]) . " s: " . ($estacionamentos["hs"])?></p>
                 </div>
                 <?php endforeach; ?>
             </fieldset>

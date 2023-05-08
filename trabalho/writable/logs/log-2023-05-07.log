@@ -1,0 +1,88 @@
+CRITICAL - 2023-05-07 13:47:03 --> There is no data to insert.
+#0 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#2 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(14): CodeIgniter\BaseModel->save(Array)
+#4 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPreco()
+#5 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#6 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('G:\\ARQUIVOS-LOC...')
+#9 {main}
+CRITICAL - 2023-05-07 13:47:46 --> There is no data to insert.
+#0 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#2 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(14): CodeIgniter\BaseModel->save(Array)
+#4 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPreco()
+#5 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#6 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('G:\\ARQUIVOS-LOC...')
+#9 {main}
+CRITICAL - 2023-05-07 13:47:57 --> There is no data to insert.
+#0 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#2 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(14): CodeIgniter\BaseModel->save(Array)
+#4 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPreco()
+#5 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#6 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('G:\\ARQUIVOS-LOC...')
+#9 {main}
+CRITICAL - 2023-05-07 13:49:55 --> There is no data to insert.
+#0 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#2 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(14): CodeIgniter\BaseModel->save(Array)
+#4 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPreco()
+#5 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#6 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('G:\\ARQUIVOS-LOC...')
+#9 {main}
+CRITICAL - 2023-05-07 13:53:11 --> There is no data to insert.
+#0 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#2 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(14): CodeIgniter\BaseModel->save(Array)
+#4 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPreco()
+#5 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#6 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('G:\\ARQUIVOS-LOC...')
+#9 {main}
+CRITICAL - 2023-05-07 13:53:13 --> There is no data to insert.
+#0 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#2 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(14): CodeIgniter\BaseModel->save(Array)
+#4 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPreco()
+#5 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#6 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('G:\\ARQUIVOS-LOC...')
+#9 {main}
+CRITICAL - 2023-05-07 13:53:14 --> There is no data to insert.
+#0 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#2 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(14): CodeIgniter\BaseModel->save(Array)
+#4 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPreco()
+#5 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#6 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('G:\\ARQUIVOS-LOC...')
+#9 {main}
+CRITICAL - 2023-05-07 13:53:15 --> There is no data to insert.
+#0 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#2 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(14): CodeIgniter\BaseModel->save(Array)
+#4 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPreco()
+#5 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#6 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 G:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('G:\\ARQUIVOS-LOC...')
+#9 {main}

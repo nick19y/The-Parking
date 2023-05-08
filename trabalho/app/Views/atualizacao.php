@@ -30,17 +30,11 @@
         </div>
         <div class="div-at2">
             <div>
-                <h1 class="first-h1">Atualizacao de Valores</h1>
-                <form action="" class="formulario">
-                        <label for="carro" class="label-carro">Carro:</label>
-                        <input type="text" id="carro" class="carro" placeholder="Digite o Valor">
-                        
-                        <label for="moto" class="label-moto">Moto:</label>
-                        <input type="text" id="moto" class="moto" placeholder="Digite o valor">
-
-                        <div class="div-button">
-                            <button type="submit">Enviar</button>
-                        </div>
+                <h1 class="first-h1">Remover conta</h1>
+                <form action="<?= base_url("/admin/atualizacao/salvarPreco")?>" class="formulario">
+                    <div class="div-button">
+                        <button type="submit">Removar</button>
+                    </div>
                 </form>
             </div>
         </div>

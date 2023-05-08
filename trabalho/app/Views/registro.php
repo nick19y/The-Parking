@@ -79,6 +79,8 @@
                     </div>
                     <h1 class="titulo-iniciar-sessao">Placa do veículo</h1>
                     <input class="input-placa-veiculo" id="placa_veiculo" name="placa_veiculo" type="text">
+                    <h1 class="titulo-iniciar-sessao">Preço</h1>
+                    <input class="input-placa-veiculo" id="preco" name="preco" type="text">
                     <div class="selecao-moto-carro">
                         <div class="radio-selecao carro-radio">
                             <h3>Carro</h3>

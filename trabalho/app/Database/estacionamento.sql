@@ -4,12 +4,9 @@ CREATE TABLE estacionamento(
     idEstacionamento INT PRIMARY KEY AUTO_INCREMENT,
     horario_atual_entrada TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),
     horario_atual_saida TIMESTAMP,
-    horario_entrada DATETIME NOT NULL,
-    horario_saida DATETIME NOT NULL,
     placa_veiculo CHAR(8) NOT NULL,
     veiculo VARCHAR (25) NOT NULL,
-    preco_carro DECIMAL(5,2),
-    preco_moto DECIMAL(5,2)
+    preco DECIMAL(5,2)
 ) engine InnoDB;
 -- veiculo é o tipo, carro ou moto
 CREATE TABLE funcionario(
@@ -80,3 +77,14 @@ CREATE TABLE veiculo_estacionamento(
 -- INSERT dentro da tabela, não vai funcionar pelo id, pois esse se atualiza e não guarda a quantidade
 -- a solução pode ser um sum na consulta ou um novo campo no sql que guarde a quantidade de veículos
 -- INSERT INTO estacionamento values(6, '2023-05-01 08:45:12', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 'AKD0398', 'carro');
+
+-- horario_entrada DATETIME NOT NULL,
+-- horario_saida DATETIME NOT NULL,
+
+
+-- preco_carro DECIMAL(5,2) DEFAULT 5,
+-- preco_moto DECIMAL(5,2) DEFAULT 2.5
+
+
+-- insert com horario de saida que deixa de ser null e por isso não é exibido na tela
+-- insert into estacionamento(horario_atual_saida, placa_veiculo, veiculo) values('2022-07-01 00:00:00', 'KFP4095', 'carro');
