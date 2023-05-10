@@ -6,7 +6,17 @@ const btnConfiguracoes = document.querySelector("#configuracoes-item");
 const btnFecharRegistro = document.querySelector(".btn-fechar-registro");
 
 
+const btnFecharPagamento = document.querySelector(".img-fechar-pagamento");
+const popUpPagamento = document.querySelector(".pop-up-flexbox1");
+const btnRealizarPagamento = document.querySelector(".btn-fechar-pagamento-display");
 
+btnRealizarPagamento.addEventListener('click', ()=>{
+    popUpPagamento.style.display = 'block';
+})
+
+btnFecharPagamento.addEventListener('click', ()=>{
+    popUpPagamento.style.display = 'none';
+})
 
 const btnFaturamento = document.querySelector(".btnFaturamento");
 const btnHistorico = document.querySelector(".btnHistorico");

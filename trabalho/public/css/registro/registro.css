@@ -8,7 +8,13 @@
 .altura-data{
     font-size: 1em;
 }
-
+.btn-fechar-pagamento{
+    display: flex;
+    margin: 0 0 0.5em 3em;
+    width: 100%;
+    justify-content: end;
+    align-items: end;
+}
 .cabecalho-nome-data{
     width: 100%;
     display: flex;
@@ -246,7 +252,7 @@
     background-color: var(--azul-principal);
     border: 1px solid white;
     border-radius: 20px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -300,6 +306,9 @@
         display: flex;
         justify-content: center;
         font-weight: bold;
+    }
+    .btn-fechar-pagamento{
+        margin: 0 0 0.5em 0em;
     }
     .container-registro{
         display: flex;
@@ -355,12 +364,15 @@
         cursor: pointer;
     }
     .pop-up-flexbox1{
-        padding: 3em;
+        padding: 2em;
     }
     .btn-finalizar-pagamento{
         width: 20em;
     }
     .btn-finalizar-pagamento:hover{
+        cursor: pointer;
+    }
+    .img-fechar-pagamento:hover{
         cursor: pointer;
     }
 }

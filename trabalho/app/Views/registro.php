@@ -97,6 +97,9 @@
         </div>
         <?= form_close() ?>
         <div class="pop-up-flexbox1">
+            <div class="btn-fechar-pagamento">
+                <img src="/img/x.png" class="img-fechar-pagamento" alt="">
+            </div>
             <div class="pop-up-registrar-1">
                 <div class="mostrar_valor">
                     <p class="p-total1">Veiculo: moto</p>
@@ -119,9 +122,12 @@
                     <img src="/img/<?=$estacionamentos["veiculo"]?>.svg" alt="" class="imagem-veiculo">
                 </div>
                 <div class="horario horario-registro-2"><?=$estacionamentos["horario_atual_entrada"]?></div>
-                <a href="/admin/registro/remover/<?= $estacionamentos["idEstacionamento"]?>">
+                <a class="btn-fechar-pagamento-display">
                     <button class="btn-fechar">&#10003</button>
                 </a>
+                <!-- <a href="/admin/registro/remover/php= // $estacionamentos["idEstacionamento"] php">
+                    <button class="btn-fechar">&#10003</button>
+                </a> -->
             </div>
             <?php endforeach; ?>
         </div>
