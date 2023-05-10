@@ -39,4 +39,10 @@ class Registro extends BaseController{
         $registroModel = new RegistroModel();
         
     }
+    public function buscarRegistro($id){
+        $registroModel = new RegistroModel();
+        $registro = $registroModel->find($id);
+        echo json_encode($registro, JSON_UNESCAPED_UNICODE);
+        exit;
+    }
 }

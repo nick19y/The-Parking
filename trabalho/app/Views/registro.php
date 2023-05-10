@@ -122,7 +122,7 @@
                     <img src="/img/<?=$estacionamentos["veiculo"]?>.svg" alt="" class="imagem-veiculo">
                 </div>
                 <div class="horario horario-registro-2"><?=$estacionamentos["horario_atual_entrada"]?></div>
-                <a class="btn-fechar-pagamento-display">
+                <a class="btn-fechar-pagamento-display" registro="<?= $estacionamentos["idEstacionamento"] ?>">
                     <button class="btn-fechar">&#10003</button>
                 </a>
                 <!-- <a href="/admin/registro/remover/php= // $estacionamentos["idEstacionamento"] php">

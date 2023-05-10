@@ -55,13 +55,17 @@ $routes->group('admin', ['filter'=>'admin'], function($routes){
     $routes->get('atualizacao', 'Admin\Atualizacao::atualizacao');
     $routes->post('atualizacao/salvarPreco', 'Admin\Atualizacao::salvarPreco');
 
-
+    
+    
     $routes->get('historico', 'Admin\Historico::historico');
-
+    
     $routes->get('registro', 'Admin\Registro::index');
     $routes->post('registro/remover/(:num)', 'Admin\Registro::remover/$1');
     $routes->post('registro/registrar', 'Admin\Registro::registrar');
     $routes->post('registro/setHorarioSaida', 'Admin\Registro::setHorarioSaida');
+    $routes->get('registro/buscar/(:num)', 'Admin\Registro::buscarRegistro/$1');
+
+
 
     $routes->get("sair", "Admin\AutenticacaoAdmin::sair");
 });

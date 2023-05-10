@@ -8,11 +8,28 @@ const btnFecharRegistro = document.querySelector(".btn-fechar-registro");
 
 const btnFecharPagamento = document.querySelector(".img-fechar-pagamento");
 const popUpPagamento = document.querySelector(".pop-up-flexbox1");
-const btnRealizarPagamento = document.querySelector(".btn-fechar-pagamento-display");
+const btnRealizarPagamentoAll = document.querySelectorAll(".btn-fechar-pagamento-display");
 
-btnRealizarPagamento.addEventListener('click', ()=>{
-    popUpPagamento.style.display = 'block';
-})
+async function pegarDadosEstacionamento(id){
+    const requisicao = await fetch("http://localhost:8080/admin/registro/buscar/" + id);
+    // console.log(requisicao);
+    const json = await requisicao.json();
+    veiculo.value = json.veiculo;
+    placa.value = json.placa;
+    preco.value = json.preco;
+    console.log(json);
+}
+
+pegarDadosEstacionamento(4);
+
+
+btnRealizarPagamentoAll.forEach(btn => {
+    btn.addEventListener('click', ()=>{
+        popUpPagamento.style.display = 'block';
+        const idRegistro = btn.getAttribute("registro");
+
+    })
+});
 
 btnFecharPagamento.addEventListener('click', ()=>{
     popUpPagamento.style.display = 'none';
