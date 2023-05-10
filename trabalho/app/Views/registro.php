@@ -79,7 +79,7 @@
                     </div>
                     <h1 class="titulo-iniciar-sessao">Placa do veículo</h1>
                     <input class="input-placa-veiculo" id="placa_veiculo" name="placa_veiculo" type="text">
-                    <h1 class="titulo-iniciar-sessao">Preço</h1>
+                    <h1 class="titulo-iniciar-sessao">Preço/Hora</h1>
                     <input class="input-placa-veiculo" id="preco" name="preco" type="text">
                     <div class="selecao-moto-carro">
                         <div class="radio-selecao carro-radio">
@@ -96,6 +96,16 @@
             </div>
         </div>
         <?= form_close() ?>
+        <div class="pop-up-flexbox1">
+            <div class="pop-up-registrar-1">
+                <div class="mostrar_valor">
+                    <p class="p-total1">Veiculo: moto</p>
+                    <p class="p-total2">Placa: 123456</p>
+                    <p class="p-total3">Total a pagar: R$16,00</p>    
+                </div>
+                <button class="btn-finalizar-pagamento">Finalizar</button>
+            </div>
+        </div>
     </header>
     <main class="conteudo-principal-registro">
         <div class="titulo-registro-container">

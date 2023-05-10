@@ -240,6 +240,35 @@
     width: 10vw;
     height: 5vh;
 }
+.pop-up-flexbox1{
+    position: absolute;
+    color: white;
+    background-color: var(--azul-principal);
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5em 5em;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+}
+.mostrar_valor{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1.5em;
+}
+.btn-finalizar-pagamento{
+    color: white;
+    background-color: transparent;
+    border-radius: 20px;
+    width: 50vw;
+    height: 5vh;
+    font-size: 20px;
+}
 @media screen and (min-width: 1024px){
     .corpo-registro{
         display: flex;
@@ -323,6 +352,15 @@
         cursor: pointer;
     }
     .btn-fechar-registro:hover{
+        cursor: pointer;
+    }
+    .pop-up-flexbox1{
+        padding: 3em;
+    }
+    .btn-finalizar-pagamento{
+        width: 20em;
+    }
+    .btn-finalizar-pagamento:hover{
         cursor: pointer;
     }
 }
