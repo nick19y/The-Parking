@@ -9,7 +9,7 @@ class RegistroModel extends Model
     protected $table            = 'estacionamento';
     protected $primaryKey       = 'idestacionamento';
     protected $useAutoIncrement = true;
-    protected $allowedFields = ["horario_entrada", "horario_saida", "placa_veiculo", "veiculo", "preco"];
+    protected $allowedFields = ["horario_entrada", "horario_saida", "placa_veiculo", "veiculo", "preco_carro", "preco_moto"];
     
     public function getHorarioEntrada(){
         $query = $this->db->query("SELECT *, RIGHT(horario_atual_entrada, 8) FROM estacionamento WHERE horario_atual_saida IS NULL")->getResultArray();

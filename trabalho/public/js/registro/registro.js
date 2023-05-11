@@ -6,6 +6,9 @@ const btnConfiguracoes = document.querySelector("#configuracoes-item");
 const btnFecharRegistro = document.querySelector(".btn-fechar-registro");
 
 
+
+// pagamento
+
 const btnFecharPagamento = document.querySelector(".img-fechar-pagamento");
 const popUpPagamento = document.querySelector(".pop-up-flexbox1");
 const btnRealizarPagamentoAll = document.querySelectorAll(".btn-fechar-pagamento-display");
@@ -14,19 +17,43 @@ async function pegarDadosEstacionamento(id){
     const requisicao = await fetch("http://localhost:8080/admin/registro/buscar/" + id);
     // console.log(requisicao);
     const json = await requisicao.json();
-    veiculo.value = json.veiculo;
-    placa.value = json.placa;
-    preco.value = json.preco;
-    console.log(json);
+    let veiculo = json.veiculo;
+    let placa = json.placa_veiculo;
+    let preco_carro = json.preco_carro;
+    let preco_moto = json.preco_moto;
+    // let veiculo = json.veiculo; não foi possível pelo fato de oq eu for exibir ser uma saída e não uma entrada
+    // console.log(veiculo);
+    let dados_veiculo = {veiculo, placa, preco_carro, preco_moto};
+    // console.log(dados_veiculo);
+    return dados_veiculo;
 }
 
 pegarDadosEstacionamento(4);
+
+const valorVeiculo = document.querySelector(".p-total1");
+const valorPlaca = document.querySelector(".p-total2");
+const valorTotalAPagar = document.querySelector(".p-total3");
+
+async function listarDadosPagamento(id){
+    const dados_veiculo = await pegarDadosEstacionamento(id);
+    if(dados_veiculo.veiculo == "carro"){
+        valorVeiculo.innerText = "Veículo: " + dados_veiculo.veiculo;
+        valorPlaca.innerText = "Veículo: " + dados_veiculo.placa;
+        valorTotalAPagar.innerText = "Veículo: " + dados_veiculo.preco_carro;
+    }
+    else if(dados_veiculo.veiculo == "moto"){
+        valorVeiculo.innerText = "Veículo: " + dados_veiculo.veiculo;
+        valorPlaca.innerText = "Veículo: " + dados_veiculo.placa;
+        valorTotalAPagar.innerText = "Veículo: " + dados_veiculo.preco_moto;
+    }
+}
 
 
 btnRealizarPagamentoAll.forEach(btn => {
     btn.addEventListener('click', ()=>{
         popUpPagamento.style.display = 'block';
         const idRegistro = btn.getAttribute("registro");
+        listarDadosPagamento(idRegistro);
 
     })
 });
@@ -34,6 +61,9 @@ btnRealizarPagamentoAll.forEach(btn => {
 btnFecharPagamento.addEventListener('click', ()=>{
     popUpPagamento.style.display = 'none';
 })
+
+
+
 
 const btnFaturamento = document.querySelector(".btnFaturamento");
 const btnHistorico = document.querySelector(".btnHistorico");

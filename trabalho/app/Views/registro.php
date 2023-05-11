@@ -102,9 +102,9 @@
             </div>
             <div class="pop-up-registrar-1">
                 <div class="mostrar_valor">
-                    <p class="p-total1">Veiculo: moto</p>
-                    <p class="p-total2">Placa: 123456</p>
-                    <p class="p-total3">Total a pagar: R$16,00</p>    
+                    <p class="p-total1"></p>
+                    <p class="p-total2"></p>
+                    <p class="p-total3"></p>    
                 </div>
                 <button class="btn-finalizar-pagamento">Finalizar</button>
             </div>
