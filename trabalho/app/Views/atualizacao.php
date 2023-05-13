@@ -30,10 +30,20 @@
         </div>
         <div class="div-at2">
             <div>
-                <h1 class="first-h1">Remover conta</h1>
+                <h1 class="first-h1">Atualização de preço</h1>
                 <form action="<?= base_url("/admin/atualizacao/salvarPreco")?>" class="formulario">
-                    <div class="div-button">
-                        <button type="submit">Removar</button>
+                    <div class="div-preco">
+
+                        <form action="" class="formulario">
+                        <label for="carro" class="label-carro">Carro:</label>
+                        <input type="text" id="carro" class="carro" placeholder="digite o valor" name="carro">
+                        
+                        <label for="moto" class="label-carro">Moto:</label>
+                        <input type="moto" id="moto" class="moto" placeholder="Digite o valor" name="moto">
+
+                        <button type="submit" class="botao">Atualizar</button>
+
+                        </form>
                     </div>
                 </form>
             </div>

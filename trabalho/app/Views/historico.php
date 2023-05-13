@@ -16,10 +16,10 @@
         <button class="btn-voltar-sessao"><img src="img/up.svg" alt=""></button>
         <div class="div-linha">
             <fieldset class="first-fiel">
-                <legend class="legenda-1"></legend>
+                <legend class="legenda-1">19 novembro 2023</legend>
                 <?php foreach ($estacionamento as $estacionamentos) :?>
                 <div class="div-1">
-                    <p class="p-placa"><?= $estacionamentos["placa_veiculo"] . " - (" . $estacionamentos["veiculo"] . ") - e: " . ($estacionamentos["he"]) . " s: " . ($estacionamentos["hs"])?></p>
+                    <p class="p-placa"><?= $estacionamentos["placa_veiculo"] . " - (" . $estacionamentos["veiculo"] . ")<br> e: " . ($estacionamentos["he"]) . " s: " . ($estacionamentos["hs"])?></p>
                 </div>
                 <?php endforeach; ?>
             </fieldset>

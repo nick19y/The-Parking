@@ -5,9 +5,12 @@ CREATE TABLE estacionamento(
     horario_atual_entrada TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),
     horario_atual_saida TIMESTAMP,
     placa_veiculo CHAR(8) NOT NULL,
-    veiculo VARCHAR (25) NOT NULL,
-    preco_carro DECIMAL(5,2) DEFAULT 5,
-    preco_moto DECIMAL(5,2) DEFAULT 2.5
+    veiculo VARCHAR (25) NOT NULL
+) engine InnoDB;
+CREATE TABLE preco(
+    idPreco INT PRIMARY KEY AUTO_INCREMENT,
+    preco_carro DECIMAL(5,2),
+    preco_moto DECIMAL(5,2)
 ) engine InnoDB;
 -- veiculo é o tipo, carro ou moto
 CREATE TABLE funcionario(
@@ -54,6 +57,13 @@ CREATE TABLE veiculo_estacionamento(
     FOREIGN KEY (fkEstacionamento) REFERENCES estacionamento(idEstacionamento),
     PRIMARY KEY (fkVeiculo, fkEstacionamento)
 ) engine InnoDB;
+CREATE TABLE preco_estacionamento(
+    fkEstacionamento INT,
+    fkPreco INT,
+    FOREIGN KEY (fkEstacionamento) REFERENCES estacionamento(idEstacionamento),
+    FOREIGN KEY (fkPreco) REFERENCES preco(idPreco),
+    PRIMARY KEY (fkEstacionamento, fkPreco)
+) engine InnoDB;
 
 
 -- exemplo de um insert into com datetime
@@ -93,3 +103,14 @@ CREATE TABLE veiculo_estacionamento(
 
 
 -- preco DECIMAL(5,2)
+
+--     preco_carro DECIMAL(5,2) DEFAULT 5,
+-- preco_moto DECIMAL(5,2) DEFAULT 2.5
+
+
+
+-- consulta para pegar o inner join de duas tabelas
+-- select * from preco p inner join preco_estacionamento pe inner join estacionamento e
+-- on p.idPreco = pe.fkPreco
+-- and e.idEstacionamento = pe.fkEstacionamento;
+-- SELECT * FROM preco p INNER JOIN preco_estacionamento pe INNER JOIN estacionamento e ON p.idPreco = pe.fkPreco AND e.idEstacionamento = pe.fkEstacionamento

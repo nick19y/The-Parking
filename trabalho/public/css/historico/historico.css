@@ -3,7 +3,6 @@
     box-sizing: border-box;
 }
 
-
 main {
     background-color: #4348D6;
     width: 100vw;
@@ -13,11 +12,13 @@ main {
     align-items: center;
     flex-direction: column;
 }
-
+.imagem-de-fundo{
+    margin-bottom: 30em;
+}
 .div-linha {
     width: 1000px;
     height: 600px;
-    border: 1px solid white;
+    border: 1px solid transparent;
     border-radius: 30px;
 }
 
@@ -29,14 +30,12 @@ main {
 
 .first-fiel {
     flex-wrap: wrap;
-    border-top-right-radius: 1.5px;
-    border-top-left-radius: 1.5px;
     color: white;
     border: 1px solid white;
-    height: 270px;
-    border-bottom: transparent;
     display: flex;
     justify-content: center;
+    border-radius: 20px;
+    box-shadow: 20px 20px 30px black;
 }
 
 .label-1 {
@@ -45,7 +44,7 @@ main {
 
 .p-placa {
     font-size: 14px;
-    margin: 20px;
+    margin: 10px;
     font-size: 20px;
 }
 
@@ -58,17 +57,13 @@ h1 {
     .div-linha {
         width: 550px;
     }
-        .first-fiel {
+    .first-fiel {
         width: 550px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }
-
-    .div-1 {
-        height: 120px;
-    }
+    }   
 
     .p-placa {
         text-align: center;
@@ -86,10 +81,7 @@ h1 {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }
-
-    .div-1 {
-        height: 120px;
+        box-shadow: 10px 10px 30px black;
     }
 
     .p-placa {
