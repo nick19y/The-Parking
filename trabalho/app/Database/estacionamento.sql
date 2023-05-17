@@ -108,9 +108,19 @@ CREATE TABLE preco_estacionamento(
 -- preco_moto DECIMAL(5,2) DEFAULT 2.5
 
 
+-- perguntas
 
 -- consulta para pegar o inner join de duas tabelas
 -- select * from preco p inner join preco_estacionamento pe inner join estacionamento e
 -- on p.idPreco = pe.fkPreco
 -- and e.idEstacionamento = pe.fkEstacionamento;
 -- SELECT * FROM preco p INNER JOIN preco_estacionamento pe INNER JOIN estacionamento e ON p.idPreco = pe.fkPreco AND e.idEstacionamento = pe.fkEstacionamento
+-- ver pq a consulta acima não retorna nenhum valor
+-- não funciona pq não há valores semelhantes entre as tabelas, não sei como salvar em duas tabelas em uma model
+
+
+-- insert para o preco
+-- insert into preco (preco_carro, preco_moto) values(5.00, 2.00); 
+
+
+-- pegar uma consulta que mostra a soma de registros diária

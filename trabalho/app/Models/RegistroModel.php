@@ -21,4 +21,13 @@ class RegistroModel extends Model
         $query = $this->db->query("UPDATE estacionamento SET horario_atual_saida = NOW() WHERE idEstacionamento = ?", [$idEstacionamento])->getResultArray();
         return $query;
     }
+    public function getPreco(){
+        $selectEstacionamento = $this->db->query("SELECT * FROM estacionamento")->getResultArray();
+        $query = $this->db->table("preco")->get()->getResultArray();
+        return [$query, $selectEstacionamento];
+    }
+    function getPrecoERegistro(){
+        $query = $this->db->query("SELECT * FROM preco p INNER JOIN preco_estacionamento pe INNER JOIN estacionamento e ON p.idPreco = pe.fkPreco AND e.idEstacionamento = pe.fkEstacionamento;")->getResultArray();
+        return $query;
+    }
 }

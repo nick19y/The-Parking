@@ -28,7 +28,7 @@ async function pegarDadosEstacionamento(id){
     return dados_veiculo;
 }
 
-pegarDadosEstacionamento(4);
+// pegarDadosEstacionamento(4);
 
 const valorVeiculo = document.querySelector(".p-total1");
 const valorPlaca = document.querySelector(".p-total2");
@@ -38,13 +38,13 @@ async function listarDadosPagamento(id){
     const dados_veiculo = await pegarDadosEstacionamento(id);
     if(dados_veiculo.veiculo == "carro"){
         valorVeiculo.innerText = "Veículo: " + dados_veiculo.veiculo;
-        valorPlaca.innerText = "Veículo: " + dados_veiculo.placa;
-        valorTotalAPagar.innerText = "Veículo: " + dados_veiculo.preco_carro;
+        valorPlaca.innerText = "Placa: " + dados_veiculo.placa;
+        valorTotalAPagar.innerText = "Preço: " + dados_veiculo.preco_carro;
     }
     else if(dados_veiculo.veiculo == "moto"){
         valorVeiculo.innerText = "Veículo: " + dados_veiculo.veiculo;
-        valorPlaca.innerText = "Veículo: " + dados_veiculo.placa;
-        valorTotalAPagar.innerText = "Veículo: " + dados_veiculo.preco_moto;
+        valorPlaca.innerText = "Placa: " + dados_veiculo.placa;
+        valorTotalAPagar.innerText = "Preço: " + dados_veiculo.preco_moto;
     }
 }
 

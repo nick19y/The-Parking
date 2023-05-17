@@ -4,6 +4,7 @@ namespace App\Controllers\Admin;
 
 use App\Controllers\BaseController;
 use App\Models\RegistroModel;
+use App\Models\PrecoModel;
 
 // TALVEZ O ERRO SEJA ESTAR RETORNANDO UMA VIEW, VER COMO FOI FEITO NO PROJETO DO GIOVANNI
 
@@ -37,11 +38,16 @@ class Registro extends BaseController{
     }
     public function setHorarioSaida(){
         $registroModel = new RegistroModel();
-        
     }
     public function buscarRegistro($id){
         $registroModel = new RegistroModel();
+        // criar nova model para preco para pegar de outro banco de dados e usar essa model nessa controller
         $registro = $registroModel->find($id);
+        // $registro["estacionamento"] = $registroModel->getPrecoERegistro();        
+        // $registro["registro"] = $registroModel;
+
+        // CONCLUSÃO: SERÁ NECESSÁRIA UMA CONSULTA QUE RETORNE OS VALORES DAS TABELAS PRECO E ESTACIONAMENTO
+
         echo json_encode($registro, JSON_UNESCAPED_UNICODE);
         exit;
     }

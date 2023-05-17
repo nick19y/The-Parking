@@ -41,7 +41,9 @@
                         <label for="moto" class="label-carro">Moto:</label>
                         <input type="moto" id="moto" class="moto" placeholder="Digite o valor" name="moto">
 
-                        <button type="submit" class="botao">Atualizar</button>
+                        <div class="div-button">
+                            <button type="submit" class="botao">Atualizar</button>
+                        </div>
 
                         </form>
                     </div>

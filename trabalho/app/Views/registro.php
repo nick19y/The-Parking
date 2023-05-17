@@ -51,9 +51,9 @@
                 </a>
             </div>
             <div class="item-lista-cabecalho">    
-                <li class="texto-itens-cabecalho">Faturamento</li>
-                <a href="../faturamento">
-                    <img src="/img/faturamento.svg" alt="" id="faturamento-item" class="imagem-lista-cabecalho btnFaturamento">
+                <li class="texto-itens-cabecalho">Atualização</li>
+                <a href="/admin/atualizacao">
+                    <img src="/img/atualizacao.svg" alt="" id="faturamento-item" class="imagem-lista-cabecalho btnFaturamento">
                 </a>
             </div>
             <div class="item-lista-cabecalho">
@@ -79,8 +79,6 @@
                     </div>
                     <h1 class="titulo-iniciar-sessao">Placa do veículo</h1>
                     <input class="input-placa-veiculo" id="placa_veiculo" name="placa_veiculo" type="text">
-                    <h1 class="titulo-iniciar-sessao">Preço/Hora</h1>
-                    <input class="input-placa-veiculo" id="preco" name="preco" type="text">
                     <div class="selecao-moto-carro">
                         <div class="radio-selecao carro-radio">
                             <h3>Carro</h3>
