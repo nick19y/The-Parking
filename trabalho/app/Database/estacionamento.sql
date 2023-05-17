@@ -5,12 +5,14 @@ CREATE TABLE estacionamento(
     horario_atual_entrada TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),
     horario_atual_saida TIMESTAMP,
     placa_veiculo CHAR(8) NOT NULL,
+    valor_hora DECIMAL(10,2),
+    total DECIMAL(10,2),
     veiculo VARCHAR (25) NOT NULL
 ) engine InnoDB;
 CREATE TABLE preco(
     idPreco INT PRIMARY KEY AUTO_INCREMENT,
-    preco_carro DECIMAL(5,2),
-    preco_moto DECIMAL(5,2)
+    veiculo VARCHAR(50),
+    preco DECIMAL(5,2)
 ) engine InnoDB;
 -- veiculo é o tipo, carro ou moto
 CREATE TABLE funcionario(
@@ -65,6 +67,9 @@ CREATE TABLE preco_estacionamento(
     PRIMARY KEY (fkEstacionamento, fkPreco)
 ) engine InnoDB;
 
+
+INSERT INTO preco VALUES(1,"carro", 5);
+INSERT INTO preco VALUES(2,"moto", 2.5);
 
 -- exemplo de um insert into com datetime
 -- INSERT INTO estacionamento(parametro, horario_entrada, horario_saida)

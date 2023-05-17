@@ -12,19 +12,24 @@
         <div class="div-at1">
             <div class="div-at2">
                 <h1 class="first-h1">Atualizacao de Dados</h1>
-                <form action="" class="formulario">
-                        <label for="nome" class="label-nome">Nome:</label>
-                        <input type="text" id="nome" class="nome" placeholder="Digite o seu nome" name="nome">
-                        
-                        <label for="email" class="label-email">E-mail:</label>
-                        <input type="email" id="email" class="email" placeholder="Digite o seu email" name="email">
-
-                        <label for="senha" class="label-senha">Senha:</label>
-                        <input type="password" id="senha" class="senha" placeholder="Digite a sua senha" name="senha">
-                        
-                        <div class="div-button">
-                            <button type="submit">Enviar</button>
-                        </div>
+                <form action="/admin/atualizacao/salvarDadosFuncionario" class="formulario">
+                    <label for="nome" class="label-nome">Nome:</label>
+                    <input type="text" id="nome" class="nome" placeholder="Digite o seu nome" name="nome">
+                    
+                    <label for="email" class="label-email">E-mail:</label>
+                    <input type="email" id="email" class="email" placeholder="Digite o seu email" name="email">
+                    
+                    <label for="senha" class="label-senha">Senha:</label>
+                    <input type="password" id="senha" class="senha" placeholder="Digite a sua senha" name="senha">
+                    
+                    <div class="div-button">
+                        <button type="submit">Enviar</button>
+                    </div>
+                    <?php if (session()->has("tipo")) : ?>
+                    <div class="alert alert-<?= session("tipo") ?> mt-2" role="alert">
+                        <?= session("mensagem") ?>
+                    </div>
+                    <?php endif; ?>
                 </form>
             </div>
         </div>
@@ -33,22 +38,22 @@
                 <h1 class="first-h1">Atualização de preço</h1>
                 <form action="<?= base_url("/admin/atualizacao/salvarPreco")?>" class="formulario">
                     <div class="div-preco">
-
-                        <form action="" class="formulario">
-                        <label for="carro" class="label-carro">Carro:</label>
-                        <input type="text" id="carro" class="carro" placeholder="digite o valor" name="carro">
                         
-                        <label for="moto" class="label-carro">Moto:</label>
-                        <input type="moto" id="moto" class="moto" placeholder="Digite o valor" name="moto">
-
-                        <div class="div-button">
-                            <button type="submit" class="botao">Atualizar</button>
-                        </div>
-
+                        <form action="" class="formulario">
+                            <label for="carro" class="label-carro">Carro:</label>
+                            <input type="text" id="carro" class="carro" placeholder="digite o valor" name="carro">
+                            
+                            <label for="moto" class="label-carro">Moto:</label>
+                            <input type="moto" id="moto" class="moto" placeholder="Digite o valor" name="moto">
+                            
+                            <div class="div-button">
+                                <button type="submit" class="botao">Atualizar</button>
+                            </div>
+                            
                         </form>
                     </div>
                 </form>
             </div>
         </div>
     </main>
-</html>
+    </html>
