@@ -1,0 +1,183 @@
+ERROR - 2023-05-18 06:42:14 --> Unknown column 'preco_carro' in 'field list'
+CRITICAL - 2023-05-18 06:42:14 --> Unknown column 'preco_carro' in 'field list'
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(30): CodeIgniter\BaseModel->save(Array)
+#9 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPreco()
+#10 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#11 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#14 {main}
+ERROR - 2023-05-18 06:44:12 --> Unknown column 'preco_carro' in 'field list'
+CRITICAL - 2023-05-18 06:44:12 --> Unknown column 'preco_carro' in 'field list'
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(30): CodeIgniter\BaseModel->save(Array)
+#9 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPreco()
+#10 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#11 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#14 {main}
+ERROR - 2023-05-18 06:44:25 --> Unknown column 'preco_carro' in 'field list'
+CRITICAL - 2023-05-18 06:44:25 --> Unknown column 'preco_carro' in 'field list'
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(30): CodeIgniter\BaseModel->save(Array)
+#9 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPreco()
+#10 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#11 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#14 {main}
+CRITICAL - 2023-05-18 06:48:44 --> There is no data to insert.
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(30): CodeIgniter\BaseModel->save(Array)
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPreco()
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#6 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#9 {main}
+CRITICAL - 2023-05-18 06:49:01 --> There is no data to insert.
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(30): CodeIgniter\BaseModel->save(Array)
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPreco()
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#6 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#9 {main}
+CRITICAL - 2023-05-18 07:18:55 --> Call to undefined method App\Models\AdminModel::setPrecoCarro
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(33): CodeIgniter\Model->__call('setPrecoCarro', Array)
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPrecoCarro()
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#6 {main}
+CRITICAL - 2023-05-18 07:29:57 --> Call to undefined method App\Models\AdminModel::setPrecoMoto
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(19): CodeIgniter\Model->__call('setPrecoMoto', Array)
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPrecoMoto()
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#6 {main}
+CRITICAL - 2023-05-18 07:31:11 --> Call to a member function getResultArray() on bool
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(18): App\Models\PrecoModel->setPrecoMoto('9')
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPrecoMoto()
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#6 {main}
+ERROR - 2023-05-18 07:31:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE idPreco = 2' at line 1
+CRITICAL - 2023-05-18 07:31:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE idPreco = 2' at line 1
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE preco SE...', 0)
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE preco SE...')
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE preco SE...')
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Models\PrecoModel.php(19): CodeIgniter\Database\BaseConnection->query('UPDATE preco SE...')
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(18): App\Models\PrecoModel->setPrecoMoto(NULL)
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPrecoMoto()
+#6 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#7 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#10 {main}
+ERROR - 2023-05-18 07:32:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE idPreco = 2' at line 1
+CRITICAL - 2023-05-18 07:32:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE idPreco = 2' at line 1
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE preco SE...', 0)
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE preco SE...')
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE preco SE...')
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Models\PrecoModel.php(19): CodeIgniter\Database\BaseConnection->query('UPDATE preco SE...')
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(18): App\Models\PrecoModel->setPrecoMoto(NULL)
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPrecoMoto()
+#6 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#7 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#10 {main}
+ERROR - 2023-05-18 07:32:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE idPreco = 2' at line 1
+CRITICAL - 2023-05-18 07:32:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE idPreco = 2' at line 1
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE preco SE...', 0)
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE preco SE...')
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE preco SE...')
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Models\PrecoModel.php(19): CodeIgniter\Database\BaseConnection->query('UPDATE preco SE...')
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(18): App\Models\PrecoModel->setPrecoMoto(NULL)
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPrecoMoto()
+#6 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#7 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#10 {main}
+ERROR - 2023-05-18 17:16:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE idPreco = 2' at line 1
+CRITICAL - 2023-05-18 17:16:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE idPreco = 2' at line 1
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE preco SE...', 0)
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE preco SE...')
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE preco SE...')
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Models\PrecoModel.php(19): CodeIgniter\Database\BaseConnection->query('UPDATE preco SE...')
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(18): App\Models\PrecoModel->setPrecoMoto(NULL)
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPrecoMoto()
+#6 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#7 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#10 {main}
+CRITICAL - 2023-05-18 17:18:14 --> Call to a member function getResultArray() on bool
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(18): App\Models\PrecoModel->setPrecoMoto('6')
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPrecoMoto()
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#6 {main}
+ERROR - 2023-05-18 17:19:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE idPreco = 2' at line 1
+CRITICAL - 2023-05-18 17:19:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE idPreco = 2' at line 1
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE preco SE...', 0)
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE preco SE...')
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE preco SE...')
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Models\PrecoModel.php(19): CodeIgniter\Database\BaseConnection->query('UPDATE preco SE...')
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(18): App\Models\PrecoModel->setPrecoMoto(NULL)
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPrecoMoto()
+#6 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#7 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#10 {main}
+ERROR - 2023-05-18 17:21:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE idPreco = 2' at line 1
+CRITICAL - 2023-05-18 17:21:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE idPreco = 2' at line 1
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE preco SE...', 0)
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE preco SE...')
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE preco SE...')
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Models\PrecoModel.php(19): CodeIgniter\Database\BaseConnection->query('UPDATE preco SE...')
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(18): App\Models\PrecoModel->setPrecoMoto(NULL)
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarPrecoMoto()
+#6 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#7 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#10 {main}

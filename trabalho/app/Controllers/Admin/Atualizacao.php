@@ -2,53 +2,49 @@
 namespace App\Controllers\Admin;
 
 use App\Controllers\BaseController;
-use App\Models\RegistroModel;
-use App\Models\AtualizacaoModel;
+// use App\Models\RegistroModel;
+use App\Models\PrecoModel;
+use App\Models\AdminModel;
 class Atualizacao extends BaseController
 {
     public function atualizacao(){
         return view("atualizacao");
     }
-    public function salvarDadosPagamento(){
-        $modelAtualizacao = new AtualizacaoModel();
-        $dadosEnviados = $this->request->getPost();
-        $regras = [
-            'preco_carro' => 'required',
-            'preco_moto' => 'required'
-        ];
-
-        $mensagem = [
-            'preco_carro' => [
-                'required' => 'O preco do carro é obrigatório'
-            ],
-            'preco_moto' => [
-                'required' => 'O preco da moto é obrigatório',
-            ]
-        ];
-        if ($this->validate($regras, $mensagem)) {
-            if ($modelAtualizacao->save($dadosEnviados)) {
-                session()->setFlashData("tipo", "success");
-                session()->setFlashData("mensagem", "Dados salvos com sucesso");
-            } else {
-                session()->setFlashData("tipo", "danger");
-                session()->setFlashData("mensagem", "Erro ao salvar dados");
-            }
+    public function salvarPrecoMoto(){
+        $modelAtualizacao = new PrecoModel();
+        // $dadosEnviados = $this->request->getPost();
+        // $veiculo = $this->request->getPost("veiculo");
+        $preco = $this->request->getPost("preco");
+        if($modelAtualizacao->setPrecoMoto($preco)){
+            // se retornar true
             return redirect()->to("/admin/atualizacao");
-        } else {
-            session()->setFlashData("validacao", $this->validator);
-            session()->setFlashData("atualizacao", $dadosEnviados);
+        }
+        else{
+            return "Erro";
+        }
+    }
+    public function salvarPrecoCarro(){
+        $modelAtualizacao = new PrecoModel();
+        // $dadosEnviados = $this->request->getPost();
+        // $veiculo = $this->request->getPost("veiculo");
+        $preco = $this->request->getPost("preco");
+        if($modelAtualizacao->setPrecoCarro($preco)){
+            // se retornar true
             return redirect()->to("/admin/atualizacao");
+        }
+        else{
+            return "Erro";
         }
     }
     public function salvarDadosFuncionario()
     {
-        $RegistroModel = new RegistroModel();
+        $AdminModel = new AdminModel();
         $dadosEnviados = $this->request->getPost();
-
+        $dadosEnviados["idFuncionario"] = session("idFuncionario");
         $regras = [
             'email' => 'required',
             'nome' => 'required|min_length[2]',
-            'senha' => 'required|min_length[6]'
+            'senha' => 'required|min_length[2]'
         ];
 
         $mensagem = [
@@ -63,9 +59,13 @@ class Atualizacao extends BaseController
                 'required' => 'A senha precisa ter no mínimo 6 caracteres'
             ]
         ];
-
+        $dadosEnviados["senha"] = password_hash($dadosEnviados["senha"], PASSWORD_DEFAULT);
+        
+// usar a model de funcionario
         if ($this->validate($regras, $mensagem)) {
-            if ($RegistroModel->save($dadosEnviados)) {
+            // troquei o save pelo metodo cadastrar
+            // o problema disso é que o save atualiza os dados mas não faz o hash da senha
+            if ($AdminModel->save($dadosEnviados)) {
                 session()->setFlashData("tipo", "success");
                 session()->setFlashData("mensagem", "Dados salvos com sucesso");
             } else {
@@ -74,6 +74,7 @@ class Atualizacao extends BaseController
             }
             return redirect()->to("/admin/atualizacao");
         } else {
+            // colocar validacao em da mesma forma que eu coloquei a mensagem na view
             session()->setFlashData("validacao", $this->validator);
             session()->setFlashData("atualizacao", $dadosEnviados);
             return redirect()->to("/admin/atualizacao");

@@ -28,7 +28,6 @@
             <input type="text" class="entrada-nome-email input-nome-email" placeholder= "Digite o seu nome" name="nome">
             <input type="email" class="entrada-nome-email input-nome-email" placeholder= "Digite o seu email" name="email">
             <input type="password" class="entrada-nome-email input-nome-email" placeholder= "Digite sua senha" name="senha">
-            <input type="password" class="entrada-nome-email input-nome-email" placeholder= "Confirme sua senha">
             <button class="btn2-padrao criar-conta-btn" type="submit">Criar conta</button>
         </div>
         <?= form_close() ?>    

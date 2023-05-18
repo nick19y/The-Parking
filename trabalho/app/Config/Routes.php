@@ -53,7 +53,9 @@ $routes->post('/admin/novo', "Admin\AutenticacaoAdmin::cadastrar");
 $routes->group('admin', ['filter'=>'admin'], function($routes){
     
     $routes->get('atualizacao', 'Admin\Atualizacao::atualizacao');
-    $routes->post('atualizacao/salvarPreco', 'Admin\Atualizacao::salvarPreco');
+    $routes->post('atualizacao/salvarPrecoMoto', 'Admin\Atualizacao::salvarPrecoCarro');
+    $routes->post('atualizacao/salvarPrecoCarro', 'Admin\Atualizacao::salvarPrecoMoto');
+    $routes->post('atualizacao/salvarDadosFuncionario', 'Admin\Atualizacao::salvarDadosFuncionario');
 
     
     

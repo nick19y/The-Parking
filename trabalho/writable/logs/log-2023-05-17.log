@@ -1,0 +1,22 @@
+CRITICAL - 2023-05-17 18:51:36 --> There is no data to insert.
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(68): CodeIgniter\BaseModel->save(Array)
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarDadosFuncionario()
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#6 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#9 {main}
+CRITICAL - 2023-05-17 18:52:54 --> There is no data to insert.
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Atualizacao.php(68): CodeIgniter\BaseModel->save(Array)
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Atualizacao->salvarDadosFuncionario()
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Atualizacao))
+#6 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#9 {main}

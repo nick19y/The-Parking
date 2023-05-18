@@ -70,7 +70,6 @@ CREATE TABLE preco_estacionamento(
 
 INSERT INTO preco VALUES(1,"carro", 5);
 INSERT INTO preco VALUES(2,"moto", 2.5);
-
 -- exemplo de um insert into com datetime
 -- INSERT INTO estacionamento(parametro, horario_entrada, horario_saida)
 -- VALUES('', '2023-10-22 14:45:30');

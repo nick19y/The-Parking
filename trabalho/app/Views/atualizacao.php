@@ -12,7 +12,7 @@
         <div class="div-at1">
             <div class="div-at2">
                 <h1 class="first-h1">Atualizacao de Dados</h1>
-                <form action="/admin/atualizacao/salvarDadosFuncionario" class="formulario">
+                <form action="/admin/atualizacao/salvarDadosFuncionario" class="formulario" method="POST">
                     <label for="nome" class="label-nome">Nome:</label>
                     <input type="text" id="nome" class="nome" placeholder="Digite o seu nome" name="nome">
                     
@@ -23,7 +23,7 @@
                     <input type="password" id="senha" class="senha" placeholder="Digite a sua senha" name="senha">
                     
                     <div class="div-button">
-                        <button type="submit">Enviar</button>
+                        <button type="submit">Atualizar</button>
                     </div>
                     <?php if (session()->has("tipo")) : ?>
                     <div class="alert alert-<?= session("tipo") ?> mt-2" role="alert">
@@ -36,23 +36,31 @@
         <div class="div-at2">
             <div>
                 <h1 class="first-h1">Atualização de preço</h1>
-                <form action="<?= base_url("/admin/atualizacao/salvarPreco")?>" class="formulario">
+                <div class="formulario">
                     <div class="div-preco">
-                        
-                        <form action="" class="formulario">
-                            <label for="carro" class="label-carro">Carro:</label>
-                            <input type="text" id="carro" class="carro" placeholder="digite o valor" name="carro">
-                            
-                            <label for="moto" class="label-carro">Moto:</label>
-                            <input type="moto" id="moto" class="moto" placeholder="Digite o valor" name="moto">
+                        <form action="<?= base_url("/admin/atualizacao/salvarPrecoMoto")?>" method="POST">
+                            <label for="moto" class="label-carro">Carro:</label>
+                            <input type="moto" id="moto" class="moto" placeholder="Digite o valor" name="preco">
                             
                             <div class="div-button">
                                 <button type="submit" class="botao">Atualizar</button>
                             </div>
-                            
                         </form>
+                        <form action="<?= base_url("/admin/atualizacao/salvarPrecoCarro")?>" class="formulario" method="POST">
+                            <label for="carro" class="label-carro">Moto:</label>
+                            <input type="text" id="carro" class="carro" placeholder="Digite o valor" name="preco">
+                            
+                            <div class="div-button">
+                                <button type="submit" class="botao">Atualizar</button>
+                            </div>
+                        </form>
+                        <?php if (session()->has("tipo")) : ?>
+                        <div class="alert alert-<?= session("tipo") ?> mt-2" role="alert">
+                            <?= session("mensagemPreco") ?>
+                        </div>
+                        <?php endif; ?>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </main>

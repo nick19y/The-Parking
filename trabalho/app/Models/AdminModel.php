@@ -25,6 +25,9 @@ public function logar($email, $senha){
         throw new Exception("Senha incorreta ou usuário não encontrado");
     }
 
+    // var_dump($admin, $senha, password_hash($senha, PASSWORD_DEFAULT));
+    // exit;
+
     if(!password_verify($senha, $admin["senha"])){
         throw new Exception("Senha incorreta ou usuário não encontrado");
     }
