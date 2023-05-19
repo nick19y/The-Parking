@@ -71,7 +71,7 @@ class Registro extends BaseController{
 
         // var_dump($intervalo);
 
-        $registro["preco"] = $total;
+        $registro["preco"] = number_format($total, 2, ",", ".");
         $registro["intervalo"] = $intervaloVisual;
 
         //$registro["estacionamento"] = $registroModel->getPrecoERegistro();        
