@@ -64,9 +64,12 @@ class Registro extends BaseController{
         // var_dump($teste);
         // 2023-05-18 19:38:50.913687 valor retornado
 
-        $intervaloVisual = $intervalo->h .":".  $intervalo->m . ":". $intervalo->s;
+        $intervaloVisual = $intervalo->h .":".  $intervalo->i . ":". $intervalo->s;
 
-        $total = ($valor_hora/60) * (($intervalo->h * 60) + $intervalo->m);
+            // valor padrão da hora         
+        $total = ($valor_hora/60) * (($intervalo->h * 60) + $intervalo->i);
+
+        // var_dump($intervalo);
 
         $registro["preco"] = $total;
         $registro["intervalo"] = $intervaloVisual;
