@@ -19,11 +19,12 @@ async function pegarDadosEstacionamento(id){
     const json = await requisicao.json();
     let veiculo = json.veiculo;
     let placa = json.placa_veiculo;
-    let preco_carro = json.preco_carro;
-    let preco_moto = json.preco_moto;
+    let preco = json.preco;
+    let tempo = json.intervalo;
+    // PERGUNTAR SE TEM ALGO A VER COM O BANCO DE DADOS
     // let veiculo = json.veiculo; não foi possível pelo fato de oq eu for exibir ser uma saída e não uma entrada
     // console.log(veiculo);
-    let dados_veiculo = {veiculo, placa, preco_carro, preco_moto};
+    let dados_veiculo = {veiculo, placa, preco, tempo};
     // console.log(dados_veiculo);
     return dados_veiculo;
 }
@@ -33,18 +34,21 @@ async function pegarDadosEstacionamento(id){
 const valorVeiculo = document.querySelector(".p-total1");
 const valorPlaca = document.querySelector(".p-total2");
 const valorTotalAPagar = document.querySelector(".p-total3");
+const tempoDecorrido = document.querySelector(".p-total4");
 
 async function listarDadosPagamento(id){
     const dados_veiculo = await pegarDadosEstacionamento(id);
     if(dados_veiculo.veiculo == "carro"){
         valorVeiculo.innerText = "Veículo: " + dados_veiculo.veiculo;
         valorPlaca.innerText = "Placa: " + dados_veiculo.placa;
-        valorTotalAPagar.innerText = "Preço: " + dados_veiculo.preco_carro;
+        tempoDecorrido.innerText = "Tempo: " + dados_veiculo.tempo;
+        valorTotalAPagar.innerText = "Preço: " + dados_veiculo.preco;
     }
     else if(dados_veiculo.veiculo == "moto"){
         valorVeiculo.innerText = "Veículo: " + dados_veiculo.veiculo;
         valorPlaca.innerText = "Placa: " + dados_veiculo.placa;
-        valorTotalAPagar.innerText = "Preço: " + dados_veiculo.preco_moto;
+        tempoDecorrido.innerText = "Tempo: " + dados_veiculo.tempo;
+        valorTotalAPagar.innerText = "Preço: " + dados_veiculo.preco;
     }
 }
 

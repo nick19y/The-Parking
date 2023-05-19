@@ -102,6 +102,7 @@
                 <div class="mostrar_valor">
                     <p class="p-total1"></p>
                     <p class="p-total2"></p>
+                    <p class="p-total4"></p>    
                     <p class="p-total3"></p>    
                 </div>
                 <button class="btn-finalizar-pagamento">Finalizar</button>

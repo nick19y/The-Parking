@@ -19,4 +19,8 @@ class PrecoModel extends Model
         $query = $this->db->query("UPDATE preco SET preco = $precoMoto WHERE idPreco = 2");
         return $query;
     }
+    public function getPreco(){
+        $query = $this->db->query("SELECT * FROM preco");
+        return $query;
+    }
 }

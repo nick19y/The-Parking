@@ -5,6 +5,7 @@ namespace App\Controllers\Admin;
 use App\Controllers\BaseController;
 use App\Models\RegistroModel;
 use App\Models\PrecoModel;
+use DateTime;
 
 // TALVEZ O ERRO SEJA ESTAR RETORNANDO UMA VIEW, VER COMO FOI FEITO NO PROJETO DO GIOVANNI
 
@@ -49,15 +50,35 @@ class Registro extends BaseController{
         $registroModel = new RegistroModel();
     }
     public function buscarRegistro($id){
+        date_default_timezone_set('America/Sao_Paulo');
         $registroModel = new RegistroModel();
         // criar nova model para preco para pegar de outro banco de dados e usar essa model nessa controller
-        // $registro = $registroModel->find($id);
-        $registro["estacionamento"] = $registroModel->getPrecoERegistro();        
-        // $registro["registro"] = $registroModel;
+        $registro = $registroModel->find($id);
 
-        // CONCLUSÃO: SERÁ NECESSÁRIA UMA CONSULTA QUE RETORNE OS VALORES DAS TABELAS PRECO E ESTACIONAMENTO
+        $valor_hora = $registro["valor_hora"];
+
+        $intervalo  = date_diff (new DateTime($registro["horario_atual_entrada"]), new DateTime());
+
+
+        // $teste = new DateTime();
+        // var_dump($teste);
+        // 2023-05-18 19:38:50.913687 valor retornado
+
+        $intervaloVisual = $intervalo->h .":".  $intervalo->m . ":". $intervalo->s;
+
+        $total = ($valor_hora/60) * (($intervalo->h * 60) + $intervalo->m);
+
+        $registro["preco"] = $total;
+        $registro["intervalo"] = $intervaloVisual;
+
+        //$registro["estacionamento"] = $registroModel->getPrecoERegistro();        
+        // $registro["registro"] = $registroModel;
 
         echo json_encode($registro, JSON_UNESCAPED_UNICODE);
         exit;
+    }
+    public function getValorHora(){
+        $precoModel = new PrecoModel();
+        $valorHora["valorHora"] = $precoModel->getPreco();
     }
 }

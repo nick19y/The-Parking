@@ -128,3 +128,6 @@ INSERT INTO preco VALUES(2,"moto", 2.5);
 
 
 -- pegar uma consulta que mostra a soma de registros diária
+
+
+-- normalmente o hash de senha tem 72 caracteres
