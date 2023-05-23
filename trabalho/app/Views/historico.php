@@ -12,14 +12,14 @@
 </head>
 <body>
     <main class="imagem-de-fundo">
+    <button class="btn-voltar-sessao"><img src="/img/up.svg" alt=""></button>
         <h1>Histórico de veiculos</h1>
-        <button class="btn-voltar-sessao"><img src="img/up.svg" alt=""></button>
         <div class="div-linha">
             <fieldset class="first-fiel">
                 <legend class="legenda-1">19 novembro 2023</legend>
                 <?php foreach ($estacionamento as $estacionamentos) :?>
                 <div class="div-1">
-                    <p class="p-placa"><?= $estacionamentos["placa_veiculo"] . " - (" . $estacionamentos["veiculo"] . ")<br> e: " . ($estacionamentos["he"]) . " s: " . ($estacionamentos["hs"])?></p>
+                    <p class="p-placa"><?= $estacionamentos["placa_veiculo"] . " (" . $estacionamentos["veiculo"] . ") <br> entrada: " . ($estacionamentos["he"]) . "<br>  saída: " . ($estacionamentos["hs"])?></p>
                 </div>
                 <?php endforeach; ?>
             </fieldset>

@@ -3,6 +3,20 @@
     box-sizing: border-box;
 }
 
+.btn-voltar-sessao{
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    left: 60px;
+    top: 5px;
+    height: 60px;
+    font-style: italic;
+    height: 50px;
+    padding: 10px;
+}
+
 main {
     background-color: #4348D6;
     width: 100vw;
@@ -45,7 +59,10 @@ main {
 .p-placa {
     font-size: 14px;
     margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
     font-size: 20px;
+    border: 1px solid white;
 }
 
 h1 {
@@ -86,6 +103,7 @@ h1 {
 
     .p-placa {
         text-align: center;
+        width: 240px;
     }
 
     h1 {
@@ -94,42 +112,6 @@ h1 {
         padding-bottom: -5px;
     }
 }
-
-.btn-voltar-sessao{
-    background-color: transparent;
-    border: transparent;
-    position: absolute;
-    color: white;
-    font-weight: 400;
-    left: 60px;
-    top: 10px;
-    height: 60px;
-    font-style: italic;
-    height: 50px;
-    padding: 10px;
-}
-.btn-voltar-sessao:hover {
-    cursor: pointer;
-    color: black;
-}
-
-@media (max-width: 700px){
-    .btn-voltar-sessao{
-        position: absolute;
-        left: 60px;
-        top: 5px;
-        height: 60px;
-    }
-}
-@media (max-width: 600px){
-    .btn-voltar-sessao{
-        position: absolute;
-        left: 5px;
-        top: 5px;
-        height: 60px;
-    }
-}
-
 
 
 

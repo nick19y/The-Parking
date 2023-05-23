@@ -186,7 +186,7 @@
     height: auto;
     padding: 0.1em;
     margin: 1em;
-    margin-bottom: 5em;
+    margin-bottom: 10em;
 }
 .titulo-registro-container{
     display: flex;
@@ -323,7 +323,8 @@
         min-width: 22vw;
     }
     .conteudo-principal-registro{
-        min-height: 50vh;
+        min-height: 87vh;
+        margin-top: 3rem;
     }    
     .btn-fechar{
         width: 1vw;

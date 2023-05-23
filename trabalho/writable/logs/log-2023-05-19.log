@@ -1,0 +1,27 @@
+ERROR - 2023-05-19 17:30:42 --> Error connecting to the database: Unknown database 'estacionamento_mariah'
+CRITICAL - 2023-05-19 17:30:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'estacionamento_mariah'
+#0 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fu...', Array, false)
+#2 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\vendor\codeigniter4\framework\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#3 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#4 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#5 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#6 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\app\Models\AdminModel.php(17): CodeIgniter\BaseModel->save(Array)
+#7 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\app\Controllers\Admin\AutenticacaoAdmin.php(44): App\Models\AdminModel->cadastrar('Vinicius', 'vini@123', '123')
+#8 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\AutenticacaoAdmin->cadastrar()
+#9 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AutenticacaoAdmin))
+#10 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Aluno\\...')
+#13 {main}
+CRITICAL - 2023-05-19 18:10:09 --> syntax error, unexpected '--' (T_DEC)
+#0 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('historico', Array, true)
+#2 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\app\Controllers\Admin\Historico.php(11): view('historico', Array)
+#3 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Historico->historico()
+#4 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Historico))
+#5 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Aluno\Desktop\Estacionamento-Mariah-main\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Aluno\\...')
+#8 {main}

@@ -1,3 +1,9 @@
+const btn_voltar1 = document.querySelector(".btn-voltar-sessao");
+btn_voltar1.addEventListener("click", function(){
+    window.history.back();
+});
+
+
 // https://www.youtube.com/watch?v=0VcybDX-kk0&ab_channel=ChartJS
 const data = {
     labels: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],

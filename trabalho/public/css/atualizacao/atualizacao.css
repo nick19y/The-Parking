@@ -7,8 +7,26 @@ main {
     display: flex;
     justify-content: space-around;
     background-color: #4348d6;
-    padding: 8rem;
     flex-wrap: wrap;
+    padding-top: 6rem;
+}
+
+.btn-voltar-sessao{
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    left: 30px;
+    top: 5px;
+    height: 60px;
+    font-style: italic;
+    height: 50px;
+    padding: 10px;
+}
+.btn-voltar-sessao img:hover {
+    cursor: pointer;
+    background-color: transparent;
 }
 
 .first-h1 {
@@ -37,6 +55,7 @@ form {
     border-radius: 10px;
     border: transparent;
     font-weight: bold;
+    box-shadow: 5px 6px 20px black;
 }
 
 .formulario label {
@@ -46,7 +65,7 @@ form {
 
 }
 
-button {
+.ok {
     width: 6rem;
     height: 2rem;
     border-radius: 10px;
@@ -55,7 +74,7 @@ button {
     color: #fff;
 }
 
-button:hover {
+.ok:hover {
     background-color: grey;
     cursor: pointer;
     transition: 0.5s;
@@ -77,6 +96,19 @@ button:hover {
     margin-top: 10px;
 }
 
-@media (min-width: 1077){
+@media (max-width: 450px){
+    .btn-voltar-sessao{
+        display: flex;
+        position: relative;
+        left: 12px;
+        top: 20px;
+    }
 
+    .first-h1{
+        margin-top: -30px;
+    }
+
+    .div-at1{
+        margin-top: -100px;
+    }
 }
