@@ -46,8 +46,19 @@ class Registro extends BaseController{
             return "Erro";
         }   
     }
-    public function setHorarioSaida(){
+    public function atribuirHorarioSaida($id){
         $registroModel = new RegistroModel();
+        $registroId['idEstacionamento'] = $registroModel->find($id);
+        // var_dump($registroModel->setHorarioSaida($id));
+        // $registroModelHorarioSaida["horario_atual_saida"] = new DateTime();
+        // $dadosEstacionamento["estacionamento"] = $registroModel->findAll();
+        if($registroModel->setHorarioSaida($id)){
+            return redirect()->to("/admin/registro");
+            return view("/admin/registro");
+        } else{
+            return "Erro";
+        }
+        var_dump(new DateTime());
     }
     public function buscarRegistro($id){
         date_default_timezone_set('America/Sao_Paulo');

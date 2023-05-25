@@ -12,6 +12,9 @@ const btnFecharRegistro = document.querySelector(".btn-fechar-registro");
 const btnFecharPagamento = document.querySelector(".img-fechar-pagamento");
 const popUpPagamento = document.querySelector(".pop-up-flexbox1");
 const btnRealizarPagamentoAll = document.querySelectorAll(".btn-fechar-pagamento-display");
+const botaoHoraSaida = document.getElementById("btnHoraSaida");
+
+// fazer função abaixo funcionar
 
 async function pegarDadosEstacionamento(id){
     const requisicao = await fetch("http://localhost:8080/admin/registro/buscar/" + id);
@@ -21,10 +24,12 @@ async function pegarDadosEstacionamento(id){
     let placa = json.placa_veiculo;
     let preco = json.preco;
     let tempo = json.intervalo;
+    // pegar esse id no php e fazer a execução do update pela função da Model
+    botaoHoraSaida.setAttribute("href","/admin/registro/atribuirHorarioSaida/"+id);
     // PERGUNTAR SE TEM ALGO A VER COM O BANCO DE DADOS
     // let veiculo = json.veiculo; não foi possível pelo fato de oq eu for exibir ser uma saída e não uma entrada
     // console.log(veiculo);
-    let dados_veiculo = {veiculo, placa, preco, tempo};
+    let dados_veiculo = {veiculo, placa, preco, tempo, id};
     // console.log(dados_veiculo);
     return dados_veiculo;
 }

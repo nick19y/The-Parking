@@ -18,7 +18,7 @@ class RegistroModel extends Model
     // update estacionamento set horario_atual_saida = NOW() where idEstacionamento = 1;
     public function setHorarioSaida($idEstacionamento){
         // fazer um update para o campo de saída nessa função
-        $query = $this->db->query("UPDATE estacionamento SET horario_atual_saida = NOW() WHERE idEstacionamento = ?", [$idEstacionamento])->getResultArray();
+        $query = $this->db->query("UPDATE estacionamento SET horario_atual_saida = NOW() WHERE idEstacionamento = ?", [$idEstacionamento]);
         return $query;
     }
     public function getPreco(){

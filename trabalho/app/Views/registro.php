@@ -94,20 +94,21 @@
             </div>
         </div>
         <?= form_close() ?>
-        <div class="pop-up-flexbox1">
-            <div class="btn-fechar-pagamento">
-                <img src="/img/x.png" class="img-fechar-pagamento" alt="">
-            </div>
-            <div class="pop-up-registrar-1">
-                <div class="mostrar_valor">
-                    <p class="p-total1"></p>
-                    <p class="p-total2"></p>
-                    <p class="p-total4"></p>    
-                    <p class="p-total3"></p>    
+
+            <div class="pop-up-flexbox1">
+                <div class="btn-fechar-pagamento">
+                    <img src="/img/x.png" class="img-fechar-pagamento" alt="">
                 </div>
-                <button class="btn-finalizar-pagamento">Finalizar</button>
+                <div class="pop-up-registrar-1">
+                    <div class="mostrar_valor">
+                        <p class="p-total1"></p>
+                        <p class="p-total2"></p>
+                        <p class="p-total4"></p>    
+                        <p class="p-total3"></p>    
+                    </div>
+                    <a  class="btn-finalizar-pagamento" href="#" id="btnHoraSaida">Finalizar</a>
+                </div>
             </div>
-        </div>
     </header>
     <main class="conteudo-principal-registro">
         <div class="titulo-registro-container">
