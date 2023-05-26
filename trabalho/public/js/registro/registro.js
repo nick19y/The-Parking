@@ -40,7 +40,11 @@ const valorVeiculo = document.querySelector(".p-total1");
 const valorPlaca = document.querySelector(".p-total2");
 const valorTotalAPagar = document.querySelector(".p-total3");
 const tempoDecorrido = document.querySelector(".p-total4");
-
+valorPlaca.style.textTransform = "uppercase";
+valorVeiculo.style.textTransform = "uppercase";
+valorTotalAPagar.style.textTransform = "uppercase";
+tempoDecorrido.style.textTransform = "uppercase";
+// element.style.color = 'red';
 async function listarDadosPagamento(id){
     const dados_veiculo = await pegarDadosEstacionamento(id);
     if(dados_veiculo.veiculo == "carro"){

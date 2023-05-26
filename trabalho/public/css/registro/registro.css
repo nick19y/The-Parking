@@ -4,9 +4,14 @@
     padding: 1em 0 1.5em 0;
     color: var(--branco);
 }
-
+.corpo-registro{
+    margin-bottom: 10em;
+}
 .altura-data{
     font-size: 1em;
+}
+.mensagem-data{
+    width: 55%;
 }
 .btn-fechar-pagamento{
     display: flex;
@@ -36,6 +41,7 @@
 }
 .mensagem-usuario{
     margin-bottom: 0.4em;
+    text-align: center;
 }
 .container-data{
     display: flex;
@@ -223,6 +229,7 @@
     border: 1px solid black;
     border-radius: 15px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 .horario{
     font-weight: bold;
@@ -270,9 +277,10 @@
 .btn-finalizar-pagamento{
     color: white;
     background-color: transparent;
+    border: 1px solid white;
+    padding: 0.6em 1em;
+    margin: 0.8em;
     border-radius: 20px;
-    width: 50vw;
-    height: 5vh;
     font-size: 20px;
 }
 @media screen and (min-width: 1024px){
@@ -280,6 +288,7 @@
         display: flex;
         flex-direction: row-reverse;
         width: 99%;
+        margin-bottom: 5em;
     }
     .cabecalho-registro{
         margin-top: 15%;
@@ -366,6 +375,7 @@
     }
     .pop-up-flexbox1{
         padding: 2em;
+        width: 20em;
     }
     .btn-finalizar-pagamento{
         width: 20em;

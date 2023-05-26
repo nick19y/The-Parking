@@ -26,7 +26,7 @@
             </div>
             <div class="mensagem-data">
                 <div class="msg-usuario">
-                    <h1 class="mensagem-usuario">Bem-vindo novamente, <?= session()->get("nome")?>!</h1>
+                    <h1 class="mensagem-usuario">Bem-vindo, <?= session()->get("nome")?>!</h1>
                 </div>
                 <div class="container-data">
                     <div class="data-mes">

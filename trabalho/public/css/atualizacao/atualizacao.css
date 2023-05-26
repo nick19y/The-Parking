@@ -9,6 +9,7 @@ main {
     background-color: #4348d6;
     flex-wrap: wrap;
     padding-top: 6rem;
+    margin-bottom: 15em;
 }
 
 .btn-voltar-sessao{
