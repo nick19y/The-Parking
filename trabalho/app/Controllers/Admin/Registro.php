@@ -74,12 +74,13 @@ class Registro extends BaseController{
         // $teste = new DateTime();
         // var_dump($teste);
         // 2023-05-18 19:38:50.913687 valor retornado
+        $intervaloDiasEmHoras = $intervalo->d * 24;
+        $horasF = str_pad(($intervaloDiasEmHoras + $intervalo->h), 2, "0", STR_PAD_LEFT);
+        $calculoIntervalo =  $horasF.":".  str_pad($intervalo->i, 2, "0",STR_PAD_LEFT) . ":". str_pad($intervalo->s, 2, "0",STR_PAD_LEFT);
+        $intervaloVisual = $calculoIntervalo;
 
-        $intervaloVisual = $intervalo->h .":".  $intervalo->i . ":". $intervalo->s;
-
-            // valor padrão da hora         
-        $total = ($valor_hora/60) * (($intervalo->h * 60) + $intervalo->i);
-
+        // valor padrão da hora
+        $total = ($valor_hora/60) * (($intervalo->d * 1440) + ($intervalo->h * 60) + $intervalo->i);
         // var_dump($intervalo);
 
         $registro["preco"] = number_format($total, 2, ",", ".");

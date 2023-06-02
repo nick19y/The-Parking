@@ -26,9 +26,8 @@ async function pegarDadosEstacionamento(id){
     let tempo = json.intervalo;
     // pegar esse id no php e fazer a execução do update pela função da Model
     botaoHoraSaida.setAttribute("href","/admin/registro/atribuirHorarioSaida/"+id);
-    // PERGUNTAR SE TEM ALGO A VER COM O BANCO DE DADOS
-    // let veiculo = json.veiculo; não foi possível pelo fato de oq eu for exibir ser uma saída e não uma entrada
-    // console.log(veiculo);
+    // let veiculo = json.veiculo;
+    // console.log(json);
     let dados_veiculo = {veiculo, placa, preco, tempo, id};
     // console.log(dados_veiculo);
     return dados_veiculo;
@@ -152,3 +151,4 @@ function atualizarHorario() {
 
 setInterval(atualizarHorario, 1000);
 
+// colocar faturamento mesal
