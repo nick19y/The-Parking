@@ -16,10 +16,16 @@
         <h1>Histórico de veiculos</h1>
         <div class="div-linha">
             <fieldset class="first-fiel">
-                <legend class="legenda-1">19 novembro 2023</legend>
+                <legend class="legenda-1"></legend>
                 <?php foreach ($estacionamento as $estacionamentos) :?>
                 <div class="div-1">
-                    <p class="p-placa"><?= $estacionamentos["placa_veiculo"] . " (" . $estacionamentos["veiculo"] . ") <br> entrada: " . ($estacionamentos["he"]) . "<br>  saída: " . ($estacionamentos["hs"])?></p>
+                    <div class="p-placa">
+                        <div class="placa-veiculo">
+                            <?= $estacionamentos["placa_veiculo"] . " (" . $estacionamentos["veiculo"] . ") "?>
+                        </div>
+                        <br>
+                        <?="entrada: " . ($estacionamentos["he"]) . "<br>  saída: " . ($estacionamentos["hs"])?>
+                    </div>
                 </div>
                 <?php endforeach; ?>
             </fieldset>

@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alteração</title>
-    <script src="/js/botao-voltar/botao-voltar.js" defer></script>
 </head>
 <body>
     <main>
         <div class="div-at1">
-        <button class="btn-voltar-sessao"><img src="/img/up.svg" alt=""></button>
+        <a href="/admin/registro">
+            <button class="btn-voltar-sessao"><img src="/img/up.svg" alt=""></button>
+        </a>
             <div class="div-at2">
                 <h1 class="first-h1">Atualizacao de Dados</h1>
                 <form action="/admin/atualizacao/salvarDadosFuncionario" class="formulario" method="POST">

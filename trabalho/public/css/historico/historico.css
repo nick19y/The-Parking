@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+.placa-veiculo{
+    text-transform: uppercase;
+    margin-bottom: -1em;
+}
+
 .btn-voltar-sessao{
     background-color: transparent;
     border: transparent;
@@ -103,7 +108,6 @@ h1 {
 
     .p-placa {
         text-align: center;
-        width: 240px;
     }
 
     h1 {
