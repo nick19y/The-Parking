@@ -26,8 +26,19 @@ class RegistroModel extends Model
         $query = $this->db->table("preco")->get()->getResultArray();
         return [$query, $selectEstacionamento];
     }
-    function getPrecoERegistro(){
+    public function getPrecoERegistro(){
         $query = $this->db->query("SELECT * FROM preco p INNER JOIN preco_estacionamento pe INNER JOIN estacionamento e ON p.idPreco = pe.fkPreco AND e.idEstacionamento = pe.fkEstacionamento;")->getResultArray();
         return $query;
+    }
+
+
+    public function getFaturamentoMensal($ano){
+        return $this->db->query("")->getResultArray();
+    }
+    public function getQuantidadeVendasMensal($ano){
+        return $this->db->query("SELECT MONTH(horario_atual_saida) AS mes, count(*) AS quantidade_estacionamento FROM estacionamento WHERE year(horario_atual_saida) = ? GROUP BY mes", [$ano])->getResultArray();
+    }
+    public function geFaturamentoDiaSemana($ano){
+        return $this->db->query("")->getResultArray();
     }
 }

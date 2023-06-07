@@ -42,7 +42,6 @@ $routes->get('/mensagemContaCriada','Home::mensagemContaCriada');
 $routes->get('/recuperarSenha','Home::recuperarSenha');
 $routes->get('/redefinirSenha','Home::redefinirSenha');
 $routes->get('/senhaRedefinidaMensagem', 'Home::senhaRedefinidaMensagem');
-$routes->get('/graficos', 'Home::graficos');
 $routes->get('/faturamento', 'Home::faturamento');
 $routes->get('/preco', 'Home::preco');
 
@@ -58,6 +57,8 @@ $routes->group('admin', ['filter'=>'admin'], function($routes){
     $routes->post('atualizacao/salvarDadosFuncionario', 'Admin\Atualizacao::salvarDadosFuncionario');
 
     
+    $routes->get('graficos', 'Admin\Graficos::index');
+
     
     $routes->get('historico', 'Admin\Historico::historico');
     

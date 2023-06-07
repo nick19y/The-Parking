@@ -1,0 +1,48 @@
+CRITICAL - 2023-06-07 17:15:37 --> mysqli::query(): Argument #1 ($query) cannot be empty
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('', 0)
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('')
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('')
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Models\RegistroModel.php(36): CodeIgniter\Database\BaseConnection->query('')
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Graficos.php(25): App\Models\RegistroModel->getFaturamentoMensal(2022)
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Graficos->index()
+#6 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Graficos))
+#7 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#10 {main}
+CRITICAL - 2023-06-07 17:15:38 --> mysqli::query(): Argument #1 ($query) cannot be empty
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('', 0)
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('')
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('')
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Models\RegistroModel.php(36): CodeIgniter\Database\BaseConnection->query('')
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Graficos.php(25): App\Models\RegistroModel->getFaturamentoMensal(2022)
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Graficos->index()
+#6 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Graficos))
+#7 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#10 {main}
+CRITICAL - 2023-06-07 17:49:20 --> Undefined variable $valor_mensal
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Views\graficos.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'E:\\ARQUIVOS-LOC...', 43)
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\View\View.php(210): include('E:\\ARQUIVOS-LOC...')
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('graficos', Array, true)
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Graficos.php(13): view('graficos', Array)
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Graficos->index()
+#6 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Graficos))
+#7 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#10 {main}
+CRITICAL - 2023-06-07 17:49:21 --> Undefined variable $valor_mensal
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Views\graficos.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'E:\\ARQUIVOS-LOC...', 43)
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\View\View.php(210): include('E:\\ARQUIVOS-LOC...')
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('graficos', Array, true)
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Graficos.php(13): view('graficos', Array)
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Graficos->index()
+#6 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Graficos))
+#7 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#10 {main}
