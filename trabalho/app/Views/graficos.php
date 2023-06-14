@@ -7,29 +7,31 @@
   <link rel="stylesheet" href="/css/graficos/graf.css">
   <link rel="stylesheet" href="/css/styles.css">
   <script src="/js/graficos/graficos.js" defer></script>
-  <script src="/js/botao-voltar/botao-voltar.js" defer></script>
 </head>
 <body>
   <div class="chartMenu">
-    <a href="/admin/registro"></a>
-    <button class="btn-voltar-sessao"><img src="/img/up.svg" alt=""></button>
+    <a href="/admin/registro">
+      <button class="btn-voltar-sessao"><img src="/img/up.svg" alt=""></button>
+    </a>
   </div>
+  <div class="limite">
   <?= form_open(base_url("admin/graficos"))?>  
-  <div class="tipo">Tipo do Gráfico</div>
-  <select name="tipo" id="tipo">
-    <option value="mes_total">
-      Total em R$ mensalmente
-    </option>
-    <option value="mes_qtd">
-      Quantidade de vendas mensalmente
-    </option>
-  </select>
-  <div>
-    <label for="ano">Ano</label>
-    <input type="number" name="ano" min="2022" max="2030" value="2023">
+      <div class="tipo">Tipo do Gráfico</div>
+      <select name="tipo" id="tipo">
+        <option value="mes_total">
+          Faturamento mensal
+        </option>
+      <option value="mes_qtd">
+        Quantidade de vendas mensal
+      </option>
+    </select>
+    <div>
+      <label for="ano">Ano</label>
+      <input type="number" name="ano" min="2022" max="2030" value="2023">
+    </div>
+    <button class="gerar">Gerar</button>
+    <?= form_close() ?>
   </div>
-  <button class="gerar">Gerar</button>
-  <?= form_close() ?>
   <div class="chartCard">
     <div class="chartBox">
       <h2 id="titulo-grafico">

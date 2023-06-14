@@ -26,7 +26,6 @@
             <input type="email" class="entrada-nome-email" placeholder= "Digite o seu email" name="email">
             <input type="password" class="entrada-nome-email" placeholder= "Digite sua senha" name="senha">
             <button class="btn2-padrao" type="submit">Iniciar sessão</button>
-            <a href="recuperarSenha" class="esqueceu-senha">Esqueceu a senha?</a>
             <a href="criarConta" class="esqueceu-senha">Criar nova conta</a>
         </div>
         <?= form_close()?>
