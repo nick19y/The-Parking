@@ -11,8 +11,10 @@
 </head>
 <body>
   <div class="chartMenu">
+    <a href="/admin/registro"></a>
     <button class="btn-voltar-sessao"><img src="/img/up.svg" alt=""></button>
   </div>
+  <?= form_open(base_url("admin/graficos"))?>  
   <div class="tipo">Tipo do Gráfico</div>
   <select name="tipo" id="tipo">
     <option value="mes_total">
@@ -21,15 +23,13 @@
     <option value="mes_qtd">
       Quantidade de vendas mensalmente
     </option>
-    <option value="semana_total">
-      Total em R$ por dia da semana
-    </option>
   </select>
   <div>
     <label for="ano">Ano</label>
     <input type="number" name="ano" min="2022" max="2030" value="2023">
   </div>
   <button class="gerar">Gerar</button>
+  <?= form_close() ?>
   <div class="chartCard">
     <div class="chartBox">
       <h2 id="titulo-grafico">
@@ -40,10 +40,14 @@
   </div>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
   <script>
-    const informacoes = <?= json_encode($quantidade_estacionamento)?>;
+    const informacoes = <?= json_encode($valor_mensal)?>;
     const quantidade = [0,0,0,0,0,0,0,0,0,0,0,0];
     informacoes.forEach(mes => {
-      quantidade[Number(mes.mes-1)] = Number(mes.quantidade_estacionamento)
+      if(mes.quantidade_estacionamento){
+        quantidade[Number(mes.mes-1)] = Number(mes.quantidade_estacionamento)
+      } else if(mes.faturamento_mensal){
+        quantidade[Number(mes.mes-1)] = Number(mes.faturamento_mensal)
+      }
     });
     console.log(informacoes, quantidade);
     const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];

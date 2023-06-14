@@ -33,12 +33,9 @@ class RegistroModel extends Model
 
 
     public function getFaturamentoMensal($ano){
-        return $this->db->query("")->getResultArray();
+        return $this->db->query("SELECT MONTH(horario_atual_saida) AS mes, SUM(valor_hora) AS faturamento_mensal FROM estacionamento WHERE YEAR(horario_atual_saida) = ? GROUP BY mes ORDER BY mes", [$ano])->getResultArray();
     }
     public function getQuantidadeVendasMensal($ano){
         return $this->db->query("SELECT MONTH(horario_atual_saida) AS mes, count(*) AS quantidade_estacionamento FROM estacionamento WHERE year(horario_atual_saida) = ? GROUP BY mes", [$ano])->getResultArray();
-    }
-    public function geFaturamentoDiaSemana($ano){
-        return $this->db->query("")->getResultArray();
     }
 }

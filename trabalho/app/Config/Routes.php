@@ -58,6 +58,7 @@ $routes->group('admin', ['filter'=>'admin'], function($routes){
 
     
     $routes->get('graficos', 'Admin\Graficos::index');
+    $routes->post('graficos', 'Admin\Graficos::index');
 
     
     $routes->get('historico', 'Admin\Historico::historico');

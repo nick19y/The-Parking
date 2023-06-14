@@ -9,7 +9,19 @@ class Graficos extends BaseController
         $registroModel = new RegistroModel();
         $ano= $this->request->getVar("ano");
         $tipo = $this->request->getVar("tipo");
-        $dados["quantidade_estacionamento"] = $registroModel->getQuantidadeVendasMensal(2023);
+        if($ano && $tipo){
+            if($tipo=="mes_total"){
+                $dados["valor_mensal"] = $registroModel->getFaturamentoMensal($ano);
+                $dados["legenda"] = "R$ no mês";
+            }
+            else if($tipo == "mes_qtd"){
+                $dados["valor_mensal"] = $registroModel->getQuantidadeVendasMensal($ano);
+                $dados["legenda"] = "Qtd no mês";
+            }
+        } else{
+            $dados["valor_mensal"] = $registroModel->getFaturamentoMensal(2022);
+            $dados["legenda"] = "R$ no mês";
+        }
         return view("graficos", $dados);
     }
 }
