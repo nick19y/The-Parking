@@ -6,7 +6,6 @@
   <title>Gráficos</title>
   <link rel="stylesheet" href="/css/graficos/graf.css">
   <link rel="stylesheet" href="/css/styles.css">
-  <script src="/js/graficos/graficos.js" defer></script>
 </head>
 <body>
   <div class="chartMenu">
@@ -15,29 +14,31 @@
     </a>
   </div>
   <div class="limite">
-  <?= form_open(base_url("admin/graficos"))?>  
-      <div class="tipo">Tipo do Gráfico</div>
-      <select name="tipo" id="tipo">
-        <option value="mes_total">
-          Faturamento mensal
+    <form action="http://localhost:8080/admin/graficos" method="post" accept-charset="utf-8" class="formulario_grafico"> 
+        <div class="tipo">Tipo do Gráfico</div>
+        <select name="tipo" id="tipo">
+          <option value="mes_total">
+            Faturamento mensal
+          </option>
+        <option value="mes_qtd">
+            Quantidade de veículos estacionados
         </option>
-      <option value="mes_qtd">
-        Quantidade de vendas mensal
-      </option>
-    </select>
-    <div>
-      <label for="ano">Ano</label>
-      <input type="number" name="ano" min="2022" max="2030" value="2023">
-    </div>
-    <button class="gerar">Gerar</button>
-    <?= form_close() ?>
+      </select>
+      <div>
+        <label for="ano">Ano</label>
+        <input type="number" name="ano" min="2022" max="2030" value="2023">
+      </div>
+      <button class="gerar">Gerar</button>
+    </form>
   </div>
-  <div class="chartCard">
-    <div class="chartBox">
-      <h2 id="titulo-grafico">
-        Faturamento Mensal
-      </h2>
-      <canvas id="myChart"></canvas>
+  <div class="limite-grafico">
+    <div class="chartCard">
+      <div class="chartBox">
+        <h2 id="titulo-grafico">
+          Faturamento Mensal
+        </h2>
+        <canvas id="myChart"></canvas>
+      </div>
     </div>
   </div>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>

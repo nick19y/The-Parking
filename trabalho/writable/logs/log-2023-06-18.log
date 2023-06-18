@@ -1,0 +1,24 @@
+CRITICAL - 2023-06-18 14:42:36 --> Trying to access array offset on value of type null
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Registro.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'E:\\ARQUIVOS-LOC...', 38)
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Registro->registrar()
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Registro))
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#6 {main}
+CRITICAL - 2023-06-18 14:42:52 --> Trying to access array offset on value of type null
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Registro.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'E:\\ARQUIVOS-LOC...', 38)
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Registro->registrar()
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Registro))
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#6 {main}
+CRITICAL - 2023-06-18 14:43:00 --> Trying to access array offset on value of type null
+#0 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\app\Controllers\Admin\Registro.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'E:\\ARQUIVOS-LOC...', 36)
+#1 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Admin\Registro->registrar()
+#2 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Registro))
+#3 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\ARQUIVOS-LOCAIS-TCC\tcc-igniter\trabalho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\ARQUIVOS-LOC...')
+#6 {main}

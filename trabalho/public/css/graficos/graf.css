@@ -5,34 +5,40 @@
     font-family: sans-serif;
 }
 body{
-    padding: 5em 3em 0;
+    padding: 3em 0em 0;
     margin: 0;
 }
+.formulario_grafico{
+    gap: 1em;
+}
 @media (max-width: 1023px){
+    .limite_grafico{ 
+        overflow-x: scroll;
+    }
     .limite{
-        width: 100%;
         position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        transform: translateX(100%);
+        transform: translate(30%);
+    }
+    .chartCard{
+        width: 100%;
+        margin: 6em 5em 0em 0em;
     }
 }
 .chartCard{
-    width: 300vw;
-    margin: 7em 0em 5em;
-    height: 65vh;
+    height: 70vh;
     background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .chartBox{
-    width: 100%;
+    width: 86%;
     height: 80%;
-    padding: 2em 1em 5.5em;
-    margin: 3rem 5em 5em;
+    padding: 2em 1em 4em;
     border-radius: 20px;
     border: solid 3px rgba(54, 162, 235, 1);
     background: white;
@@ -58,5 +64,8 @@ body{
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+    .chartBox{
+        margin: 3rem 5em 5em;
     }
 }
