@@ -12,11 +12,11 @@ class Graficos extends BaseController
         if($ano && $tipo){
             if($tipo=="mes_total"){
                 $dados["valor_mensal"] = $registroModel->getFaturamentoMensal($ano);
-                $dados["legenda"] = "R$ no mês";
+                $dados["legenda"] = "Faturamento em R$";
             }
             else if($tipo == "mes_qtd"){
                 $dados["valor_mensal"] = $registroModel->getQuantidadeVendasMensal($ano);
-                $dados["legenda"] = "Qtd no mês";
+                $dados["legenda"] = "Quantidade de veículos estacionados";
             }
         } else{
             $dados["valor_mensal"] = $registroModel->getFaturamentoMensal(2022);

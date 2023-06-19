@@ -35,7 +35,7 @@
     <div class="chartCard">
       <div class="chartBox">
         <h2 id="titulo-grafico">
-          Faturamento Mensal
+        <?= $legenda ?>
         </h2>
         <canvas id="myChart"></canvas>
       </div>
