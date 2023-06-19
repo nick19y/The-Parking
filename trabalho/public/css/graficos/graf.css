@@ -9,12 +9,23 @@ body{
     margin: 0;
 }
 .formulario_grafico{
-    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.mes_total_estacionamento{
+    text-align: center;
+}
+.selecao-tipo-grafico{
+    border-radius: 30px;
+    padding: 0.2em;
+}
+.input-ano{
+    border-radius: 15px;
+    padding: 0.4em 0.1em 0.3em 0em;
+    text-align: center;
 }
 @media (max-width: 1023px){
-    .limite_grafico{ 
-        overflow-x: scroll;
-    }
     .limite{
         position: absolute;
         display: flex;
@@ -25,8 +36,17 @@ body{
     }
     .chartCard{
         width: 100%;
-        margin: 6em 5em 0em 0em;
+        margin: 8em 5em 0em 0em;
     }
+}
+.formulario_grafico{
+    gap: 8px;
+}
+.gerar{
+    background-color: transparent;
+    padding: 0.5em;
+    border-radius: 15px;
+    color: white;
 }
 .chartCard{
     height: 70vh;
@@ -36,7 +56,7 @@ body{
     justify-content: center;
 }
 .chartBox{
-    width: 86%;
+    width: 80%;
     height: 80%;
     padding: 2em 1em 4em;
     border-radius: 20px;
@@ -64,8 +84,12 @@ body{
         align-items: center;
         justify-content: center;
         text-align: center;
+        transform: translate(4%);
     }
     .chartBox{
         margin: 3rem 5em 5em;
+    }
+    .gerar:hover{
+        cursor: pointer;
     }
 }

@@ -16,17 +16,17 @@
   <div class="limite">
     <form action="http://localhost:8080/admin/graficos" method="post" accept-charset="utf-8" class="formulario_grafico"> 
         <div class="tipo">Tipo do Gráfico</div>
-        <select name="tipo" id="tipo">
-          <option value="mes_total">
+        <select name="tipo" id="tipo" class="selecao-tipo-grafico">
+          <option class="mes_total_estacionamento" value="mes_total">
             Faturamento mensal
           </option>
-        <option value="mes_qtd">
+        <option class="mes_total_estacionamento" value="mes_qtd">
             Quantidade de veículos estacionados
         </option>
       </select>
       <div>
-        <label for="ano">Ano</label>
-        <input type="number" name="ano" min="2022" max="2030" value="2023">
+        <label for="ano">Ano:</label>
+        <input type="number" name="ano" min="2022" max="2030" value="2023" class="input-ano">
       </div>
       <button class="gerar">Gerar</button>
     </form>
